@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": ".venv/bin/python",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.formatting.provider": "black",
+  "[python]": { "editor.formatOnSave": true },
+  "terminal.integrated.defaultProfile.osx": "zsh"
+}

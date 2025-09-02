@@ -212,6 +212,10 @@ ai-pipeline/
   └─ decision/
     └─ active_learning/
     └─ mpc_scheduler/
+  └─ .vscode/
+     └─ launch.json
+     └─ settings.json
+     └─ tasks.json
   └─ data/
     └─ lakehouse/
   └─ demos/
