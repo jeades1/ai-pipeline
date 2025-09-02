@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.DS_Store
+*.tmp
+.venv/
+__pycache__/
+.DS_Store
+*.tmp
+docs/diagrams/exports/*.png
+docs/diagrams/exports/*.svg
