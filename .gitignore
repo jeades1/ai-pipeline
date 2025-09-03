@@ -1,10 +1,26 @@
-.venv/
-__pycache__/
+# macOS
 .DS_Store
-*.tmp
-.venv/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Python
 __pycache__/
-.DS_Store
-*.tmp
-docs/diagrams/exports/*.png
-docs/diagrams/exports/*.svg
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+.env
+
+# Data (keep small demo data; ignore heavy or private stuff)
+data/raw/*
+!data/raw/README.md
+data/working/*
+data/processed/*
+data/cache/*
+!data/.gitkeep
+
+# Mermaid exports (keep if desired; otherwise ignore and render in CI)
+# docs/diagrams/exports/*

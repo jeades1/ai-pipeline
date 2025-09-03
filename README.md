@@ -165,6 +165,11 @@ ai-pipeline/
    └─ Makefile
    └─ README.md
    └─ requirements.lock.txt
+  └─ pipeline/
+  └─ artifacts/
+    └─ demo/
+       └─ features.csv
+       └─ report.md
   └─ tools/
     └─ cli/
        └─ main.py
@@ -218,6 +223,8 @@ ai-pipeline/
      └─ tasks.json
   └─ data/
     └─ lakehouse/
+    └─ raw/
+       └─ sample.csv
   └─ demos/
      └─ AKI_OPEN_DATA_DEMO.md
 ```
@@ -240,3 +247,11 @@ Glossary
 	•	Digital twin (avatar) — donor-specific hybrid mechanistic–ML model calibrated to that donor’s functional/omic trajectories.
 	•	Evidence ladder — progression from correlation → interventional causality → clinical mediation → prospective validation.
 	•	KG — typed, versioned graph encoding biology, context, priors, and live evidence with uncertainty and provenance.
+
+## Quick start
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+make render-diagrams
+python main.py demo

@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-import argparse, os, sys, textwrap
+import argparse
+import os
+import sys
 
 START_MARKER = "<!-- TREE:START -->"
-END_MARKER   = "<!-- TREE:END -->"
+END_MARKER = "<!-- TREE:END -->"
+
 
 def generate_tree(root="."):
     lines = []
@@ -12,18 +15,24 @@ def generate_tree(root="."):
         if ".git" in parts or ".venv" in parts:
             continue
         depth = len(parts) - len(root.split(os.sep))
-        if depth < 0: depth = 0
+        if depth < 0:
+            depth = 0
         indent = "  " * depth
-        name = os.path.basename(dirpath) if dirpath != root else os.path.basename(os.path.abspath(root))
+        name = (
+            os.path.basename(dirpath)
+            if dirpath != root
+            else os.path.basename(os.path.abspath(root))
+        )
         if dirpath == root:
             lines.append(f"{name}/")
         else:
             lines.append(f"{indent}└─ {name}/")
         for f in sorted(filenames):
-            if f.startswith("."): 
+            if f.startswith("."):
                 continue
             lines.append(f"{indent}   └─ {f}")
     return "```\n" + "\n".join(lines) + "\n```"
+
 
 def update_readme(readme_path):
     with open(readme_path, "r", encoding="utf-8") as f:
@@ -40,11 +49,16 @@ def update_readme(readme_path):
         print("Markers not found in README; printing tree:\n")
         print(tree_md)
 
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--readme", default="README.md")
-    ap.add_argument("--inplace", action="store_true", help="Update README between TREE markers")
-    ap.add_argument("--print-only", action="store_true", help="Print tree to stdout only")
+    ap.add_argument(
+        "--inplace", action="store_true", help="Update README between TREE markers"
+    )
+    ap.add_argument(
+        "--print-only", action="store_true", help="Print tree to stdout only"
+    )
     args = ap.parse_args()
     if args.print_only:
         print(generate_tree("."))

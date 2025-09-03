@@ -1,9 +1,4 @@
-import typer
-app = typer.Typer(help="ai-pipeline CLI")
-
-@app.command()
-def hello(name: str = "world"):
-    print(f"hello, {name}")
+from .cli import app
 
 if __name__ == "__main__":
     app()
