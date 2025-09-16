@@ -1,5 +1,6 @@
 # Large data files
 data/external/
+data/processed/priors/
 *.h5ad
 *.gct
 *.gctx
@@ -7,6 +8,7 @@ data/external/
 *.zip
 *.CEL
 *.parquet
+*.tsv
 
 # Model files
 *.joblib
