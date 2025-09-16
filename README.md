@@ -55,29 +55,30 @@ python presentation/generate_visualizations.py
 
 ### 📖 **Complete Understanding (30 minutes)**
 
-**Welcome to the AI-Guided Biomarker Discovery Journey** - This narrative guide takes you through our complete system, from foundational concepts to advanced clinical applications. Whether you're a healthcare provider, researcher, or technology implementer, this roadmap provides context and connections between all system components.
+**Systematic Guide to Biomarker Discovery Platform** - This structured guide covers our integrated computational-experimental approach to biomarker discovery. For medical researchers and clinicians familiar with biomarker validation but new to machine learning and systems biology approaches.
 
-#### **Phase 1: Foundation - Understanding the Vision** 
-*"What are we building and why does it matter?"*
+#### **Phase 1: Scientific Foundation** 
+*"Core methodology and biological principles"*
 
-4. **[Mission & Scientific Vision](#mission--outcomes)** - Core objectives and outcomes
-   - Start here to understand our fundamental approach: using AI to discover biomarkers that bridge molecular signals to clinical outcomes
-   - Key insight: Traditional biomarker discovery takes 10-15 years; our system reduces this to 2-3 years through intelligent automation
+4. **[Mission & Scientific Vision](#mission--outcomes)** - Core objectives and experimental approach
+   - Understand our systematic approach to mechanistic biomarker discovery
+   - Focus on causal relationships between molecular signatures and tissue function
+   - Integration of patient-derived models with computational methods
 
-5. **[PACKAGE_OVERVIEW.md](./PACKAGE_OVERVIEW.md)** - Complete system architecture and capabilities
-   - **Critical reading**: This comprehensive guide explains the entire system in non-technical terms
-   - Think of this as your "owner's manual" - it shows how all pieces fit together and why each component matters
-   - Special focus on real-world applications and business value for healthcare systems
+5. **[PACKAGE_OVERVIEW.md](./PACKAGE_OVERVIEW.md)** - Complete system methodology and validation
+   - **Essential reading**: Comprehensive overview of computational methods and experimental validation
+   - Details our approach compared to current best practices in biomarker discovery
+   - Specific focus on clinical translation and regulatory validation
 
-6. **[System Architecture](#system-architecture)** - Technical architecture overview
-   - Visual representation of how data flows through our system
-   - See how tissue chip experiments → AI analysis → clinical recommendations work together
-   - Understanding this flow is essential for appreciating the system's innovation
+6. **[System Architecture](#system-architecture)** - Integrated experimental-computational pipeline
+   - Data flow from tissue-chip experiments through AI analysis to clinical validation
+   - Understanding multi-modal data integration (genomics, proteomics, functional assays)
+   - Quality control and validation at each processing stage
 
-#### **Phase 2: Core Capabilities - The Engine Room**
-*"How does the system actually work?"*
+#### **Phase 2: Methodological Advances** 
+*"What makes this approach scientifically rigorous?"*
 
-7. **[Enhanced Validation Framework](./ENHANCED_VALIDATION_SUMMARY.md)** - Statistical rigor and validation
+7. **[Enhanced Validation Framework](./ENHANCED_VALIDATION_SUMMARY.md)** - Statistical methods and bias control
    - **Why this matters**: 90% of biomarker candidates fail in clinical trials due to poor validation
    - Our solution: Multi-layer statistical validation that catches problems early
    - Read this to understand how we achieve higher success rates than traditional approaches

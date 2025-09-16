@@ -1,44 +1,44 @@
-# Platform Capabilities: What Our AI System Can Do
+# Platform Capabilities: Integrated Computational-Experimental Platform
 
-> **For Non-Technical Audiences**: This document explains the full range of capabilities of our AI biomarker discovery platform. Think of it as a comprehensive menu of what our system can do for researchers, doctors, and patients - from finding new disease markers to personalizing treatments.
+> **For Medical Researchers**: This platform combines advanced machine learning with experimental biology to enable systematic biomarker discovery. The system integrates multi-modal data analysis, causal inference, and tissue-chip validation to identify mechanistically-grounded biomarkers with high clinical translation potential.
 
-!!! abstract "AI Pipeline Core Capabilities"
-    Comprehensive overview of our privacy-preserving federated AI platform for global health research - designed to accelerate medical discovery while protecting patient privacy.
+!!! abstract "Core Platform Capabilities"
+    Comprehensive biomarker discovery platform leveraging federated learning, tissue-chip technology, and causal inference for accelerated clinical translation.
 
-## 🧬 Scientific Capabilities
+## 🧬 Scientific Methodology
 
-### **What Makes Our Approach Unique**
-Unlike traditional biomarker discovery that takes 10-15 years per discovery, our AI system can:
-- Analyze thousands of potential biomarkers simultaneously
-- Learn from experiments across multiple institutions without sharing sensitive data
-- Provide mechanistic explanations for why biomarkers work
-- Validate discoveries across diverse patient populations
+### **Advanced Biomarker Discovery Approach**
+Our platform addresses key limitations in current biomarker discovery:
+- **Multi-Modal Data Integration**: Systematic fusion of genomics, proteomics, metabolomics, and functional data
+- **Causal vs. Correlative Analysis**: Machine learning methods that identify mechanistic relationships
+- **Human-Relevant Validation**: Tissue-chip models that better predict clinical outcomes than animal models
+- **Cross-Population Validation**: Federated learning across diverse patient populations
 
 ### Federated Research Infrastructure
 
 === "Multi-Institutional Collaboration"
 
-    **Global Research Network**
+    **Clinical Research Network**
     
-    Our platform enables collaboration on an unprecedented scale:
+    Collaborative platform enabling biomarker validation across multiple sites:
     
-    - **50+ Global Institutions**: Research hospitals, universities, biotech companies working together
-    - **6 Continents**: North America, Europe, Asia-Pacific, Africa, Latin America, Middle East
-    - **Multiple Disease Areas**: Cardiovascular, oncology, rare diseases, infectious diseases
-    - **Cross-Cultural Research**: Diverse population genetics and environmental factors
+    - **Academic Medical Centers**: Major research hospitals and university medical centers
+    - **International Collaboration**: Multi-national studies for population diversity
+    - **Disease-Specific Networks**: Specialized centers for cardiovascular, oncology, neurological, and rare diseases
+    - **Regulatory Partnerships**: Collaboration with FDA, EMA, and other regulatory bodies for validation standards
     
-    **Why This Matters**
+    **Clinical Advantages**
     
-    - **Better Science**: Discoveries validated across multiple populations are more reliable
-    - **Faster Progress**: Parallel research across institutions accelerates discovery
-    - **Global Equity**: Ensures biomarkers work for all populations, not just those in wealthy countries
-    - **Rare Disease Focus**: Combines small patient populations from multiple sites for adequate statistical power
+    - **Increased Statistical Power**: Larger effective sample sizes through multi-site collaboration
+    - **Reduced Population Bias**: Validation across diverse demographic and genetic backgrounds
+    - **Accelerated Recruitment**: Parallel enrollment across multiple clinical sites
+    - **Enhanced Generalizability**: Biomarkers validated across different clinical practices and patient populations
     
     **Privacy-Preserving Data Sharing**
     
-    **The Problem**: Traditional research requires sharing sensitive patient data between institutions, creating privacy and regulatory challenges.
+    **Clinical Challenge**: HIPAA/GDPR requirements prevent sharing of raw patient data between institutions, limiting multi-site studies.
     
-    **Our Solution**: Advanced encryption that allows computation on data without ever exposing raw patient information:
+    **Technical Solution**: Federated learning architecture that enables collaborative analysis without data sharing:
     
     - **No Raw Data Sharing**: Patient data never leaves the original institution
     - **Homomorphic Encryption**: Allows mathematical analysis on encrypted data
