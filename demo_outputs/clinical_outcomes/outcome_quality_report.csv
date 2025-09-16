@@ -1,0 +1,3 @@
+outcome_id,total_assessments,prevalence,average_confidence,high_quality_percent,expected_prevalence
+aki_stage,50,0.36,0.82,100.0,0.25
+kidney_recovery,50,0.12,0.7999999999999998,100.0,0.6

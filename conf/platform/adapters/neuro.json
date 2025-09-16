@@ -1,0 +1,10 @@
+{
+  "name": "neuro",
+  "description": "Adapter for neurological disease (neuroinflammation, neurodegeneration).",
+  "ontology_terms": ["microglia", "synapse", "amyloid", "axon"],
+  "prioritization_weights": {"omics": 0.8, "imaging": 0.9, "secretome": 0.6, "functional": 0.7},
+  "assay_modules": ["neuronal organoids", "microglia co-culture", "electrophysiology"],
+  "biomarker_archetypes": ["neuroinflammation", "synaptic integrity", "protein aggregation"],
+  "outcomes": ["cognitive composite", "seizure frequency", "MMSE"],
+  "notes": "Leverage high-content imaging and functional readouts."
+}

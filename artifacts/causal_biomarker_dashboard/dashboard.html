@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Causal Biomarker Discovery Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #2c3e50; color: white; padding: 20px; border-radius: 5px; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .metrics { display: flex; justify-content: space-around; }
+        .metric { text-align: center; padding: 10px; background-color: #ecf0f1; border-radius: 5px; }
+        .top-biomarkers { background-color: #e8f5e8; }
+        .causal-edges { background-color: #e8f4fd; }
+        img { max-width: 100%; height: auto; margin: 10px 0; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔬 Causal Biomarker Discovery Dashboard</h1>
+        <p>Comprehensive analysis integrating causal discovery with biomarker scoring</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 Summary Metrics</h2>
+        <div class="metrics">
+            <div class="metric">
+                <h3>4</h3>
+                <p>Biomarkers Analyzed</p>
+            </div>
+            <div class="metric">
+                <h3>19</h3>
+                <p>Causal Relationships</p>
+            </div>
+            <div class="metric">
+                <h3>11</h3>
+                <p>High-Confidence Edges</p>
+            </div>
+            <div class="metric">
+                <h3>3</h3>
+                <p>Strong Evidence Biomarkers</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section top-biomarkers">
+        <h2>🏆 Top Biomarkers</h2>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Biomarker</th>
+                <th>Integrated Score</th>
+                <th>Causal Confidence</th>
+                <th>Evidence Tier</th>
+                <th>P-value</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td><strong>CRP</strong></td>
+                <td>0.957</td>
+                <td>1.000</td>
+                <td>1</td>
+                <td>1.31e-06</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><strong>METABOLITE_X</strong></td>
+                <td>0.953</td>
+                <td>0.878</td>
+                <td>2</td>
+                <td>2.52e-13</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><strong>ENZYME_ACTIVITY</strong></td>
+                <td>0.827</td>
+                <td>0.856</td>
+                <td>2</td>
+                <td>2.67e-08</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><strong>RANDOM_MARKER</strong></td>
+                <td>0.386</td>
+                <td>0.288</td>
+                <td>5</td>
+                <td>5.94e-01</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="section causal-edges">
+        <h2>🔗 Strong Causal Relationships</h2>
+        <table>
+            <tr>
+                <th>Source</th>
+                <th>Target</th>
+                <th>Strength</th>
+                <th>Confidence</th>
+                <th>Method</th>
+            </tr>
+
+            <tr>
+                <td>ENZYME_ACTIVITY</td>
+                <td>METABOLITE_X</td>
+                <td>0.030</td>
+                <td>0.960</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>ENZYME_ACTIVITY</td>
+                <td>CRP</td>
+                <td>0.135</td>
+                <td>0.753</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>ENZYME_ACTIVITY</td>
+                <td>disease_outcome</td>
+                <td>0.012</td>
+                <td>0.856</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>METABOLITE_X</td>
+                <td>ENZYME_ACTIVITY</td>
+                <td>0.052</td>
+                <td>0.958</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>METABOLITE_X</td>
+                <td>CRP</td>
+                <td>0.031</td>
+                <td>0.826</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>METABOLITE_X</td>
+                <td>disease_outcome</td>
+                <td>0.014</td>
+                <td>0.878</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>CRP</td>
+                <td>ENZYME_ACTIVITY</td>
+                <td>13.772</td>
+                <td>1.000</td>
+                <td>Integrated(NOTEARS, Mendelian Randomization)</td>
+            </tr>
+            <tr>
+                <td>CRP</td>
+                <td>METABOLITE_X</td>
+                <td>6.224</td>
+                <td>1.000</td>
+                <td>Integrated(NOTEARS, Mendelian Randomization)</td>
+            </tr>
+            <tr>
+                <td>CRP</td>
+                <td>disease_outcome</td>
+                <td>0.104</td>
+                <td>1.000</td>
+                <td>Integrated(NOTEARS, Mendelian Randomization)</td>
+            </tr>
+            <tr>
+                <td>disease_outcome</td>
+                <td>METABOLITE_X</td>
+                <td>50.459</td>
+                <td>1.000</td>
+                <td>Integrated(NOTEARS, Mendelian Randomization)</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>🎨 Visualizations</h2>
+        
+        <h3>Causal Network Graph</h3>
+        <img src="causal_graph.png" alt="Causal Graph">
+        
+        <h3>High-Confidence Relationships</h3>
+        <img src="high_confidence_graph.png" alt="High Confidence Graph">
+        
+        <h3>Biomarker Scoring Analysis</h3>
+        <img src="biomarker_scores.png" alt="Biomarker Scores">
+    </div>
+    
+    <div class="section">
+        <h2>🔬 Methodology</h2>
+        <p><strong>Causal Discovery Methods:</strong></p>
+        <ul>
+            <li><strong>NOTEARS:</strong> Neural-oriented causal discovery for observational data</li>
+            <li><strong>PC-MCI:</strong> Temporal causal discovery with conditional independence testing</li>
+            <li><strong>Mendelian Randomization:</strong> Genetic instrument-based causal inference</li>
+        </ul>
+        
+        <p><strong>Integrated Scoring Components:</strong></p>
+        <ul>
+            <li>Causal Evidence (30%): Confidence in causal relationships</li>
+            <li>Statistical Significance (25%): P-value based scoring</li>
+            <li>Effect Size (15%): Magnitude of biomarker association</li>
+            <li>Pathway Centrality (10%): Position in causal network</li>
+            <li>Clinical Actionability (5%): Therapeutic potential</li>
+            <li>Other factors (15%): Association strength, temporal stability</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

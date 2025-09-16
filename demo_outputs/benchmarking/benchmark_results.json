@@ -1,0 +1,317 @@
+{
+  "vs_serum_creatinine": {
+    "benchmark_id": "vs_serum_creatinine",
+    "our_method": "AI_Pipeline",
+    "comparison_method": "Serum Creatinine",
+    "benchmark_type": "existing_biomarker",
+    "clinical_context": "diagnosis",
+    "our_performance": {
+      "roc_auc": 0.9803218984962406,
+      "pr_auc": 0.9503487114507695,
+      "accuracy": 0.9066666666666666,
+      "sensitivity": 0.9342105263157895,
+      "specificity": 0.8973214285714286,
+      "ppv": 0.7553191489361702,
+      "npv": 0.9757281553398058,
+      "f1_score": 0.8352941176470589,
+      "mcc": 0.779672491524251,
+      "balanced_accuracy": 0.9157659774436091
+    },
+    "comparison_performance": {
+      "roc_auc": 0.9498355263157894,
+      "pr_auc": 0.9529818648585221,
+      "accuracy": 0.72,
+      "sensitivity": 0.9342105263157895,
+      "specificity": 0.6473214285714286,
+      "ppv": 0.47333333333333333,
+      "npv": 0.9666666666666667,
+      "f1_score": 0.6283185840707964,
+      "mcc": 0.5058399550750968,
+      "balanced_accuracy": 0.7907659774436091
+    },
+    "statistical_tests": {
+      "auc_difference": {
+        "statistic": 0.03048637218045125,
+        "p_value": 0.16,
+        "method": "bootstrap"
+      },
+      "mcnemar_test": {
+        "statistic": 0.8928571428571429,
+        "p_value": 0.3447042220069577,
+        "method": "mcnemar"
+      }
+    },
+    "confidence_intervals": {
+      "roc_auc": [
+        0.9682889328040546,
+        0.9906530869852198
+      ],
+      "accuracy": [
+        0.71,
+        0.8
+      ]
+    },
+    "clinical_utility_metrics": {
+      "net_benefit_improvement": 0.0030486372180451252,
+      "clinical_impact_score": 0.0030486372180451252,
+      "context_relevance": 1.0
+    },
+    "decision_thresholds": {
+      "optimal_threshold": 0.5167642501025859,
+      "optimal_sensitivity": 0.9342105263157895,
+      "optimal_specificity": 0.9107142857142857
+    },
+    "n_samples": 300,
+    "n_positive": 76,
+    "n_negative": 224,
+    "is_significantly_better": false,
+    "improvement_magnitude": 0.03048637218045125,
+    "clinical_significance": "minimal"
+  },
+  "vs_ngal": {
+    "benchmark_id": "vs_ngal",
+    "our_method": "AI_Pipeline",
+    "comparison_method": "NGAL",
+    "benchmark_type": "existing_biomarker",
+    "clinical_context": "diagnosis",
+    "our_performance": {
+      "roc_auc": 0.9803218984962406,
+      "pr_auc": 0.9503487114507695,
+      "accuracy": 0.9066666666666666,
+      "sensitivity": 0.9342105263157895,
+      "specificity": 0.8973214285714286,
+      "ppv": 0.7553191489361702,
+      "npv": 0.9757281553398058,
+      "f1_score": 0.8352941176470589,
+      "mcc": 0.779672491524251,
+      "balanced_accuracy": 0.9157659774436091
+    },
+    "comparison_performance": {
+      "roc_auc": 0.9609962406015038,
+      "pr_auc": 0.9340265170371784,
+      "accuracy": 0.7266666666666667,
+      "sensitivity": 0.9473684210526315,
+      "specificity": 0.6517857142857143,
+      "ppv": 0.48,
+      "npv": 0.9733333333333334,
+      "f1_score": 0.6371681415929203,
+      "mcc": 0.521168438562221,
+      "balanced_accuracy": 0.7995770676691729
+    },
+    "statistical_tests": {
+      "auc_difference": {
+        "statistic": 0.019325657894736836,
+        "p_value": 0.18,
+        "method": "bootstrap"
+      },
+      "mcnemar_test": {
+        "statistic": 0.6274509803921569,
+        "p_value": 0.4282918554448939,
+        "method": "mcnemar"
+      }
+    },
+    "confidence_intervals": {
+      "roc_auc": [
+        0.9678341336650119,
+        0.9908768113863048
+      ],
+      "accuracy": [
+        0.7082499999999999,
+        0.8033333333333333
+      ]
+    },
+    "clinical_utility_metrics": {
+      "net_benefit_improvement": 0.0019325657894736837,
+      "clinical_impact_score": 0.0019325657894736837,
+      "context_relevance": 1.0
+    },
+    "decision_thresholds": {
+      "optimal_threshold": 0.5167642501025859,
+      "optimal_sensitivity": 0.9342105263157895,
+      "optimal_specificity": 0.9107142857142857
+    },
+    "n_samples": 300,
+    "n_positive": 76,
+    "n_negative": 224,
+    "is_significantly_better": false,
+    "improvement_magnitude": 0.019325657894736836,
+    "clinical_significance": "negligible"
+  },
+  "vs_apache_ii": {
+    "benchmark_id": "vs_apache_ii",
+    "our_method": "AI_Pipeline",
+    "comparison_method": "APACHE II Score",
+    "benchmark_type": "existing_biomarker",
+    "clinical_context": "diagnosis",
+    "our_performance": {
+      "roc_auc": 0.9803218984962406,
+      "pr_auc": 0.9503487114507695,
+      "accuracy": 0.9066666666666666,
+      "sensitivity": 0.9342105263157895,
+      "specificity": 0.8973214285714286,
+      "ppv": 0.7553191489361702,
+      "npv": 0.9757281553398058,
+      "f1_score": 0.8352941176470589,
+      "mcc": 0.779672491524251,
+      "balanced_accuracy": 0.9157659774436091
+    },
+    "comparison_performance": {
+      "roc_auc": 0.930656719924812,
+      "pr_auc": 0.8545382108993358,
+      "accuracy": 0.7633333333333333,
+      "sensitivity": 0.9210526315789473,
+      "specificity": 0.7098214285714286,
+      "ppv": 0.5185185185185185,
+      "npv": 0.9636363636363636,
+      "f1_score": 0.6635071090047393,
+      "mcc": 0.5515242588738746,
+      "balanced_accuracy": 0.815437030075188
+    },
+    "statistical_tests": {
+      "auc_difference": {
+        "statistic": 0.0496651785714286,
+        "p_value": 0.004,
+        "method": "bootstrap"
+      },
+      "mcnemar_test": {
+        "statistic": 0.09473684210526316,
+        "p_value": 0.7582394636149119,
+        "method": "mcnemar"
+      }
+    },
+    "confidence_intervals": {
+      "roc_auc": [
+        0.9654464075815528,
+        0.9911642411642412
+      ],
+      "accuracy": [
+        0.7,
+        0.8066666666666666
+      ]
+    },
+    "clinical_utility_metrics": {
+      "net_benefit_improvement": 0.00496651785714286,
+      "clinical_impact_score": 0.00496651785714286,
+      "context_relevance": 1.0
+    },
+    "decision_thresholds": {
+      "optimal_threshold": 0.5167642501025859,
+      "optimal_sensitivity": 0.9342105263157895,
+      "optimal_specificity": 0.9107142857142857
+    },
+    "n_samples": 300,
+    "n_positive": 76,
+    "n_negative": 224,
+    "is_significantly_better": true,
+    "improvement_magnitude": 0.0496651785714286,
+    "clinical_significance": "minimal"
+  },
+  "vs_kdigo_guidelines": {
+    "benchmark_id": "vs_kdigo_guidelines",
+    "our_method": "AI_Pipeline",
+    "comparison_method": "KDIGO Guidelines",
+    "benchmark_type": "clinical_standard",
+    "clinical_context": "diagnosis",
+    "our_performance": {
+      "roc_auc": 0.9803218984962406,
+      "pr_auc": 0.9503487114507695,
+      "accuracy": 0.9066666666666666,
+      "sensitivity": 0.9342105263157895,
+      "specificity": 0.8973214285714286,
+      "ppv": 0.7553191489361702,
+      "npv": 0.9757281553398058,
+      "f1_score": 0.8352941176470589,
+      "mcc": 0.779672491524251,
+      "balanced_accuracy": 0.9157659774436091
+    },
+    "comparison_performance": {
+      "roc_auc": 0.68,
+      "sensitivity": 0.65,
+      "specificity": 0.7
+    },
+    "statistical_tests": {
+      "auc_difference": {
+        "statistic": 0.3003218984962406,
+        "p_value": 0.05,
+        "method": "bootstrap_comparison"
+      }
+    },
+    "confidence_intervals": {
+      "roc_auc": [
+        0.967044178724206,
+        0.9911258708621833
+      ],
+      "accuracy": [
+        0.7066666666666667,
+        0.8033333333333333
+      ]
+    },
+    "clinical_utility_metrics": {
+      "net_benefit_improvement": 0.1,
+      "clinical_impact": "moderate"
+    },
+    "decision_thresholds": {
+      "optimal_threshold": 0.5
+    },
+    "n_samples": 300,
+    "n_positive": 76,
+    "n_negative": 224,
+    "is_significantly_better": true,
+    "improvement_magnitude": 0.3003218984962406,
+    "clinical_significance": "substantial"
+  },
+  "vs_clinical_judgment": {
+    "benchmark_id": "vs_clinical_judgment",
+    "our_method": "AI_Pipeline",
+    "comparison_method": "Clinical Judgment",
+    "benchmark_type": "clinical_standard",
+    "clinical_context": "diagnosis",
+    "our_performance": {
+      "roc_auc": 0.9803218984962406,
+      "pr_auc": 0.9503487114507695,
+      "accuracy": 0.9066666666666666,
+      "sensitivity": 0.9342105263157895,
+      "specificity": 0.8973214285714286,
+      "ppv": 0.7553191489361702,
+      "npv": 0.9757281553398058,
+      "f1_score": 0.8352941176470589,
+      "mcc": 0.779672491524251,
+      "balanced_accuracy": 0.9157659774436091
+    },
+    "comparison_performance": {
+      "roc_auc": 0.72,
+      "sensitivity": 0.7,
+      "specificity": 0.75
+    },
+    "statistical_tests": {
+      "auc_difference": {
+        "statistic": 0.26032189849624066,
+        "p_value": 0.05,
+        "method": "bootstrap_comparison"
+      }
+    },
+    "confidence_intervals": {
+      "roc_auc": [
+        0.9660978580839451,
+        0.9906239040009577
+      ],
+      "accuracy": [
+        0.71,
+        0.8066666666666666
+      ]
+    },
+    "clinical_utility_metrics": {
+      "net_benefit_improvement": 0.1,
+      "clinical_impact": "moderate"
+    },
+    "decision_thresholds": {
+      "optimal_threshold": 0.5
+    },
+    "n_samples": 300,
+    "n_positive": 76,
+    "n_negative": 224,
+    "is_significantly_better": true,
+    "improvement_magnitude": 0.26032189849624066,
+    "clinical_significance": "substantial"
+  }
+}

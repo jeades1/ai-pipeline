@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Report - {{ patient_id }}</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .header { background-color: #f8f9fa; padding: 20px; border-radius: 5px; }
+        .section { margin: 30px 0; }
+        .risk-high { color: #dc3545; font-weight: bold; }
+        .risk-medium { color: #fd7e14; font-weight: bold; }
+        .risk-low { color: #28a745; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Patient Report</h1>
+        <h2>Patient ID: {{ patient_id }}</h2>
+        <p>Generated on: {{ generated_at }}</p>
+    </div>
+    
+    <div class="section">
+        <h2>Risk Assessment</h2>
+        {% set risk_score = patient_data.get('risk_score', 0.5) %}
+        {% if risk_score > 0.7 %}
+        <p class="risk-high">High Risk ({{ "%.0f"|format(risk_score * 100) }}%)</p>
+        {% elif risk_score > 0.3 %}
+        <p class="risk-medium">Moderate Risk ({{ "%.0f"|format(risk_score * 100) }}%)</p>
+        {% else %}
+        <p class="risk-low">Low Risk ({{ "%.0f"|format(risk_score * 100) }}%)</p>
+        {% endif %}
+    </div>
+    
+    <div class="section">
+        <h2>Clinical Insights</h2>
+        {% for insight in insights.risk_assessment %}
+        <p>• {{ insight }}</p>
+        {% endfor %}
+    </div>
+    
+    <div class="section">
+        <h2>Recommendations</h2>
+        {% for recommendation in insights.recommendations %}
+        <p>• {{ recommendation }}</p>
+        {% endfor %}
+    </div>
+    
+    <div class="section">
+        <h2>Patient Dashboard</h2>
+        {{ visualization.to_html(include_plotlyjs='cdn')|safe }}
+    </div>
+</body>
+</html>
+        

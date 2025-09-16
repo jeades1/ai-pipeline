@@ -1,0 +1,454 @@
+{
+  "experiments": [
+    {
+      "experiment_id": "KIDNEY_000",
+      "timestamp": "2024-01-01 00:00:00",
+      "biomarkers": {
+        "NGAL": 7.5274418073486755,
+        "KIM1": 2.287686961720233,
+        "creatinine": 1.219011773296277
+      },
+      "metabolites": {
+        "glucose": 112.4392587013883,
+        "lactate": 22.092883413300413,
+        "urea": 36.72986314006512
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_001",
+      "timestamp": "2024-01-02 00:00:00",
+      "biomarkers": {
+        "NGAL": 24.36141178345864,
+        "KIM1": 6.767960070861021,
+        "creatinine": 0.764795973549448
+      },
+      "metabolites": {
+        "glucose": 94.96900119431757,
+        "lactate": 32.55769798435071,
+        "urea": 39.594493844177656
+      },
+      "treatment": "control"
+    },
+    {
+      "experiment_id": "KIDNEY_002",
+      "timestamp": "2024-01-03 00:00:00",
+      "biomarkers": {
+        "NGAL": 5.4164919733853285,
+        "KIM1": 2.4125787714447866,
+        "creatinine": 0.8936221284996486
+      },
+      "metabolites": {
+        "glucose": 96.01360271930662,
+        "lactate": 15.786016988790692,
+        "urea": 43.86154688159816
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_003",
+      "timestamp": "2024-01-04 00:00:00",
+      "biomarkers": {
+        "NGAL": 5.121694883043822,
+        "KIM1": 3.3260762387222584,
+        "creatinine": 0.6873931386857492
+      },
+      "metabolites": {
+        "glucose": 82.3081050323833,
+        "lactate": 27.175436996111177,
+        "urea": 36.52697711042157
+      },
+      "treatment": "control"
+    },
+    {
+      "experiment_id": "KIDNEY_004",
+      "timestamp": "2024-01-05 00:00:00",
+      "biomarkers": {
+        "NGAL": 17.552624424546593,
+        "KIM1": 2.792570100375976,
+        "creatinine": 1.2527533692110953
+      },
+      "metabolites": {
+        "glucose": 85.0537602525053,
+        "lactate": 22.945889171006893,
+        "urea": 32.65296963339984
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_005",
+      "timestamp": "2024-01-06 00:00:00",
+      "biomarkers": {
+        "NGAL": 8.154556568839368,
+        "KIM1": 6.543611674599252,
+        "creatinine": 1.0985972917028919
+      },
+      "metabolites": {
+        "glucose": 99.13723370491806,
+        "lactate": 25.37671700978449,
+        "urea": 42.106684652031106
+      },
+      "treatment": "ischemia"
+    },
+    {
+      "experiment_id": "KIDNEY_006",
+      "timestamp": "2024-01-07 00:00:00",
+      "biomarkers": {
+        "NGAL": 5.953510834748388,
+        "KIM1": 3.3524173021766477,
+        "creatinine": 1.1557821360424114
+      },
+      "metabolites": {
+        "glucose": 98.63113671502558,
+        "lactate": 14.458764236410675,
+        "urea": 55.94082131951845
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_007",
+      "timestamp": "2024-01-08 00:00:00",
+      "biomarkers": {
+        "NGAL": 10.19906756460275,
+        "KIM1": 1.4500945731263046,
+        "creatinine": 0.870229563318022
+      },
+      "metabolites": {
+        "glucose": 105.65363412439602,
+        "lactate": 25.52509219425805,
+        "urea": 61.85779812271167
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_008",
+      "timestamp": "2024-01-09 00:00:00",
+      "biomarkers": {
+        "NGAL": 11.654693011389028,
+        "KIM1": 2.418860465143313,
+        "creatinine": 0.9880347712940193
+      },
+      "metabolites": {
+        "glucose": 107.40340306501437,
+        "lactate": 21.45448528795003,
+        "urea": 20.044682195482615
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_009",
+      "timestamp": "2024-01-10 00:00:00",
+      "biomarkers": {
+        "NGAL": 5.233237057013271,
+        "KIM1": 2.360850779094818,
+        "creatinine": 0.9285785615502162
+      },
+      "metabolites": {
+        "glucose": 96.32973236748803,
+        "lactate": 18.6366098420995,
+        "urea": 42.43011857009701
+      },
+      "treatment": "ischemia"
+    },
+    {
+      "experiment_id": "KIDNEY_010",
+      "timestamp": "2024-01-11 00:00:00",
+      "biomarkers": {
+        "NGAL": 6.970739624078869,
+        "KIM1": 1.2242745476926555,
+        "creatinine": 0.7986819167180458
+      },
+      "metabolites": {
+        "glucose": 91.2045897104306,
+        "lactate": 13.395373469683495,
+        "urea": 18.763169826751707
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_011",
+      "timestamp": "2024-01-12 00:00:00",
+      "biomarkers": {
+        "NGAL": 15.19906572708142,
+        "KIM1": 3.4446286153092163,
+        "creatinine": 0.9291694420122959
+      },
+      "metabolites": {
+        "glucose": 115.60761966023657,
+        "lactate": 18.75012540680963,
+        "urea": 39.97990344973039
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_012",
+      "timestamp": "2024-01-13 00:00:00",
+      "biomarkers": {
+        "NGAL": 18.27398763702738,
+        "KIM1": 3.4633713491995395,
+        "creatinine": 1.1017216746466885
+      },
+      "metabolites": {
+        "glucose": 93.54536020068036,
+        "lactate": 12.579716675378323,
+        "urea": 37.91531789459592
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_013",
+      "timestamp": "2024-01-14 00:00:00",
+      "biomarkers": {
+        "NGAL": 4.693171594722214,
+        "KIM1": 3.128952521112185,
+        "creatinine": 0.9941397713563462
+      },
+      "metabolites": {
+        "glucose": 88.48256102189204,
+        "lactate": 16.420767293360676,
+        "urea": 31.85527885554918
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_014",
+      "timestamp": "2024-01-15 00:00:00",
+      "biomarkers": {
+        "NGAL": 5.874750886658392,
+        "KIM1": 2.0705238078360217,
+        "creatinine": 0.8509353032585819
+      },
+      "metabolites": {
+        "glucose": 89.8040015859943,
+        "lactate": 28.248918431204007,
+        "urea": 32.81519480240109
+      },
+      "treatment": "ischemia"
+    },
+    {
+      "experiment_id": "KIDNEY_015",
+      "timestamp": "2024-01-16 00:00:00",
+      "biomarkers": {
+        "NGAL": 3.723831295928144,
+        "KIM1": 2.749917044603111,
+        "creatinine": 0.7132948055423008
+      },
+      "metabolites": {
+        "glucose": 68.42333217905815,
+        "lactate": 25.41867649027007,
+        "urea": 30.157755184391814
+      },
+      "treatment": "ischemia"
+    },
+    {
+      "experiment_id": "KIDNEY_016",
+      "timestamp": "2024-01-17 00:00:00",
+      "biomarkers": {
+        "NGAL": 7.588358362662922,
+        "KIM1": 1.3521785423541473,
+        "creatinine": 1.0989411307550065
+      },
+      "metabolites": {
+        "glucose": 105.75152547105466,
+        "lactate": 17.953457629521395,
+        "urea": 50.05924511796417
+      },
+      "treatment": "control"
+    },
+    {
+      "experiment_id": "KIDNEY_017",
+      "timestamp": "2024-01-18 00:00:00",
+      "biomarkers": {
+        "NGAL": 5.290129445338257,
+        "KIM1": 2.087541833014842,
+        "creatinine": 0.8601030441678387
+      },
+      "metabolites": {
+        "glucose": 110.62840472284967,
+        "lactate": 21.118936832789217,
+        "urea": 38.02034244369471
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_018",
+      "timestamp": "2024-01-19 00:00:00",
+      "biomarkers": {
+        "NGAL": 12.964827645350852,
+        "KIM1": 2.1476278576047636,
+        "creatinine": 0.9068609519762327
+      },
+      "metabolites": {
+        "glucose": 73.17901757442951,
+        "lactate": 24.65967271158155,
+        "urea": 50.96652268766096
+      },
+      "treatment": "ischemia"
+    },
+    {
+      "experiment_id": "KIDNEY_019",
+      "timestamp": "2024-01-20 00:00:00",
+      "biomarkers": {
+        "NGAL": 14.646304469524612,
+        "KIM1": 7.385709278255204,
+        "creatinine": 0.5461252141691643
+      },
+      "metabolites": {
+        "glucose": 86.13556415272556,
+        "lactate": 29.07004590537492,
+        "urea": 21.992996822231653
+      },
+      "treatment": "ischemia"
+    },
+    {
+      "experiment_id": "KIDNEY_020",
+      "timestamp": "2024-01-21 00:00:00",
+      "biomarkers": {
+        "NGAL": 2.1424672993203253,
+        "KIM1": 2.394225515766659,
+        "creatinine": 1.188236373283994
+      },
+      "metabolites": {
+        "glucose": 102.87846603809554,
+        "lactate": 29.741713223949063,
+        "urea": 50.251091525817735
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_021",
+      "timestamp": "2024-01-22 00:00:00",
+      "biomarkers": {
+        "NGAL": 5.677462769781236,
+        "KIM1": 2.662943735147162,
+        "creatinine": 0.6382828085650195
+      },
+      "metabolites": {
+        "glucose": 93.23871836252275,
+        "lactate": 17.751091980365278,
+        "urea": 41.5332866213718
+      },
+      "treatment": "control"
+    },
+    {
+      "experiment_id": "KIDNEY_022",
+      "timestamp": "2024-01-23 00:00:00",
+      "biomarkers": {
+        "NGAL": 2.5033254189955776,
+        "KIM1": 3.296242274303511,
+        "creatinine": 0.7532454316888889
+      },
+      "metabolites": {
+        "glucose": 97.52888604843847,
+        "lactate": 24.630341229139553,
+        "urea": 25.0218654345957
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_023",
+      "timestamp": "2024-01-24 00:00:00",
+      "biomarkers": {
+        "NGAL": 10.536709377044067,
+        "KIM1": 3.568295904628793,
+        "creatinine": 1.0614807139439377
+      },
+      "metabolites": {
+        "glucose": 87.63081624347859,
+        "lactate": 21.383003827555903,
+        "urea": 51.95480650825479
+      },
+      "treatment": "control"
+    },
+    {
+      "experiment_id": "KIDNEY_024",
+      "timestamp": "2024-01-25 00:00:00",
+      "biomarkers": {
+        "NGAL": 20.718856830355104,
+        "KIM1": 1.0030674438351512,
+        "creatinine": 1.0193352242280465
+      },
+      "metabolites": {
+        "glucose": 95.14101248571673,
+        "lactate": 19.375101348428924,
+        "urea": 31.950405798958606
+      },
+      "treatment": "ischemia"
+    },
+    {
+      "experiment_id": "KIDNEY_025",
+      "timestamp": "2024-01-26 00:00:00",
+      "biomarkers": {
+        "NGAL": 3.9530061160694174,
+        "KIM1": 1.894158552614161,
+        "creatinine": 0.9437989371939863
+      },
+      "metabolites": {
+        "glucose": 97.02900253712836,
+        "lactate": 18.227214856514948,
+        "urea": 66.31440405426518
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_026",
+      "timestamp": "2024-01-27 00:00:00",
+      "biomarkers": {
+        "NGAL": 1.780696150236772,
+        "KIM1": 6.152311477294783,
+        "creatinine": 1.0590559881241737
+      },
+      "metabolites": {
+        "glucose": 88.35251289260499,
+        "lactate": 20.785639594954702,
+        "urea": 41.76189822502692
+      },
+      "treatment": "control"
+    },
+    {
+      "experiment_id": "KIDNEY_027",
+      "timestamp": "2024-01-28 00:00:00",
+      "biomarkers": {
+        "NGAL": 5.790707807610666,
+        "KIM1": 2.1239289444070137,
+        "creatinine": 1.1151808873864673
+      },
+      "metabolites": {
+        "glucose": 97.75852770983366,
+        "lactate": 25.61101783848858,
+        "urea": 43.69773437115056
+      },
+      "treatment": "cisplatin"
+    },
+    {
+      "experiment_id": "KIDNEY_028",
+      "timestamp": "2024-01-29 00:00:00",
+      "biomarkers": {
+        "NGAL": 38.849062757910296,
+        "KIM1": 3.0262068660938892,
+        "creatinine": 0.9523457924387496
+      },
+      "metabolites": {
+        "glucose": 81.3843681819454,
+        "lactate": 27.293197242515525,
+        "urea": 38.183635357029246
+      },
+      "treatment": "control"
+    },
+    {
+      "experiment_id": "KIDNEY_029",
+      "timestamp": "2024-01-30 00:00:00",
+      "biomarkers": {
+        "NGAL": 14.126233992020556,
+        "KIM1": 3.963452170201249,
+        "creatinine": 1.097461047408999
+      },
+      "metabolites": {
+        "glucose": 116.07894797817696,
+        "lactate": 15.603586087940059,
+        "urea": 43.485951198609804
+      },
+      "treatment": "ischemia"
+    }
+  ]
+}

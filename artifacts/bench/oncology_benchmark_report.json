@@ -1,0 +1,64 @@
+{
+  "disease": "oncology",
+  "benchmark_file": "benchmarks/oncology_markers.json",
+  "n_promoted": 2969,
+  "n_benchmark": 10,
+  "n_found": 2,
+  "precision_at_k": {
+    "p@5": 0.0,
+    "p@10": 0.0,
+    "p@20": 0.0,
+    "p@50": 0.0,
+    "p@100": 0.0
+  },
+  "recall_at_k": {
+    "r@5": 0.0,
+    "r@10": 0.0,
+    "r@20": 0.0,
+    "r@50": 0.0,
+    "r@100": 0.0
+  },
+  "precision": 0.0007,
+  "recall": 0.2,
+  "f1": 0.0013951170901843547,
+  "hits": [
+    "TP53",
+    "MYC"
+  ],
+  "misses": [
+    "BRCA1",
+    "BRCA2",
+    "EGFR",
+    "HER2",
+    "KRAS",
+    "PIK3CA",
+    "APC",
+    "RB1"
+  ],
+  "ranks": {
+    "TP53": 1196,
+    "MYC": 1369
+  },
+  "promoted_preview": [
+    "SRSF5",
+    "ELL2",
+    "FOSB",
+    "PPARGC1A",
+    "PPP2R1B",
+    "CITED2",
+    "AKAP13",
+    "NR4A1",
+    "ABCA5",
+    "RGS1",
+    "PDE7A",
+    "SGK1",
+    "TUBGCP3",
+    "HMGCR",
+    "OXER1",
+    "DDX5",
+    "IL1RL1",
+    "ABCG1",
+    "HSP90AA1",
+    "ZNF331"
+  ]
+}

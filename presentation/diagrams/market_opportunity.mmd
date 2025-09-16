@@ -1,0 +1,70 @@
+graph TD
+    subgraph "Solution A: Therapy Response Engine"
+        A1[Patient-Specific Therapy Ranking<br/>Revenue: $100K-$500K per client]
+        A2[Use Cases: Oncology, IBD, Asthma<br/>Market: $2B addressable]
+        A3[Status: Production Ready<br/>Timeline: Immediate deployment]
+    end
+    
+    subgraph "Solution B: Biomarker Discovery"
+        B1[Mechanism-anchored Discovery<br/>Revenue: Core competency]
+        B2[Use Cases: Companion Dx, Pharma<br/>Market: $1.5B addressable]
+        B3[Status: Production Ready<br/>Timeline: Immediate deployment]
+    end
+    
+    subgraph "Solution C: Trial Enrichment"
+        C1[Adaptive Trial Design<br/>Revenue: $1M-$5M per trial]
+        C2[Use Cases: Pharma, CROs<br/>Market: $800M addressable]
+        C3[Status: Federated Platform Ready<br/>Timeline: 3-6 months]
+    end
+    
+    subgraph "Solution D: Model Calibration"
+        D1[AI Model Calibration Service<br/>Revenue: Health system integration]
+        D2[Use Cases: EHR AI, Diagnostics<br/>Market: $500M addressable]
+        D3[Status: Production Ready<br/>Timeline: Immediate deployment]
+    end
+    
+    subgraph "Solution E: Safety Monitoring"
+        E1[Toxicity & DDI Sentinel<br/>Revenue: $1-$5 per patient/month]
+        E2[Use Cases: Payers, Providers<br/>Market: $300M addressable]
+        E3[Status: 6-12 months development<br/>Timeline: Mid-2026]
+    end
+    
+    subgraph "Solution F: Chronic Disease"
+        F1[Preemptive Decompensation Index<br/>Revenue: $50-$100 per patient/quarter]
+        F2[Use Cases: Population Health<br/>Market: $400M addressable]
+        F3[Status: 12-18 months development<br/>Timeline: Late 2026]
+    end
+    
+    subgraph "Solution G: RWE Bridge"
+        G1[Real-World Evidence Platform<br/>Revenue: Payer partnerships]
+        G2[Use Cases: Coverage, Manufacturers<br/>Market: $600M addressable]
+        G3[Status: 6-9 months development<br/>Timeline: Mid-2026]
+    end
+    
+    subgraph "Total Market Impact"
+        TAM[Total Addressable Market<br/>$6.1B across all solutions]
+        IMM[Immediate Revenue<br/>$3B+ addressable in 2025]
+        LEAD[Market Leadership Position<br/>First-to-market advantage]
+    end
+    
+    A3 --> IMM
+    B3 --> IMM
+    D3 --> IMM
+    
+    C3 --> TAM
+    E3 --> TAM
+    F3 --> TAM
+    G3 --> TAM
+    
+    IMM --> LEAD
+    TAM --> LEAD
+    
+    classDef immediate fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px
+    classDef nearterm fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef longterm fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
+    classDef market fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    
+    class A3,B3,D3 immediate
+    class C3,G3 nearterm
+    class E3,F3 longterm
+    class TAM,IMM,LEAD market

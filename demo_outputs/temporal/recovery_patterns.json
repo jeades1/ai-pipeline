@@ -1,0 +1,23 @@
+{
+  "serum_creatinine_treatment_recovery": {
+    "pattern_id": "serum_creatinine_treatment_recovery",
+    "intervention_type": "treatment",
+    "transition_time": 44.21401978183597,
+    "recovery_rate": 0.000688977969534286,
+    "recovery_success_probability": 0.5670483278623233
+  },
+  "teer_resistance_treatment_recovery": {
+    "pattern_id": "teer_resistance_treatment_recovery",
+    "intervention_type": "treatment",
+    "transition_time": 115.9567223630034,
+    "recovery_rate": 0.34030792864273934,
+    "recovery_success_probability": 0.6388494481010684
+  },
+  "inflammatory_score_treatment_recovery": {
+    "pattern_id": "inflammatory_score_treatment_recovery",
+    "intervention_type": "treatment",
+    "transition_time": 52.42150453677702,
+    "recovery_rate": 0.06225262944207796,
+    "recovery_success_probability": 0.39556704895587097
+  }
+}

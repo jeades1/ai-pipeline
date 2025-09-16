@@ -1,0 +1,20 @@
+{
+  "context": "liver",
+  "outputs": {
+    "opentargets": "data/processed/priors/opentargets_prior.parquet",
+    "gtex": "data/processed/priors/gtex_prior.parquet",
+    "hpa": "data/processed/priors/hpa_prior.parquet",
+    "encode": "data/processed/priors/encode_prior.tsv",
+    "pride": "data/processed/priors/pride_prior.tsv",
+    "unified": "data/processed/priors/unified_cv_enhanced.tsv",
+    "cardiovascular_literature": "data/processed/priors/cardiovascular_literature.tsv"
+  },
+  "counts": {
+    "opentargets": 3821736,
+    "gtex": 56200,
+    "hpa": 20162,
+    "encode": 20,
+    "pride": 52,
+    "unified": 3898170
+  }
+}

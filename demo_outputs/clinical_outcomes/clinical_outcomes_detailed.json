@@ -1,0 +1,3052 @@
+{
+  "30000_aki_stage": {
+    "patient_id": "10000",
+    "stay_id": "30000",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.36740772807385,
+      "peak_creatinine": 1.36740772807385,
+      "min_urine_output_6h": 0.5644601830637751,
+      "min_urine_output_12h": 0.6217174923870062
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.36740772807385,
+        "peak_creatinine": 1.36740772807385,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5644601830637751,
+        "min_uo_12h": 0.6217174923870062,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-01 08:00:00 to 2023-01-01 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.603076"
+  },
+  "30001_aki_stage": {
+    "patient_id": "10001",
+    "stay_id": "30001",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 0.8967385035568741,
+      "peak_creatinine": 0.8967385035568741,
+      "min_urine_output_6h": 0.47960352152099794,
+      "min_urine_output_12h": 0.6303641275854803
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.8967385035568741,
+        "peak_creatinine": 0.8967385035568741,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.47960352152099794,
+        "min_uo_12h": 0.6303641275854803,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-02 08:00:00 to 2023-01-02 09:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.604563"
+  },
+  "30002_aki_stage": {
+    "patient_id": "10002",
+    "stay_id": "30002",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 1.0893555520820883,
+      "peak_creatinine": 1.0893555520820883,
+      "min_urine_output_6h": 0.46314876660995313,
+      "min_urine_output_12h": 0.5484282522368621
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.0893555520820883,
+        "peak_creatinine": 1.0893555520820883,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.46314876660995313,
+        "min_uo_12h": 0.5484282522368621,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-03 08:00:00 to 2023-01-03 10:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.606064"
+  },
+  "30003_aki_stage": {
+    "patient_id": "10003",
+    "stay_id": "30003",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.8567209531120343,
+      "peak_creatinine": 0.8567209531120343,
+      "min_urine_output_6h": 0.6033596932269542,
+      "min_urine_output_12h": 0.6258906594925556
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.8567209531120343,
+        "peak_creatinine": 0.8567209531120343,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6033596932269542,
+        "min_uo_12h": 0.6258906594925556,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-04 08:00:00 to 2023-01-04 11:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.607536"
+  },
+  "30004_aki_stage": {
+    "patient_id": "10004",
+    "stay_id": "30004",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5,
+      "min_urine_output_6h": 0.5395256423895396,
+      "min_urine_output_12h": 0.5993550447167818
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.5,
+        "peak_creatinine": 0.5,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5395256423895396,
+        "min_uo_12h": 0.5993550447167818,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-05 08:00:00 to 2023-01-05 12:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.609028"
+  },
+  "30005_aki_stage": {
+    "patient_id": "10005",
+    "stay_id": "30005",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5,
+      "min_urine_output_6h": 0.517034091959026,
+      "min_urine_output_12h": 0.6263444203985441
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.5,
+        "peak_creatinine": 0.5,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.517034091959026,
+        "min_uo_12h": 0.6263444203985441,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-06 08:00:00 to 2023-01-06 13:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.610474"
+  },
+  "30006_aki_stage": {
+    "patient_id": "10006",
+    "stay_id": "30006",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 1,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.2054233936122858,
+      "peak_creatinine": 1.5677992501724995,
+      "min_urine_output_6h": 0.5821568286487463,
+      "min_urine_output_12h": 0.7175843645387587
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.2054233936122858,
+        "peak_creatinine": 1.5677992501724995,
+        "creatinine_ratio": 1.3006212244432092,
+        "creatinine_increase": 0.36237585656021376,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5821568286487463,
+        "min_uo_12h": 0.7175843645387587,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-07 08:00:00 to 2023-01-07 14:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.611825"
+  },
+  "30007_aki_stage": {
+    "patient_id": "10007",
+    "stay_id": "30007",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 1,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 1.095650436542902,
+      "peak_creatinine": 1.623058546383561,
+      "min_urine_output_6h": 0.4607075644044352,
+      "min_urine_output_12h": 0.5465934460420713
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.095650436542902,
+        "peak_creatinine": 1.623058546383561,
+        "creatinine_ratio": 1.4813653079943871,
+        "creatinine_increase": 0.5274081098406589,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.4607075644044352,
+        "min_uo_12h": 0.5465934460420713,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-08 08:00:00 to 2023-01-08 15:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.613221"
+  },
+  "30008_aki_stage": {
+    "patient_id": "10008",
+    "stay_id": "30008",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.9432726919601128,
+      "peak_creatinine": 1.1555222885483492,
+      "min_urine_output_6h": 0.5084100608210678,
+      "min_urine_output_12h": 0.6346166175292587
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.9432726919601128,
+        "peak_creatinine": 1.1555222885483492,
+        "creatinine_ratio": 1.2250140371891647,
+        "creatinine_increase": 0.2122495965882364,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5084100608210678,
+        "min_uo_12h": 0.6346166175292587,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-09 08:00:00 to 2023-01-09 16:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.614690"
+  },
+  "30009_aki_stage": {
+    "patient_id": "10009",
+    "stay_id": "30009",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.1231188371210523,
+      "peak_creatinine": 1.2869450835558691,
+      "min_urine_output_6h": 0.6466954112184872,
+      "min_urine_output_12h": 0.6703582798806623
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.1231188371210523,
+        "peak_creatinine": 1.2869450835558691,
+        "creatinine_ratio": 1.1458672413106,
+        "creatinine_increase": 0.1638262464348168,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6466954112184872,
+        "min_uo_12h": 0.6703582798806623,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-10 08:00:00 to 2023-01-10 17:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.616042"
+  },
+  "30010_aki_stage": {
+    "patient_id": "10010",
+    "stay_id": "30010",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 2.0,
+    "categorical_outcome": "stage_2",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 2,
+      "baseline_creatinine": 0.6806583085930926,
+      "peak_creatinine": 0.6806583085930926,
+      "min_urine_output_6h": 0.3786675530642864,
+      "min_urine_output_12h": 0.4587053343615752
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.6806583085930926,
+        "peak_creatinine": 0.6806583085930926,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.3786675530642864,
+        "min_uo_12h": 0.4587053343615752,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-11 08:00:00 to 2023-01-11 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.617383"
+  },
+  "30011_aki_stage": {
+    "patient_id": "10011",
+    "stay_id": "30011",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.8148228584976874,
+      "peak_creatinine": 0.8148228584976874,
+      "min_urine_output_6h": 0.619345742681639,
+      "min_urine_output_12h": 0.6739833599102149
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.8148228584976874,
+        "peak_creatinine": 0.8148228584976874,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.619345742681639,
+        "min_uo_12h": 0.6739833599102149,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-12 08:00:00 to 2023-01-12 09:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.618749"
+  },
+  "30012_aki_stage": {
+    "patient_id": "10012",
+    "stay_id": "30012",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 0.9975235742486624,
+      "peak_creatinine": 0.9975235742486624,
+      "min_urine_output_6h": 0.44006266619236784,
+      "min_urine_output_12h": 0.5272678478618057
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.9975235742486624,
+        "peak_creatinine": 0.9975235742486624,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.44006266619236784,
+        "min_uo_12h": 0.5272678478618057,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-13 08:00:00 to 2023-01-13 10:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.620107"
+  },
+  "30013_aki_stage": {
+    "patient_id": "10013",
+    "stay_id": "30013",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5,
+      "min_urine_output_6h": 0.4214018482398629,
+      "min_urine_output_12h": 0.5797493665661598
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.5,
+        "peak_creatinine": 0.5,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.4214018482398629,
+        "min_uo_12h": 0.5797493665661598,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-14 08:00:00 to 2023-01-14 11:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.621459"
+  },
+  "30014_aki_stage": {
+    "patient_id": "10014",
+    "stay_id": "30014",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.2238331825331374,
+      "peak_creatinine": 1.2238331825331374,
+      "min_urine_output_6h": 0.5177875563348143,
+      "min_urine_output_12h": 0.6548654303187155
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.2238331825331374,
+        "peak_creatinine": 1.2238331825331374,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5177875563348143,
+        "min_uo_12h": 0.6548654303187155,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-15 08:00:00 to 2023-01-15 12:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.622905"
+  },
+  "30015_aki_stage": {
+    "patient_id": "10015",
+    "stay_id": "30015",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.174949873686436,
+      "peak_creatinine": 1.174949873686436,
+      "min_urine_output_6h": 0.5239724124246926,
+      "min_urine_output_12h": 0.5772864517115683
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.174949873686436,
+        "peak_creatinine": 1.174949873686436,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5239724124246926,
+        "min_uo_12h": 0.5772864517115683,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-16 08:00:00 to 2023-01-16 13:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.624289"
+  },
+  "30016_aki_stage": {
+    "patient_id": "10016",
+    "stay_id": "30016",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.274960784582703,
+      "peak_creatinine": 1.3447470628297702,
+      "min_urine_output_6h": 0.5478817958501004,
+      "min_urine_output_12h": 0.6132818129892538
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.274960784582703,
+        "peak_creatinine": 1.3447470628297702,
+        "creatinine_ratio": 1.0547360194062034,
+        "creatinine_increase": 0.06978627824706729,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5478817958501004,
+        "min_uo_12h": 0.6132818129892538,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-17 08:00:00 to 2023-01-17 14:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.625627"
+  },
+  "30017_aki_stage": {
+    "patient_id": "10017",
+    "stay_id": "30017",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 1,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 1.3052009461224938,
+      "peak_creatinine": 1.9407064516649688,
+      "min_urine_output_6h": 0.47179803680633947,
+      "min_urine_output_12h": 0.6551938919112624
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.3052009461224938,
+        "peak_creatinine": 1.9407064516649688,
+        "creatinine_ratio": 1.4869024248185247,
+        "creatinine_increase": 0.635505505542475,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.47179803680633947,
+        "min_uo_12h": 0.6551938919112624,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-18 08:00:00 to 2023-01-18 15:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.626962"
+  },
+  "30018_aki_stage": {
+    "patient_id": "10018",
+    "stay_id": "30018",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 1,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.014512749597785,
+      "peak_creatinine": 1.3365530213144383,
+      "min_urine_output_6h": 0.6468816362534388,
+      "min_urine_output_12h": 0.6781855127304043
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.014512749597785,
+        "peak_creatinine": 1.3365530213144383,
+        "creatinine_ratio": 1.3174334396924334,
+        "creatinine_increase": 0.3220402717166533,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6468816362534388,
+        "min_uo_12h": 0.6781855127304043,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-19 08:00:00 to 2023-01-19 16:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.628297"
+  },
+  "30019_aki_stage": {
+    "patient_id": "10019",
+    "stay_id": "30019",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 1.0260387887810225,
+      "peak_creatinine": 1.1332618689491405,
+      "min_urine_output_6h": 0.4461722710047473,
+      "min_urine_output_12h": 0.5724829949345548
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.0260387887810225,
+        "peak_creatinine": 1.1332618689491405,
+        "creatinine_ratio": 1.1045019753059273,
+        "creatinine_increase": 0.10722308016811799,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.4461722710047473,
+        "min_uo_12h": 0.5724829949345548,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-20 08:00:00 to 2023-01-20 17:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.629634"
+  },
+  "30020_aki_stage": {
+    "patient_id": "10020",
+    "stay_id": "30020",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.9291175325166232,
+      "peak_creatinine": 0.9291175325166232,
+      "min_urine_output_6h": 0.598965949720737,
+      "min_urine_output_12h": 0.7021566201636716
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.9291175325166232,
+        "peak_creatinine": 0.9291175325166232,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.598965949720737,
+        "min_uo_12h": 0.7021566201636716,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-21 08:00:00 to 2023-01-21 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.631054"
+  },
+  "30021_aki_stage": {
+    "patient_id": "10021",
+    "stay_id": "30021",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 1.1033247626128324,
+      "peak_creatinine": 1.1033247626128324,
+      "min_urine_output_6h": 0.4724157583113679,
+      "min_urine_output_12h": 0.5953934438132199
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.1033247626128324,
+        "peak_creatinine": 1.1033247626128324,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.4724157583113679,
+        "min_uo_12h": 0.5953934438132199,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-22 08:00:00 to 2023-01-22 09:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.632400"
+  },
+  "30022_aki_stage": {
+    "patient_id": "10022",
+    "stay_id": "30022",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.1292448840084317,
+      "peak_creatinine": 1.1292448840084317,
+      "min_urine_output_6h": 0.6133681883878664,
+      "min_urine_output_12h": 0.7103028934945392
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.1292448840084317,
+        "peak_creatinine": 1.1292448840084317,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6133681883878664,
+        "min_uo_12h": 0.7103028934945392,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-23 08:00:00 to 2023-01-23 10:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.633743"
+  },
+  "30023_aki_stage": {
+    "patient_id": "10023",
+    "stay_id": "30023",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5,
+      "min_urine_output_6h": 0.5151625325907166,
+      "min_urine_output_12h": 0.5838387885879954
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.5,
+        "peak_creatinine": 0.5,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5151625325907166,
+        "min_uo_12h": 0.5838387885879954,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-24 08:00:00 to 2023-01-24 11:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.635074"
+  },
+  "30024_aki_stage": {
+    "patient_id": "10024",
+    "stay_id": "30024",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.8703385790735018,
+      "peak_creatinine": 0.8703385790735018,
+      "min_urine_output_6h": 0.602488069263624,
+      "min_urine_output_12h": 0.6574798562425186
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.8703385790735018,
+        "peak_creatinine": 0.8703385790735018,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.602488069263624,
+        "min_uo_12h": 0.6574798562425186,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-25 08:00:00 to 2023-01-25 12:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.636421"
+  },
+  "30025_aki_stage": {
+    "patient_id": "10025",
+    "stay_id": "30025",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 2.0437201184564793,
+      "peak_creatinine": 0.9015031325543832,
+      "min_urine_output_6h": 0.4362389651158385,
+      "min_urine_output_12h": 0.5810379181268146
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 2.0437201184564793,
+        "peak_creatinine": 0.9015031325543832,
+        "creatinine_ratio": 0.4411088996057072,
+        "creatinine_increase": -1.142216985902096,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.4362389651158385,
+        "min_uo_12h": 0.5810379181268146,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-26 08:00:00 to 2023-01-26 13:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.637784"
+  },
+  "30026_aki_stage": {
+    "patient_id": "10026",
+    "stay_id": "30026",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.431510052366637,
+      "peak_creatinine": 0.8493277343753632,
+      "min_urine_output_6h": 0.5359594903761694,
+      "min_urine_output_12h": 0.6330896431643884
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.431510052366637,
+        "peak_creatinine": 0.8493277343753632,
+        "creatinine_ratio": 0.5933089557919738,
+        "creatinine_increase": -0.5821823179912738,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5359594903761694,
+        "min_uo_12h": 0.6330896431643884,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-27 08:00:00 to 2023-01-27 14:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.639195"
+  },
+  "30027_aki_stage": {
+    "patient_id": "10027",
+    "stay_id": "30027",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.8019906226386289,
+      "peak_creatinine": 0.5870985486683299,
+      "min_urine_output_6h": 0.5281419954656734,
+      "min_urine_output_12h": 0.5766711833530486
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.8019906226386289,
+        "peak_creatinine": 0.5870985486683299,
+        "creatinine_ratio": 0.7320516376322672,
+        "creatinine_increase": -0.21489207397029897,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5281419954656734,
+        "min_uo_12h": 0.5766711833530486,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-28 08:00:00 to 2023-01-28 15:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.640579"
+  },
+  "30028_aki_stage": {
+    "patient_id": "10028",
+    "stay_id": "30028",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.4248371779384508,
+      "peak_creatinine": 1.495604582900497,
+      "min_urine_output_6h": 0.5981298553245294,
+      "min_urine_output_12h": 0.7045250336400725
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.4248371779384508,
+        "peak_creatinine": 1.495604582900497,
+        "creatinine_ratio": 1.049667011822668,
+        "creatinine_increase": 0.07076740496204614,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5981298553245294,
+        "min_uo_12h": 0.7045250336400725,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-01 08:00:00 to 2023-01-01 16:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.641910"
+  },
+  "30029_aki_stage": {
+    "patient_id": "10029",
+    "stay_id": "30029",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 1,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.2672331900733322,
+      "peak_creatinine": 1.700595454048639,
+      "min_urine_output_6h": 0.5141488860352396,
+      "min_urine_output_12h": 0.5810906484761794
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.2672331900733322,
+        "peak_creatinine": 1.700595454048639,
+        "creatinine_ratio": 1.341975152931584,
+        "creatinine_increase": 0.43336226397530675,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5141488860352396,
+        "min_uo_12h": 0.5810906484761794,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-02 08:00:00 to 2023-01-02 17:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.643235"
+  },
+  "30030_aki_stage": {
+    "patient_id": "10030",
+    "stay_id": "30030",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.1343459517123162,
+      "peak_creatinine": 1.1343459517123162,
+      "min_urine_output_6h": 0.5669355718090787,
+      "min_urine_output_12h": 0.5957882462851116
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.1343459517123162,
+        "peak_creatinine": 1.1343459517123162,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5669355718090787,
+        "min_uo_12h": 0.5957882462851116,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-03 08:00:00 to 2023-01-03 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.644604"
+  },
+  "30031_aki_stage": {
+    "patient_id": "10031",
+    "stay_id": "30031",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.2778424572416889,
+      "peak_creatinine": 1.2778424572416889,
+      "min_urine_output_6h": 0.5319754360270732,
+      "min_urine_output_12h": 0.6979479123382625
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.2778424572416889,
+        "peak_creatinine": 1.2778424572416889,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5319754360270732,
+        "min_uo_12h": 0.6979479123382625,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-04 08:00:00 to 2023-01-04 09:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.645938"
+  },
+  "30032_aki_stage": {
+    "patient_id": "10032",
+    "stay_id": "30032",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5,
+      "min_urine_output_6h": 0.36462666529202054,
+      "min_urine_output_12h": 0.5784430817307851
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.5,
+        "peak_creatinine": 0.5,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.36462666529202054,
+        "min_uo_12h": 0.5784430817307851,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-05 08:00:00 to 2023-01-05 10:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.647315"
+  },
+  "30033_aki_stage": {
+    "patient_id": "10033",
+    "stay_id": "30033",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.7590242171666874,
+      "peak_creatinine": 1.7590242171666874,
+      "min_urine_output_6h": 0.6548538300689336,
+      "min_urine_output_12h": 0.6952334801698025
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.7590242171666874,
+        "peak_creatinine": 1.7590242171666874,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6548538300689336,
+        "min_uo_12h": 0.6952334801698025,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-06 08:00:00 to 2023-01-06 11:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.648648"
+  },
+  "30034_aki_stage": {
+    "patient_id": "10034",
+    "stay_id": "30034",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 0.8518960965540778,
+      "peak_creatinine": 0.8518960965540778,
+      "min_urine_output_6h": 0.48551252872460765,
+      "min_urine_output_12h": 0.5622078250028938
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.8518960965540778,
+        "peak_creatinine": 0.8518960965540778,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.48551252872460765,
+        "min_uo_12h": 0.5622078250028938,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-07 08:00:00 to 2023-01-07 12:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.649976"
+  },
+  "30035_aki_stage": {
+    "patient_id": "10035",
+    "stay_id": "30035",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.7843373170511816,
+      "peak_creatinine": 0.7843373170511816,
+      "min_urine_output_6h": 0.5316112900859508,
+      "min_urine_output_12h": 0.6219898274790145
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.7843373170511816,
+        "peak_creatinine": 0.7843373170511816,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5316112900859508,
+        "min_uo_12h": 0.6219898274790145,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-08 08:00:00 to 2023-01-08 13:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.651316"
+  },
+  "30036_aki_stage": {
+    "patient_id": "10036",
+    "stay_id": "30036",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.6841627218331523,
+      "peak_creatinine": 0.8612272365137863,
+      "min_urine_output_6h": 0.6081654778480728,
+      "min_urine_output_12h": 0.6780966290474563
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.6841627218331523,
+        "peak_creatinine": 0.8612272365137863,
+        "creatinine_ratio": 1.2588046805681046,
+        "creatinine_increase": 0.177064514680634,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6081654778480728,
+        "min_uo_12h": 0.6780966290474563,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-09 08:00:00 to 2023-01-09 14:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.652683"
+  },
+  "30037_aki_stage": {
+    "patient_id": "10037",
+    "stay_id": "30037",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.8211543674206238,
+      "peak_creatinine": 0.9836789336570712,
+      "min_urine_output_6h": 0.6076616906185239,
+      "min_urine_output_12h": 0.6596585369231678
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.8211543674206238,
+        "peak_creatinine": 0.9836789336570712,
+        "creatinine_ratio": 1.1979220627504703,
+        "creatinine_increase": 0.1625245662364474,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6076616906185239,
+        "min_uo_12h": 0.6596585369231678,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-10 08:00:00 to 2023-01-10 15:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.654047"
+  },
+  "30038_aki_stage": {
+    "patient_id": "10038",
+    "stay_id": "30038",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.9175709649462852,
+      "peak_creatinine": 1.1659758166329408,
+      "min_urine_output_6h": 0.6431733801004499,
+      "min_urine_output_12h": 0.7159102558392596
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.9175709649462852,
+        "peak_creatinine": 1.1659758166329408,
+        "creatinine_ratio": 1.270720043654822,
+        "creatinine_increase": 0.2484048516866556,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6431733801004499,
+        "min_uo_12h": 0.7159102558392596,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-11 08:00:00 to 2023-01-11 16:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.655443"
+  },
+  "30039_aki_stage": {
+    "patient_id": "10039",
+    "stay_id": "30039",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 1,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.4996138442486366,
+      "peak_creatinine": 1.823138286552058,
+      "min_urine_output_6h": 0.5891075862209383,
+      "min_urine_output_12h": 0.6462823367588586
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.4996138442486366,
+        "peak_creatinine": 1.823138286552058,
+        "creatinine_ratio": 1.215738500644157,
+        "creatinine_increase": 0.32352444230342137,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5891075862209383,
+        "min_uo_12h": 0.6462823367588586,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-12 08:00:00 to 2023-01-12 17:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.656793"
+  },
+  "30040_aki_stage": {
+    "patient_id": "10040",
+    "stay_id": "30040",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.244359410146447,
+      "peak_creatinine": 1.244359410146447,
+      "min_urine_output_6h": 0.6512133746257333,
+      "min_urine_output_12h": 0.7933328701966061
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.244359410146447,
+        "peak_creatinine": 1.244359410146447,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6512133746257333,
+        "min_uo_12h": 0.7933328701966061,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-13 08:00:00 to 2023-01-13 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.658127"
+  },
+  "30041_aki_stage": {
+    "patient_id": "10041",
+    "stay_id": "30041",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5,
+      "min_urine_output_6h": 0.7331971166791474,
+      "min_urine_output_12h": 0.757788668122382
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.5,
+        "peak_creatinine": 0.5,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.7331971166791474,
+        "min_uo_12h": 0.757788668122382,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-14 08:00:00 to 2023-01-14 09:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.659461"
+  },
+  "30042_aki_stage": {
+    "patient_id": "10042",
+    "stay_id": "30042",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.1542382752977662,
+      "peak_creatinine": 1.1542382752977662,
+      "min_urine_output_6h": 0.5746079712646203,
+      "min_urine_output_12h": 0.6113616109282517
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.1542382752977662,
+        "peak_creatinine": 1.1542382752977662,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5746079712646203,
+        "min_uo_12h": 0.6113616109282517,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-15 08:00:00 to 2023-01-15 10:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.660805"
+  },
+  "30043_aki_stage": {
+    "patient_id": "10043",
+    "stay_id": "30043",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.8179153342518287,
+      "peak_creatinine": 0.8179153342518287,
+      "min_urine_output_6h": 0.5546981866067703,
+      "min_urine_output_12h": 0.6547353785544573
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.8179153342518287,
+        "peak_creatinine": 0.8179153342518287,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5546981866067703,
+        "min_uo_12h": 0.6547353785544573,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-16 08:00:00 to 2023-01-16 11:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.662155"
+  },
+  "30044_aki_stage": {
+    "patient_id": "10044",
+    "stay_id": "30044",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 1.0233138340691803,
+      "peak_creatinine": 1.0233138340691803,
+      "min_urine_output_6h": 0.5778711442924983,
+      "min_urine_output_12h": 0.5882078480220745
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.0233138340691803,
+        "peak_creatinine": 1.0233138340691803,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5778711442924983,
+        "min_uo_12h": 0.5882078480220745,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-17 08:00:00 to 2023-01-17 12:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.663593"
+  },
+  "30045_aki_stage": {
+    "patient_id": "10045",
+    "stay_id": "30045",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 0.7,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 1.0162473662676366,
+      "peak_creatinine": 1.0162473662676366,
+      "min_urine_output_6h": 0.4353113309894827,
+      "min_urine_output_12h": 0.58812507432699
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 1.0162473662676366,
+        "peak_creatinine": 1.0162473662676366,
+        "creatinine_ratio": 1.0,
+        "creatinine_increase": 0.0,
+        "confidence": 0.7,
+        "n_measurements": 1
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.4353113309894827,
+        "min_uo_12h": 0.58812507432699,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-18 08:00:00 to 2023-01-18 13:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.665005"
+  },
+  "30046_aki_stage": {
+    "patient_id": "10046",
+    "stay_id": "30046",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.6454144681635242,
+      "peak_creatinine": 0.900018324603221,
+      "min_urine_output_6h": 0.5180257494544536,
+      "min_urine_output_12h": 0.6450509170557578
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.6454144681635242,
+        "peak_creatinine": 0.900018324603221,
+        "creatinine_ratio": 1.3944811729494566,
+        "creatinine_increase": 0.25460385643969674,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.5180257494544536,
+        "min_uo_12h": 0.6450509170557578,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-19 08:00:00 to 2023-01-19 14:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.666338"
+  },
+  "30047_aki_stage": {
+    "patient_id": "10047",
+    "stay_id": "30047",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5079335474554685,
+      "min_urine_output_6h": 0.6962417496369243,
+      "min_urine_output_12h": 0.7185153472908872
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.5,
+        "peak_creatinine": 0.5079335474554685,
+        "creatinine_ratio": 1.015867094910937,
+        "creatinine_increase": 0.007933547455468482,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.6962417496369243,
+        "min_uo_12h": 0.7185153472908872,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-20 08:00:00 to 2023-01-20 15:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.667684"
+  },
+  "30048_aki_stage": {
+    "patient_id": "10048",
+    "stay_id": "30048",
+    "outcome_id": "aki_stage",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "stage_0",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 0,
+      "baseline_creatinine": 0.8593581779462263,
+      "peak_creatinine": 0.9062397396341922,
+      "min_urine_output_6h": 0.7097419758660819,
+      "min_urine_output_12h": 0.8165595959126594
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.8593581779462263,
+        "peak_creatinine": 0.9062397396341922,
+        "creatinine_ratio": 1.05455415784837,
+        "creatinine_increase": 0.04688156168796598,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.7097419758660819,
+        "min_uo_12h": 0.8165595959126594,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-21 08:00:00 to 2023-01-21 16:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.669013"
+  },
+  "30049_aki_stage": {
+    "patient_id": "10049",
+    "stay_id": "30049",
+    "outcome_id": "aki_stage",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "stage_1",
+    "time_to_event": null,
+    "confidence": 1.0,
+    "data_quality": "high",
+    "supporting_values": {
+      "creatinine_stage": 0,
+      "urine_output_stage": 1,
+      "baseline_creatinine": 0.6255974688680863,
+      "peak_creatinine": 0.8208255702842481,
+      "min_urine_output_6h": 0.4650210629661857,
+      "min_urine_output_12h": 0.5407566255850461
+    },
+    "calculation_details": {
+      "creatinine_details": {
+        "baseline_creatinine": 0.6255974688680863,
+        "peak_creatinine": 0.8208255702842481,
+        "creatinine_ratio": 1.3120666421003817,
+        "creatinine_increase": 0.19522810141616176,
+        "confidence": 1.0,
+        "n_measurements": 2
+      },
+      "urine_output_details": {
+        "min_uo_6h": 0.4650210629661857,
+        "min_uo_12h": 0.5407566255850461,
+        "patient_weight_kg": 70.0,
+        "confidence": 1.0,
+        "n_measurements": 24
+      },
+      "assessment_period": "2023-01-22 08:00:00 to 2023-01-22 17:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.670352"
+  },
+  "30000_recovery": {
+    "patient_id": "10000",
+    "stay_id": "30000",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.36740772807385,
+      "peak_creatinine": 2.8145528868457204,
+      "discharge_creatinine": 2.380409339214159,
+      "recovery_percent": 0.3
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4166666666666667,
+      "peak_time": "2023-01-02 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.673142"
+  },
+  "30001_recovery": {
+    "patient_id": "10001",
+    "stay_id": "30001",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.30000000000000004,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.8967385035568741,
+      "peak_creatinine": 1.4959209199772436,
+      "discharge_creatinine": 1.3161661950511327,
+      "recovery_percent": 0.30000000000000004
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4583333333333333,
+      "peak_time": "2023-01-03 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.673862"
+  },
+  "30002_recovery": {
+    "patient_id": "10002",
+    "stay_id": "30002",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3000000000000001,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.0893555520820883,
+      "peak_creatinine": 1.7886724693039548,
+      "discharge_creatinine": 1.5788773941373948,
+      "recovery_percent": 0.3000000000000001
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5,
+      "peak_time": "2023-01-04 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.674565"
+  },
+  "30003_recovery": {
+    "patient_id": "10003",
+    "stay_id": "30003",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.30000000000000016,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.8567209531120343,
+      "peak_creatinine": 2.240979203411457,
+      "discharge_creatinine": 1.82570172832163,
+      "recovery_percent": 0.30000000000000016
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5416666666666666,
+      "peak_time": "2023-01-05 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.675259"
+  },
+  "30004_recovery": {
+    "patient_id": "10004",
+    "stay_id": "30004",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "complete",
+    "time_to_event": 0.25,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5,
+      "discharge_creatinine": 0.5,
+      "recovery_percent": 1.0
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5833333333333334,
+      "peak_time": "2023-01-05 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.676094"
+  },
+  "30005_recovery": {
+    "patient_id": "10005",
+    "stay_id": "30005",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3756284767602714,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.8244842154954996,
+      "discharge_creatinine": 0.7025987038961734,
+      "recovery_percent": 0.3756284767602714
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.625,
+      "peak_time": "2023-01-07 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.676823"
+  },
+  "30006_recovery": {
+    "patient_id": "10006",
+    "stay_id": "30006",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3000000000000001,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.2054233936122858,
+      "peak_creatinine": 2.6549268198531406,
+      "discharge_creatinine": 2.220075791980884,
+      "recovery_percent": 0.3000000000000001
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4166666666666667,
+      "peak_time": "2023-01-08 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.677528"
+  },
+  "30007_recovery": {
+    "patient_id": "10007",
+    "stay_id": "30007",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3000000000000001,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.095650436542902,
+      "peak_creatinine": 3.205282875905538,
+      "discharge_creatinine": 2.572393144096747,
+      "recovery_percent": 0.3000000000000001
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4583333333333333,
+      "peak_time": "2023-01-09 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.678239"
+  },
+  "30008_recovery": {
+    "patient_id": "10008",
+    "stay_id": "30008",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3000000000000002,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.9432726919601128,
+      "peak_creatinine": 1.7922710783130589,
+      "discharge_creatinine": 1.5375715624071749,
+      "recovery_percent": 0.3000000000000002
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5,
+      "peak_time": "2023-01-10 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.678924"
+  },
+  "30009_recovery": {
+    "patient_id": "10009",
+    "stay_id": "30009",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.1231188371210523,
+      "peak_creatinine": 1.778423822860319,
+      "discharge_creatinine": 1.581832327138539,
+      "recovery_percent": 0.3
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5416666666666666,
+      "peak_time": "2023-01-11 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.679620"
+  },
+  "30010_recovery": {
+    "patient_id": "10010",
+    "stay_id": "30010",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.6806583085930926,
+      "peak_creatinine": 1.5006998937384044,
+      "discharge_creatinine": 1.2546874181948109,
+      "recovery_percent": 0.3
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5833333333333334,
+      "peak_time": "2023-01-12 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.680337"
+  },
+  "30011_recovery": {
+    "patient_id": "10011",
+    "stay_id": "30011",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.29999999999999993,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.8148228584976874,
+      "peak_creatinine": 1.67617506665532,
+      "discharge_creatinine": 1.4177694042080302,
+      "recovery_percent": 0.29999999999999993
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.625,
+      "peak_time": "2023-01-13 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.681135"
+  },
+  "30012_recovery": {
+    "patient_id": "10012",
+    "stay_id": "30012",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.29999999999999993,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.9975235742486624,
+      "peak_creatinine": 2.4658233862597156,
+      "discharge_creatinine": 2.0253334426564,
+      "recovery_percent": 0.29999999999999993
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4166666666666667,
+      "peak_time": "2023-01-14 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.681823"
+  },
+  "30013_recovery": {
+    "patient_id": "10013",
+    "stay_id": "30013",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3517005789332231,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.8563506717518061,
+      "discharge_creatinine": 0.731021934193453,
+      "recovery_percent": 0.3517005789332231
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4583333333333333,
+      "peak_time": "2023-01-15 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.682505"
+  },
+  "30014_recovery": {
+    "patient_id": "10014",
+    "stay_id": "30014",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999999,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.2238331825331374,
+      "peak_creatinine": 2.975194505591351,
+      "discharge_creatinine": 2.4497861086738872,
+      "recovery_percent": 0.2999999999999999
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5,
+      "peak_time": "2023-01-16 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.683201"
+  },
+  "30015_recovery": {
+    "patient_id": "10015",
+    "stay_id": "30015",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.30000000000000016,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.174949873686436,
+      "peak_creatinine": 2.48030100641715,
+      "discharge_creatinine": 2.0886956665979355,
+      "recovery_percent": 0.30000000000000016
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5416666666666666,
+      "peak_time": "2023-01-17 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.683908"
+  },
+  "30016_recovery": {
+    "patient_id": "10016",
+    "stay_id": "30016",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3000000000000003,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.274960784582703,
+      "peak_creatinine": 1.5541058975709716,
+      "discharge_creatinine": 1.470362363674491,
+      "recovery_percent": 0.3000000000000003
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5833333333333334,
+      "peak_time": "2023-01-18 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.684595"
+  },
+  "30017_recovery": {
+    "patient_id": "10017",
+    "stay_id": "30017",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.29999999999999977,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.3052009461224938,
+      "peak_creatinine": 3.847222968292392,
+      "discharge_creatinine": 3.084616361641423,
+      "recovery_percent": 0.29999999999999977
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.625,
+      "peak_time": "2023-01-19 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.685278"
+  },
+  "30018_recovery": {
+    "patient_id": "10018",
+    "stay_id": "30018",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.30000000000000004,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.014512749597785,
+      "peak_creatinine": 2.302673836464399,
+      "discharge_creatinine": 1.9162255104044148,
+      "recovery_percent": 0.30000000000000004
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4166666666666667,
+      "peak_time": "2023-01-20 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.685959"
+  },
+  "30019_recovery": {
+    "patient_id": "10019",
+    "stay_id": "30019",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.0260387887810225,
+      "peak_creatinine": 1.454931109453494,
+      "discharge_creatinine": 1.3262634132517526,
+      "recovery_percent": 0.3
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4583333333333333,
+      "peak_time": "2023-01-21 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.686642"
+  },
+  "30020_recovery": {
+    "patient_id": "10020",
+    "stay_id": "30020",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.30000000000000004,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.9291175325166232,
+      "peak_creatinine": 2.1992432452250714,
+      "discharge_creatinine": 1.818205531412537,
+      "recovery_percent": 0.30000000000000004
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5,
+      "peak_time": "2023-01-22 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.687322"
+  },
+  "30021_recovery": {
+    "patient_id": "10021",
+    "stay_id": "30021",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999998,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.1033247626128324,
+      "peak_creatinine": 2.3158198868647184,
+      "discharge_creatinine": 1.9520713495891528,
+      "recovery_percent": 0.2999999999999998
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5416666666666666,
+      "peak_time": "2023-01-23 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.688001"
+  },
+  "30022_recovery": {
+    "patient_id": "10022",
+    "stay_id": "30022",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.30000000000000004,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.1292448840084317,
+      "peak_creatinine": 2.590942686098333,
+      "discharge_creatinine": 2.1524333454713624,
+      "recovery_percent": 0.30000000000000004
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5833333333333334,
+      "peak_time": "2023-01-24 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.688726"
+  },
+  "30023_recovery": {
+    "patient_id": "10023",
+    "stay_id": "30023",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "complete",
+    "time_to_event": 1.0,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5163964417538394,
+      "discharge_creatinine": 0.5,
+      "recovery_percent": 1.0
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.625,
+      "peak_time": "2023-01-25 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.689607"
+  },
+  "30024_recovery": {
+    "patient_id": "10024",
+    "stay_id": "30024",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.8703385790735018,
+      "peak_creatinine": 2.0809352833666472,
+      "discharge_creatinine": 1.7177562720787036,
+      "recovery_percent": 0.3
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4166666666666667,
+      "peak_time": "2023-01-26 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.690287"
+  },
+  "30025_recovery": {
+    "patient_id": "10025",
+    "stay_id": "30025",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.5000000000000004,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 2.0437201184564793,
+      "peak_creatinine": 2.533241683843092,
+      "discharge_creatinine": 2.2884809011497853,
+      "recovery_percent": 0.5000000000000004
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4583333333333333,
+      "peak_time": "2023-01-27 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.691025"
+  },
+  "30026_recovery": {
+    "patient_id": "10026",
+    "stay_id": "30026",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.0,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.431510052366637,
+      "peak_creatinine": 1.5770556318644555,
+      "discharge_creatinine": 1.5770556318644555,
+      "recovery_percent": 0.0
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5,
+      "peak_time": "2023-01-28 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.691771"
+  },
+  "30027_recovery": {
+    "patient_id": "10027",
+    "stay_id": "30027",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "complete",
+    "time_to_event": 1.0,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.8019906226386289,
+      "peak_creatinine": 0.8019906226386289,
+      "discharge_creatinine": 0.6587292399917628,
+      "recovery_percent": 1.0
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5416666666666666,
+      "peak_time": "2023-01-01 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.692669"
+  },
+  "30028_recovery": {
+    "patient_id": "10028",
+    "stay_id": "30028",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3000000000000001,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.4248371779384508,
+      "peak_creatinine": 1.7079067977866356,
+      "discharge_creatinine": 1.62298591183218,
+      "recovery_percent": 0.3000000000000001
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5833333333333334,
+      "peak_time": "2023-01-02 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.693355"
+  },
+  "30029_recovery": {
+    "patient_id": "10029",
+    "stay_id": "30029",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.29999999999999993,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.2672331900733322,
+      "peak_creatinine": 3.000682245974559,
+      "discharge_creatinine": 2.480647529204191,
+      "recovery_percent": 0.29999999999999993
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.625,
+      "peak_time": "2023-01-03 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.694036"
+  },
+  "30030_recovery": {
+    "patient_id": "10030",
+    "stay_id": "30030",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999998,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.1343459517123162,
+      "peak_creatinine": 2.460549818277162,
+      "discharge_creatinine": 2.0626886583077084,
+      "recovery_percent": 0.2999999999999998
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4166666666666667,
+      "peak_time": "2023-01-04 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.694713"
+  },
+  "30031_recovery": {
+    "patient_id": "10031",
+    "stay_id": "30031",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999997,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.2778424572416889,
+      "peak_creatinine": 3.066192491852374,
+      "discharge_creatinine": 2.529687481469169,
+      "recovery_percent": 0.2999999999999997
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4583333333333333,
+      "peak_time": "2023-01-05 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.695396"
+  },
+  "30032_recovery": {
+    "patient_id": "10032",
+    "stay_id": "30032",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": true,
+    "continuous_outcome": 1.0,
+    "categorical_outcome": "complete",
+    "time_to_event": 0.25,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.5,
+      "discharge_creatinine": 0.5,
+      "recovery_percent": 1.0
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5,
+      "peak_time": "2023-01-05 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.696214"
+  },
+  "30033_recovery": {
+    "patient_id": "10033",
+    "stay_id": "30033",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": true,
+    "continuous_outcome": 0.2999999999999978,
+    "categorical_outcome": "complete",
+    "time_to_event": 1.0,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.7590242171666874,
+      "peak_creatinine": 1.8203926871114904,
+      "discharge_creatinine": 1.8019821461280496,
+      "recovery_percent": 0.2999999999999978
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5416666666666666,
+      "peak_time": "2023-01-07 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.697093"
+  },
+  "30034_recovery": {
+    "patient_id": "10034",
+    "stay_id": "30034",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999998,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.8518960965540778,
+      "peak_creatinine": 1.702155751192053,
+      "discharge_creatinine": 1.4470778548006606,
+      "recovery_percent": 0.2999999999999998
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5833333333333334,
+      "peak_time": "2023-01-08 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.697780"
+  },
+  "30035_recovery": {
+    "patient_id": "10035",
+    "stay_id": "30035",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.29999999999999977,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.7843373170511816,
+      "peak_creatinine": 0.9199415071486142,
+      "discharge_creatinine": 0.8792602501193845,
+      "recovery_percent": 0.29999999999999977
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.625,
+      "peak_time": "2023-01-09 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.698463"
+  },
+  "30036_recovery": {
+    "patient_id": "10036",
+    "stay_id": "30036",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3000000000000003,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.6841627218331523,
+      "peak_creatinine": 1.392420780555688,
+      "discharge_creatinine": 1.179943362938927,
+      "recovery_percent": 0.3000000000000003
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4166666666666667,
+      "peak_time": "2023-01-10 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.699149"
+  },
+  "30037_recovery": {
+    "patient_id": "10037",
+    "stay_id": "30037",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3000000000000001,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.8211543674206238,
+      "peak_creatinine": 1.4712526323664137,
+      "discharge_creatinine": 1.2762231528826766,
+      "recovery_percent": 0.3000000000000001
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4583333333333333,
+      "peak_time": "2023-01-11 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.699833"
+  },
+  "30038_recovery": {
+    "patient_id": "10038",
+    "stay_id": "30038",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999999,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.9175709649462852,
+      "peak_creatinine": 1.9111903716929075,
+      "discharge_creatinine": 1.613104549668921,
+      "recovery_percent": 0.2999999999999999
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5,
+      "peak_time": "2023-01-12 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.700516"
+  },
+  "30039_recovery": {
+    "patient_id": "10039",
+    "stay_id": "30039",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999998,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.4996138442486366,
+      "peak_creatinine": 2.793711613462322,
+      "discharge_creatinine": 2.4054822826982165,
+      "recovery_percent": 0.2999999999999998
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5416666666666666,
+      "peak_time": "2023-01-13 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.701204"
+  },
+  "30040_recovery": {
+    "patient_id": "10040",
+    "stay_id": "30040",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.244359410146447,
+      "peak_creatinine": 3.624195923489994,
+      "discharge_creatinine": 2.91024496948693,
+      "recovery_percent": 0.3
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5833333333333334,
+      "peak_time": "2023-01-14 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.701888"
+  },
+  "30041_recovery": {
+    "patient_id": "10041",
+    "stay_id": "30041",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3318915756469649,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 1.1855498120537975,
+      "discharge_creatinine": 0.958021604746782,
+      "recovery_percent": 0.3318915756469649
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.625,
+      "peak_time": "2023-01-15 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.702574"
+  },
+  "30042_recovery": {
+    "patient_id": "10042",
+    "stay_id": "30042",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.29999999999999993,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.1542382752977662,
+      "peak_creatinine": 3.1150960550927445,
+      "discharge_creatinine": 2.526838721154251,
+      "recovery_percent": 0.29999999999999993
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4166666666666667,
+      "peak_time": "2023-01-16 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.703269"
+  },
+  "30043_recovery": {
+    "patient_id": "10043",
+    "stay_id": "30043",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999999,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.8179153342518287,
+      "peak_creatinine": 2.0344232764431163,
+      "discharge_creatinine": 1.66947089378573,
+      "recovery_percent": 0.2999999999999999
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4583333333333333,
+      "peak_time": "2023-01-17 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.703956"
+  },
+  "30044_recovery": {
+    "patient_id": "10044",
+    "stay_id": "30044",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": true,
+    "continuous_outcome": 0.2999999999999994,
+    "categorical_outcome": "complete",
+    "time_to_event": 2.0,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.0233138340691803,
+      "peak_creatinine": 1.16582217843543,
+      "discharge_creatinine": 1.1230696751255551,
+      "recovery_percent": 0.2999999999999994
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5,
+      "peak_time": "2023-01-18 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.704778"
+  },
+  "30045_recovery": {
+    "patient_id": "10045",
+    "stay_id": "30045",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 1.0162473662676366,
+      "peak_creatinine": 2.28696563568211,
+      "discharge_creatinine": 1.905750154857768,
+      "recovery_percent": 0.3
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5416666666666666,
+      "peak_time": "2023-01-19 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.705525"
+  },
+  "30046_recovery": {
+    "patient_id": "10046",
+    "stay_id": "30046",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999997,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.6454144681635242,
+      "peak_creatinine": 1.663829893922311,
+      "discharge_creatinine": 1.3583052661946753,
+      "recovery_percent": 0.2999999999999997
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.5833333333333334,
+      "peak_time": "2023-01-20 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.706212"
+  },
+  "30047_recovery": {
+    "patient_id": "10047",
+    "stay_id": "30047",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.39311053326948514,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.5,
+      "peak_creatinine": 0.9606189573616488,
+      "discharge_creatinine": 0.7795447933991768,
+      "recovery_percent": 0.39311053326948514
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.625,
+      "peak_time": "2023-01-21 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.706902"
+  },
+  "30048_recovery": {
+    "patient_id": "10048",
+    "stay_id": "30048",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.2999999999999999,
+    "categorical_outcome": "partial",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.8593581779462263,
+      "peak_creatinine": 1.0468844246980902,
+      "discharge_creatinine": 0.990626550672531,
+      "recovery_percent": 0.2999999999999999
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4166666666666667,
+      "peak_time": "2023-01-22 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.707629"
+  },
+  "30049_recovery": {
+    "patient_id": "10049",
+    "stay_id": "30049",
+    "outcome_id": "kidney_recovery",
+    "binary_outcome": false,
+    "continuous_outcome": 0.3000000000000001,
+    "categorical_outcome": "none",
+    "time_to_event": null,
+    "confidence": 0.8,
+    "data_quality": "high",
+    "supporting_values": {
+      "baseline_creatinine": 0.6255974688680863,
+      "peak_creatinine": 1.4065098745327334,
+      "discharge_creatinine": 1.1722361528333392,
+      "recovery_percent": 0.3000000000000001
+    },
+    "calculation_details": {
+      "n_measurements": 6,
+      "assessment_period_days": 0.4583333333333333,
+      "peak_time": "2023-01-23 08:00:00"
+    },
+    "assessment_date": "2025-09-15T15:22:50.708423"
+  }
+}

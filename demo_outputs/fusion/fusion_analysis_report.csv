@@ -1,0 +1,2 @@
+ensemble_id,fusion_strategy,ensemble_method,task_type,n_modalities,n_total_features,performance_accuracy,performance_precision,performance_recall,performance_f1,performance_roc_auc,weight_molecular,weight_functional,weight_clinical,n_features_molecular,n_features_functional,n_features_clinical
+multimodal_aki_predictor,late_fusion,weighted_average,classification,3,30,1.0,1.0,1.0,1.0,1.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,20,5,5

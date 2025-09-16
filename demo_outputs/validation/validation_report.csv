@@ -1,0 +1,4 @@
+pathway_id,pathway_name,pathway_type,validation_method,sample_size,p_value,effect_size,cv_mean,cv_std,is_significant,passes_effect_size,is_validated,data_quality_score,validation_date
+mol_func_barrier,Molecular → Barrier Function,molecular_functional,cross_validation,200,1.0,0.47072236353860475,0.26752339865339125,0.09390584469023137,True,True,True,1.0,2025-09-15T15:35:45.732131
+func_clin_aki,Barrier Function → AKI,functional_clinical,cross_validation,200,1.0,0.0,0.9761904761904763,0.021128856368212965,True,False,False,1.0,2025-09-15T15:35:45.977679
+complete_pathway,Complete Molecular → Functional → Clinical,complete_pathway,cross_validation,200,4.948463580066608e-08,0.41894193884313735,0.0,0.0,True,True,True,1.0,2025-09-15T15:35:46.198790

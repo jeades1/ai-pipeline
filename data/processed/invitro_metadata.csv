@@ -1,0 +1,11 @@
+donor_id,model_id,geometry,vascularization_level,culture_protocol,cell_types,batch_id,condition_id,perturbation_id,perturbation_name
+PLATFORM,M_TUBE_SINGLE,cylindrical-tube,none,HydrogelCylinder_v1|PerfusionRecirc,PTC,B001,baseline,,
+PLATFORM,M_TUBE_CONCENTRIC,multi-layer-concentric-tubes,none,HydrogelConcentric_v1|PerfusionRecirc,PTC|EC|FB,B002,baseline,,
+PLATFORM,M_TUBE_TUBE_SPACING,parallel-tubes,none,HydrogelParallel_v1|PerfusionRecirc,PTC|EC,B003,baseline,,
+PLATFORM,M_TUBE_BLOOD_VASC,cylindrical-tube,blood,HydrogelCylinder_v1|PerfusionRecirc,PTC|EC,B004,baseline,,
+PLATFORM,M_TUBE_LYMPH_VASC,cylindrical-tube,lymphatic,HydrogelCylinder_v1|PerfusionRecirc,PTC|LEC,B005,baseline,,
+PLATFORM,M_SPHEROID_VASC_BED,spheroid-bed,blood+lymphatic,SpheroidBed_v1|PerfusionRecirc,PTC|EC|LEC|FB,B006,baseline,,
+PLATFORM,M_ORGANOID_VASC,organoid,blood+lymphatic,OrganoidVasc_v1|PerfusionRecirc|RareCellCapture,PTC|EC|LEC|FB,B007,baseline,,
+PLATFORM,M_SKIN_SHEET_VASC_BED,skin-sheet-over-vascular-bed,blood+lymphatic,SkinSheet_v1|PerfusionRecirc,KER|FB|EC|LEC,B008,baseline,,
+PLATFORM,M_MULTI_ORGAN_PLATE,multi-organ-plate,blood+lymphatic,MultiOrganPlate_v1|PerfusionRecirc,PTC|HEP|EC|LEC|FB,B009,baseline,,
+PDO001,M_PDO001_VASC,PDO,blood+lymphatic,PDO_Rapid_v1|PerfusionRecirc|RareCellCapture,PTC|EC|LEC|FB,B010,baseline,,

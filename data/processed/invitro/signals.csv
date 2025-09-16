@@ -1,0 +1,6 @@
+gene,function,effect,direction,assay,dataset
+LCN2,InflammationResponse,0.95,up,organoid,invitro_toy
+CCL2,InflammationResponse,0.9,up,organoid,invitro_toy
+TIMP2,BarrierIntegrity,0.85,up,organoid,invitro_toy
+HAVCR1,TransportFunction,0.8,up,organoid,invitro_toy
+CST3,BarrierIntegrity,0.75,up,organoid,invitro_toy

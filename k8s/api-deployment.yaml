@@ -1,0 +1,102 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-pipeline-api
+  labels:
+    app: ai-pipeline-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ai-pipeline-api
+  template:
+    metadata:
+      labels:
+        app: ai-pipeline-api
+    spec:
+      containers:
+      - name: api
+        image: ai-pipeline:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DEPLOYMENT_MODE
+          value: "production"
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: ai-pipeline-secrets
+              key: database-url
+        - name: REDIS_URL
+          value: "redis://redis-service:6379/0"
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        volumeMounts:
+        - name: model-storage
+          mountPath: /app/data/models
+          readOnly: true
+        - name: log-storage
+          mountPath: /app/data/logs
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: model-storage-pvc
+      - name: log-storage
+        persistentVolumeClaim:
+          claimName: log-storage-pvc
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-pipeline-api-service
+spec:
+  selector:
+    app: ai-pipeline-api
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8000
+  type: ClusterIP
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ai-pipeline-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+  - hosts:
+    - api.ai-pipeline.com
+    secretName: ai-pipeline-tls
+  rules:
+  - host: api.ai-pipeline.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: ai-pipeline-api-service
+            port:
+              number: 80

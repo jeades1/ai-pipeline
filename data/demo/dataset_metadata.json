@@ -1,0 +1,25 @@
+{
+  "generation_date": "2025-09-14T20:21:19.978149",
+  "n_patients": 1000,
+  "institutions": 5,
+  "biomarkers": {
+    "traditional": [
+      "NGAL",
+      "KIM1",
+      "Cystatin_C",
+      "Creatinine",
+      "BUN",
+      "Albumin",
+      "IL18",
+      "TIMP2_IGFBP7"
+    ],
+    "federated_novel": [
+      "Federated_Signature_1",
+      "Federated_Signature_2",
+      "Cross_Institution_Pattern",
+      "Privacy_Preserved_Risk"
+    ]
+  },
+  "outcome_rate": 0.175,
+  "federated_advantage_demonstrated": true
+}

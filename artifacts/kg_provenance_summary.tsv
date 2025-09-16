@@ -1,0 +1,8 @@
+provenance	predicate	count
+CellPhoneDB	binds	2716
+CellPhoneDB	causes	212
+GSE133288	associative	2969
+OmniPath	activates	5240
+OmniPath	interacts_with	3971
+Reactome	part_of	23019
+Reactome-GMT	member_of	135371

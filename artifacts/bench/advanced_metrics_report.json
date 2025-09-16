@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "evaluation_date": "2025-09-12",
+    "total_candidates": 2987,
+    "benchmark_size": 10,
+    "precision_at_20": 0.4,
+    "top_20_hits": [
+      "APOB",
+      "HMGCR",
+      "LDLR",
+      "PCSK9",
+      "ALB",
+      "LPL",
+      "NPC1L1",
+      "CETP",
+      "ABCA1",
+      "APOE",
+      "LCAT",
+      "SREBF1",
+      "SREBF2",
+      "ANGPTL3",
+      "LIPC",
+      "APOA2",
+      "PLTP",
+      "LPA",
+      "APOC1",
+      "UBC"
+    ]
+  },
+  "clinical_relevance": {
+    "clinical_enrichment_score": 0.35,
+    "interpretation": "Fraction of hits with existing clinical evidence",
+    "druggability_score": 0.46500000000000014,
+    "actionability_index": 0.16275000000000003,
+    "benchmark": {
+      "excellent": ">0.7",
+      "good": "0.4-0.7",
+      "needs_improvement": "<0.4"
+    }
+  },
+  "discovery_efficiency": {
+    "cost_per_discovery": 149350.0,
+    "time_to_validation_days": 60.0,
+    "hit_rate_confidence_95": {
+      "lower": 0.0,
+      "upper": 1.0
+    },
+    "interpretation": "Lower cost and time indicate more efficient discovery"
+  },
+  "biological_coherence": {
+    "pathway_coherence_score": 0.48,
+    "mechanism_diversity_index": 0.690316864818223,
+    "literature_support_score": 0.5350000000000001,
+    "interpretation": "High coherence + moderate diversity = biologically meaningful hits"
+  },
+  "translational_utility": {
+    "assay_feasibility_score": 0.5900000000000001,
+    "biomarker_specificity_index": 0.4,
+    "translational_readiness_score": 0.3652,
+    "interpretation": "Readiness for clinical translation and validation"
+  },
+  "recommendations": [
+    "Excellent precision - prioritize validation of top hits"
+  ]
+}

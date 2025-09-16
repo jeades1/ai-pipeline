@@ -1,0 +1,36 @@
+datasets:
+  - id: gtex_kidney
+    name: "GTEx v8 RNA-seq - Kidney (Cortex/Medulla)"
+    url: "https://storage.googleapis.com/gtex_analysis_v8/rna_seq_data/GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz"
+    local: "data/external/gtex/GTEx_v8_gene_median_tpm.gct.gz"
+    purpose: "Baseline tissue expression (median TPM per tissue) for context and filtering"
+    license: "open"
+    mode: "manual"
+    notes: "Download via browser if blocked; Google Cloud Storage public file."
+
+  - id: gtex_sample_attributes
+    name: "GTEx v8 - Sample Attributes"
+    url: "https://storage.googleapis.com/gtex_analysis_v8/annotations/GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt"
+    local: "data/external/gtex/GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt"
+    purpose: "Sample to tissue mapping and metadata"
+    license: "open"
+    mode: "auto"
+    notes: "Small TSV; useful for filtering tissue-specific subsets"
+
+  - id: lincs_l1000
+    name: "LINCS L1000 Level 5 signatures"
+    url: "https://clue.io/data/CMap2020#LINCS2020"
+    local: "data/external/lincs/L1000_Level5.gctx"
+    purpose: "Perturbation-response priors (drug/toxin pathway effects)"
+    license: "open"
+    mode: "manual"
+    notes: "Retrieve via CLUE data portal; bulk Level 5 GCTX or MODZ tarballs."
+
+  - id: hpa_tissue
+    name: "Human Protein Atlas - RNA tissue expression"
+    url: "https://www.proteinatlas.org/download/rna_tissue.tsv.zip"
+    local: "data/external/hpa/rna_tissue.tsv.zip"
+    purpose: "Tissue/cell-type expression priors"
+    license: "open"
+    mode: "manual"
+    notes: "May require cookie/terms acceptance; download via browser"

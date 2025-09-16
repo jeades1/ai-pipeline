@@ -1,0 +1,4 @@
+{
+  "lipid_core": ["HMGCR", "LDLR", "PCSK9", "APOB", "APOE", "CETP", "ABCA1", "LPL"],
+  "inflammation": ["CRP", "IL6", "TNF", "IL1B"]
+}

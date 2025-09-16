@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Mayo Clinic",
+    "region": "North America",
+    "patient_count": 15000,
+    "specialty_focus": "Nephrology Excellence",
+    "data_privacy_level": 0.95,
+    "collaboration_score": 0.9,
+    "unique_biomarkers": [
+      "Mayo_Nephro_Panel",
+      "Precision_Creatinine"
+    ]
+  },
+  {
+    "name": "Johns Hopkins",
+    "region": "North America",
+    "patient_count": 12000,
+    "specialty_focus": "Critical Care",
+    "data_privacy_level": 0.92,
+    "collaboration_score": 0.85,
+    "unique_biomarkers": [
+      "Hopkins_ICU_Score",
+      "Acute_Injury_Index"
+    ]
+  },
+  {
+    "name": "Charit\u00e9 Berlin",
+    "region": "Europe",
+    "patient_count": 8000,
+    "specialty_focus": "Transplant Medicine",
+    "data_privacy_level": 0.98,
+    "collaboration_score": 0.88,
+    "unique_biomarkers": [
+      "EU_Privacy_Biomarker",
+      "GDPR_Compliant_Risk"
+    ]
+  },
+  {
+    "name": "Singapore General",
+    "region": "Asia",
+    "patient_count": 6000,
+    "specialty_focus": "Personalized Medicine",
+    "data_privacy_level": 0.9,
+    "collaboration_score": 0.92,
+    "unique_biomarkers": [
+      "Asian_Genetic_Panel",
+      "Population_Specific_Markers"
+    ]
+  },
+  {
+    "name": "Toronto General",
+    "region": "North America",
+    "patient_count": 9000,
+    "specialty_focus": "AI Integration",
+    "data_privacy_level": 0.94,
+    "collaboration_score": 0.87,
+    "unique_biomarkers": [
+      "AI_Enhanced_Biomarkers",
+      "ML_Derived_Features"
+    ]
+  }
+]

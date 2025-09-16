@@ -1,0 +1,2 @@
+# Deprecated: AKI demo configuration removed.
+# This repository is now disease-agnostic. Define your experiment configs under conf/experiments/<your_scenario>.yaml

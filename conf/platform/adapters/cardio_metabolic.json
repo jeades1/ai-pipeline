@@ -1,0 +1,10 @@
+{
+  "name": "cardio_metabolic",
+  "description": "Adapter for cardio-metabolic disease (NASH, HFpEF, T2D).",
+  "ontology_terms": ["fibrosis", "insulin resistance", "endothelial dysfunction"],
+  "prioritization_weights": {"omics": 0.8, "imaging": 0.7, "secretome": 0.8, "functional": 0.8},
+  "assay_modules": ["MPS liver-kidney", "endothelial shear", "metabolic flux"],
+  "biomarker_archetypes": ["fibrosis panel", "metabolic stress", "vascular activation"],
+  "outcomes": ["ALT/AST", "eGFR slope", "HbA1c", "NYHA class"],
+  "notes": "Emphasize organ crosstalk and fibrosis trajectories."
+}

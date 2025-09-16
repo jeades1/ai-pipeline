@@ -1,0 +1,18 @@
+{
+  "traditional_approach": {
+    "aki_rate": "27.9%",
+    "rrt_rate": "10.5%",
+    "available_to": "All competitors"
+  },
+  "federated_approach": {
+    "aki_rate": "27.7%",
+    "rrt_rate": "4.2%",
+    "available_to": "Our platform only"
+  },
+  "competitive_advantage": {
+    "aki_prediction_improvement": "0.5%",
+    "rrt_prediction_improvement": "59.8%",
+    "federated_institutions": 6,
+    "unique_biomarkers": 8
+  }
+}

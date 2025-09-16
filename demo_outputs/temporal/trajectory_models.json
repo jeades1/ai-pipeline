@@ -1,0 +1,131 @@
+{
+  "serum_creatinine_linear": {
+    "trajectory_id": "serum_creatinine_linear",
+    "biomarker_name": "serum_creatinine",
+    "trajectory_type": "linear",
+    "model_type": "random_forest",
+    "parameters": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "feature_importance_mean": 0.125
+    },
+    "fit_metrics": {
+      "r2_score": 0.9271014282819705,
+      "rmse": 0.0955053224792415,
+      "mae": 0.07755040289110325,
+      "n_samples": 593
+    },
+    "intervention_effects": {
+      "treatment": {
+        "effect_size": 0.19756089173944041,
+        "p_value": 0.05,
+        "confidence_interval": [
+          0.0,
+          0.39512178347888083
+        ]
+      },
+      "surgery": {
+        "effect_size": 0.0,
+        "p_value": 0.05,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "medication": {
+        "effect_size": 0.0,
+        "p_value": 0.05,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "teer_resistance_linear": {
+    "trajectory_id": "teer_resistance_linear",
+    "biomarker_name": "teer_resistance",
+    "trajectory_type": "linear",
+    "model_type": "random_forest",
+    "parameters": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "feature_importance_mean": 0.125
+    },
+    "fit_metrics": {
+      "r2_score": 0.9393810178405817,
+      "rmse": 55.71499239699514,
+      "mae": 45.29749305464236,
+      "n_samples": 593
+    },
+    "intervention_effects": {
+      "treatment": {
+        "effect_size": 0.32568955044018777,
+        "p_value": 0.05,
+        "confidence_interval": [
+          0.0,
+          0.6513791008803755
+        ]
+      },
+      "surgery": {
+        "effect_size": 0.0,
+        "p_value": 0.05,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "medication": {
+        "effect_size": 0.0,
+        "p_value": 0.05,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "inflammatory_score_linear": {
+    "trajectory_id": "inflammatory_score_linear",
+    "biomarker_name": "inflammatory_score",
+    "trajectory_type": "linear",
+    "model_type": "random_forest",
+    "parameters": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "feature_importance_mean": 0.125
+    },
+    "fit_metrics": {
+      "r2_score": 0.532699379718786,
+      "rmse": 19.5213183716481,
+      "mae": 16.482794915136243,
+      "n_samples": 593
+    },
+    "intervention_effects": {
+      "treatment": {
+        "effect_size": 0.02902024886315232,
+        "p_value": 0.05,
+        "confidence_interval": [
+          0.0,
+          0.05804049772630464
+        ]
+      },
+      "surgery": {
+        "effect_size": 0.0,
+        "p_value": 0.05,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "medication": {
+        "effect_size": 0.0,
+        "p_value": 0.05,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  }
+}

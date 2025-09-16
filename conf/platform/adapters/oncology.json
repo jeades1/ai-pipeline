@@ -1,0 +1,10 @@
+{
+  "name": "oncology",
+  "description": "Adapter for oncology indications (solid tumors, IO).",
+  "ontology_terms": ["neoplasm", "immune checkpoint", "TME", "EMT"],
+  "prioritization_weights": {"omics": 0.8, "imaging": 0.9, "secretome": 0.6, "functional": 0.7},
+  "assay_modules": ["organoids", "immune co-culture", "imaging phenomics"],
+  "biomarker_archetypes": ["proliferation", "immune activation", "hypoxia"],
+  "outcomes": ["ORR", "PFS", "immune-related AEs"],
+  "notes": "Focus on IO responders and toxicity stratification."
+}

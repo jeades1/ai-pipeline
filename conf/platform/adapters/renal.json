@@ -1,0 +1,10 @@
+{
+  "name": "renal",
+  "description": "Adapter for renal indications (AKI, CKD, nephrotoxicity).",
+  "ontology_terms": ["tubule", "glomerulus", "fibrosis", "inflammation"],
+  "prioritization_weights": {"omics": 0.8, "imaging": 0.7, "secretome": 0.9, "functional": 0.8},
+  "assay_modules": ["kidney-on-chip", "tubule-endothelium co-culture"],
+  "biomarker_archetypes": ["injury panel", "repair vs scarring", "immune activation"],
+  "outcomes": ["eGFR slope", "urine panel", "DGF"],
+  "notes": "High-SNR secretome and functional assays."
+}

@@ -1,0 +1,4 @@
+trajectory_id,biomarker_name,trajectory_type,model_type,r2_score,rmse,mae,n_parameters,intervention_treatment_effect,intervention_treatment_pvalue,intervention_surgery_effect,intervention_surgery_pvalue,intervention_medication_effect,intervention_medication_pvalue,recovery_rate,transition_time,recovery_success_prob
+serum_creatinine_linear,serum_creatinine,linear,random_forest,0.9271014282819705,0.0955053224792415,0.07755040289110325,3,0.19756089173944041,0.05,0.0,0.05,0.0,0.05,0.000688977969534286,44.21401978183597,0.5670483278623233
+teer_resistance_linear,teer_resistance,linear,random_forest,0.9393810178405817,55.71499239699514,45.29749305464236,3,0.32568955044018777,0.05,0.0,0.05,0.0,0.05,0.34030792864273934,115.9567223630034,0.6388494481010684
+inflammatory_score_linear,inflammatory_score,linear,random_forest,0.532699379718786,19.5213183716481,16.482794915136243,3,0.02902024886315232,0.05,0.0,0.05,0.0,0.05,0.06225262944207796,52.42150453677702,0.39556704895587097

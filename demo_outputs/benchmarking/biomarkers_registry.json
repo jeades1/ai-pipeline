@@ -1,0 +1,38 @@
+{
+  "novel_multimodal": {
+    "biomarker_id": "novel_multimodal",
+    "biomarker_name": "Novel Multi-modal AKI Predictor",
+    "biomarker_type": "novel",
+    "clinical_interpretation": "Integrates molecular, functional, and clinical data",
+    "literature_auc": null,
+    "implementation_cost": 150.0,
+    "n_predictions": 300
+  },
+  "serum_creatinine": {
+    "biomarker_id": "serum_creatinine",
+    "biomarker_name": "Serum Creatinine",
+    "biomarker_type": "clinical_standard",
+    "clinical_interpretation": "Standard kidney function marker",
+    "literature_auc": 0.65,
+    "implementation_cost": 25.0,
+    "n_predictions": 300
+  },
+  "ngal": {
+    "biomarker_id": "ngal",
+    "biomarker_name": "Neutrophil Gelatinase-Associated Lipocalin",
+    "biomarker_type": "literature_reference",
+    "clinical_interpretation": "Early kidney injury marker",
+    "literature_auc": 0.7,
+    "implementation_cost": 80.0,
+    "n_predictions": 300
+  },
+  "rifle_criteria": {
+    "biomarker_id": "rifle_criteria",
+    "biomarker_name": "RIFLE Criteria Score",
+    "biomarker_type": "clinical_standard",
+    "clinical_interpretation": "Risk, Injury, Failure, Loss, End-stage classification",
+    "literature_auc": 0.6,
+    "implementation_cost": 0.0,
+    "n_predictions": 300
+  }
+}

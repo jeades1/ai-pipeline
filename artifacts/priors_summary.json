@@ -1,0 +1,13 @@
+{
+  "rows": 3862132,
+  "by_source": {
+    "OpenTargets": 3821736,
+    "HPA": 40324,
+    "PRIDE": 52,
+    "ENCODE": 20
+  },
+  "by_context_type": {
+    "disease": 3821736,
+    "tissue": 40396
+  }
+}

@@ -1,0 +1,199 @@
+site_name: AI Pipeline - Scientific Research Foundation
+site_description: Privacy-preserving federated AI for global health equity and precision medicine
+site_author: AI Pipeline Research Foundation
+site_url: https://jeades1.github.io/ai-pipeline
+
+# Repository
+repo_name: jeades1/ai-pipeline
+repo_url: https://github.com/jeades1/ai-pipeline
+edit_uri: edit/main/docs/
+
+# Configuration
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+    logo: material/dna
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - minify:
+      minify_html: true
+  - table-reader
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+      title: Page contents
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: jeades1
+      repo: ai-pipeline
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Navigation
+nav:
+  - Home:
+    - index.md
+    - capabilities.md
+    - quick-start.md
+  
+  - Scientific Foundation:
+    - scientific/mission.md
+    - scientific/research-gaps.md
+    - scientific/federated-approach.md
+    - scientific/tissue-chip-integration.md
+    - scientific/global-impact.md
+  
+  - Technical Architecture:
+    - technical/overview.md
+    - technical/pipeline-components.md
+    - technical/knowledge-graph.md
+    - technical/federated-learning.md
+    - technical/data-flow.md
+    - technical/code-reference.md
+  
+  - Analysis Reports:
+    - reports/index.md
+    - reports/competitive-analysis.md
+    - reports/pipeline-audits.md
+    - reports/market-research.md
+    - reports/visualization-studies.md
+    - reports/methodology-validation.md
+  
+  - Philanthropist Resources:
+    - philanthropist/overview.md
+    - philanthropist/nonprofit-proposal.md
+    - philanthropist/impact-projections.md
+    - philanthropist/donation-guide.md
+    - philanthropist/recognition.md
+  
+  - Implementation:
+    - implementation/roadmap.md
+    - implementation/next-steps.md
+    - implementation/partnership-strategy.md
+    - implementation/grants.md
+  
+  - Code Reference:
+    - code/index.md
+    - code/core-pipeline.md
+    - code/visualization.md
+    - code/knowledge-graph.md
+    - code/learning-modules.md
+    - code/reports.md
+    - code/tools.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jeades1/ai-pipeline
+    - icon: fontawesome/solid/envelope
+      link: mailto:info@aipipeline-foundation.org
+  version:
+    provider: mike
+    default: stable
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  generator: false
+
+# CSS
+extra_css:
+  - stylesheets/extra.css
+
+# JavaScript
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Copyright
+copyright: |
+  &copy; 2025 AI Pipeline Scientific Research Foundation. 
+  <a href="#__consent">Change cookie settings</a>

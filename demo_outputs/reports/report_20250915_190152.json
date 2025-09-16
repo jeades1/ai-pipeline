@@ -1,0 +1,51 @@
+{
+  "title": "AI Pipeline Report (JSON)",
+  "generated_at": "2025-09-15 19:01:52",
+  "insights": {
+    "key_findings": [
+      "Excellent discriminative performance achieved (AUC = 0.946)",
+      "High specificity achieved - suitable for confirmatory testing"
+    ],
+    "clinical_implications": [
+      "Detected 31 outlier values across biomarkers"
+    ],
+    "recommendations": [
+      "Implement data quality monitoring and validation procedures",
+      "Consider data imputation or outlier handling strategies",
+      "Consider ensemble combination of top-performing methods"
+    ],
+    "quality_alerts": [
+      "Excellent overall data quality (average score: 0.91)"
+    ],
+    "statistical_insights": [
+      "Best performing method: AI Pipeline",
+      "Substantial performance improvement over existing methods (+0.196 AUC)",
+      "2/2 pairwise comparisons are statistically significant"
+    ]
+  },
+  "data_summary": {
+    "total_samples": 200,
+    "biomarker_count": 5,
+    "outcome_types": [
+      "outcome",
+      "severity",
+      "days_to_event"
+    ],
+    "data_quality": "Excellent",
+    "completeness": 1.0
+  },
+  "performance_summary": {
+    "overall_performance": "Excellent",
+    "key_metrics": {
+      "roc_auc": 0.9464703132304816,
+      "accuracy": 0.875,
+      "precision": 0.7846153846153846,
+      "recall": 0.8225806451612904,
+      "f1_score": 0.8031496062992126,
+      "sensitivity": 0.8225806451612904,
+      "specificity": 0.8985507246376812
+    },
+    "benchmark_comparison": "Best method: AI Pipeline"
+  },
+  "custom_sections": {}
+}

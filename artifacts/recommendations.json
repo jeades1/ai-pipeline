@@ -1,0 +1,148 @@
+[
+  {
+    "id": "M_TUBE_SINGLE",
+    "name": "cylindrical-tube \u2014 nan",
+    "targets": [
+      "KIM1",
+      "NGAL"
+    ],
+    "readouts": [
+      "ELISA",
+      "RNA-seq",
+      "Imaging"
+    ],
+    "effector": "nan",
+    "cost": 3,
+    "duration_days": 4,
+    "capabilities": {
+      "vascularization": "none",
+      "geometry": "cylindrical-tube",
+      "protocol": "HydrogelCylinder_v1|PerfusionRecirc"
+    },
+    "voi": 0,
+    "eig": 0.0,
+    "identifiability_gain": 0,
+    "score": -0.15
+  },
+  {
+    "id": "M_TUBE_TUBE_SPACING",
+    "name": "parallel-tubes \u2014 nan",
+    "targets": [
+      "BARRIERINTEGRITY"
+    ],
+    "readouts": [
+      "ELISA",
+      "RNA-seq",
+      "Imaging"
+    ],
+    "effector": "nan",
+    "cost": 3,
+    "duration_days": 4,
+    "capabilities": {
+      "vascularization": "none",
+      "geometry": "parallel-tubes",
+      "protocol": "HydrogelParallel_v1|PerfusionRecirc"
+    },
+    "voi": 0,
+    "eig": 0.0,
+    "identifiability_gain": 0,
+    "score": -0.15
+  },
+  {
+    "id": "M_TUBE_CONCENTRIC",
+    "name": "multi-layer-concentric-tubes \u2014 nan",
+    "targets": [
+      "KIM1",
+      "NGAL"
+    ],
+    "readouts": [
+      "ELISA",
+      "RNA-seq",
+      "Imaging"
+    ],
+    "effector": "nan",
+    "cost": 4,
+    "duration_days": 5,
+    "capabilities": {
+      "vascularization": "none",
+      "geometry": "multi-layer-concentric-tubes",
+      "protocol": "HydrogelConcentric_v1|PerfusionRecirc"
+    },
+    "voi": 0,
+    "eig": 0.0,
+    "identifiability_gain": 0,
+    "score": -0.2
+  },
+  {
+    "id": "M_TUBE_BLOOD_VASC",
+    "name": "cylindrical-tube \u2014 nan",
+    "targets": [
+      "VEGFA"
+    ],
+    "readouts": [
+      "ELISA",
+      "RNA-seq",
+      "Imaging"
+    ],
+    "effector": "nan",
+    "cost": 4,
+    "duration_days": 4,
+    "capabilities": {
+      "vascularization": "blood",
+      "geometry": "cylindrical-tube",
+      "protocol": "HydrogelCylinder_v1|PerfusionRecirc"
+    },
+    "voi": 0,
+    "eig": 0.0,
+    "identifiability_gain": 0,
+    "score": -0.2
+  },
+  {
+    "id": "M_TUBE_LYMPH_VASC",
+    "name": "cylindrical-tube \u2014 nan",
+    "targets": [
+      "VEGFC"
+    ],
+    "readouts": [
+      "ELISA",
+      "RNA-seq",
+      "Imaging"
+    ],
+    "effector": "nan",
+    "cost": 4,
+    "duration_days": 4,
+    "capabilities": {
+      "vascularization": "lymphatic",
+      "geometry": "cylindrical-tube",
+      "protocol": "HydrogelCylinder_v1|PerfusionRecirc"
+    },
+    "voi": 0,
+    "eig": 0.0,
+    "identifiability_gain": 0,
+    "score": -0.2
+  },
+  {
+    "id": "M_SPHEROID_VASC_BED",
+    "name": "spheroid-bed \u2014 nan",
+    "targets": [
+      "IL6"
+    ],
+    "readouts": [
+      "ELISA",
+      "RNA-seq",
+      "Imaging"
+    ],
+    "effector": "nan",
+    "cost": 4,
+    "duration_days": 4,
+    "capabilities": {
+      "vascularization": "blood+lymphatic",
+      "geometry": "spheroid-bed",
+      "protocol": "SpheroidBed_v1|PerfusionRecirc"
+    },
+    "voi": 0,
+    "eig": 0.0,
+    "identifiability_gain": 0,
+    "score": -0.2
+  }
+]

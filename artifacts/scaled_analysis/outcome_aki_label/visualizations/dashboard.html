@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Causal Biomarker Discovery Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #2c3e50; color: white; padding: 20px; border-radius: 5px; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .metrics { display: flex; justify-content: space-around; }
+        .metric { text-align: center; padding: 10px; background-color: #ecf0f1; border-radius: 5px; }
+        .top-biomarkers { background-color: #e8f5e8; }
+        .causal-edges { background-color: #e8f4fd; }
+        img { max-width: 100%; height: auto; margin: 10px 0; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔬 Causal Biomarker Discovery Dashboard</h1>
+        <p>Comprehensive analysis integrating causal discovery with biomarker scoring</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 Summary Metrics</h2>
+        <div class="metrics">
+            <div class="metric">
+                <h3>78</h3>
+                <p>Biomarkers Analyzed</p>
+            </div>
+            <div class="metric">
+                <h3>5709</h3>
+                <p>Causal Relationships</p>
+            </div>
+            <div class="metric">
+                <h3>843</h3>
+                <p>High-Confidence Edges</p>
+            </div>
+            <div class="metric">
+                <h3>14</h3>
+                <p>Strong Evidence Biomarkers</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section top-biomarkers">
+        <h2>🏆 Top Biomarkers</h2>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Biomarker</th>
+                <th>Integrated Score</th>
+                <th>Causal Confidence</th>
+                <th>Evidence Tier</th>
+                <th>P-value</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td><strong>creatinine_slope_24h</strong></td>
+                <td>0.933</td>
+                <td>0.925</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><strong>creatinine_std</strong></td>
+                <td>0.932</td>
+                <td>0.933</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><strong>potassium_std</strong></td>
+                <td>0.920</td>
+                <td>0.930</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><strong>potassium_slope_24h</strong></td>
+                <td>0.918</td>
+                <td>0.928</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><strong>sodium_std</strong></td>
+                <td>0.917</td>
+                <td>0.928</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><strong>sodium_slope_24h</strong></td>
+                <td>0.916</td>
+                <td>0.933</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><strong>chloride_std</strong></td>
+                <td>0.915</td>
+                <td>0.925</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><strong>chloride_slope_24h</strong></td>
+                <td>0.914</td>
+                <td>0.929</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><strong>creatinine_max</strong></td>
+                <td>0.912</td>
+                <td>0.918</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><strong>creatinine_mean</strong></td>
+                <td>0.912</td>
+                <td>0.914</td>
+                <td>2</td>
+                <td>0.00e+00</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="section causal-edges">
+        <h2>🔗 Strong Causal Relationships</h2>
+        <table>
+            <tr>
+                <th>Source</th>
+                <th>Target</th>
+                <th>Strength</th>
+                <th>Confidence</th>
+                <th>Method</th>
+            </tr>
+
+            <tr>
+                <td>creatinine_min</td>
+                <td>creatinine_max</td>
+                <td>0.062</td>
+                <td>0.992</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>creatinine_min</td>
+                <td>creatinine_mean</td>
+                <td>0.036</td>
+                <td>0.996</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>creatinine_min</td>
+                <td>creatinine_std</td>
+                <td>0.013</td>
+                <td>0.987</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>creatinine_min</td>
+                <td>urea_min</td>
+                <td>0.127</td>
+                <td>0.888</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>creatinine_min</td>
+                <td>urea_max</td>
+                <td>0.099</td>
+                <td>0.946</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>creatinine_min</td>
+                <td>urea_mean</td>
+                <td>0.039</td>
+                <td>0.926</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>creatinine_min</td>
+                <td>urea_std</td>
+                <td>0.027</td>
+                <td>0.847</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>creatinine_min</td>
+                <td>urea_slope_24h</td>
+                <td>0.265</td>
+                <td>0.978</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>creatinine_min</td>
+                <td>potassium_mean</td>
+                <td>0.215</td>
+                <td>0.765</td>
+                <td>NOTEARS</td>
+            </tr>
+            <tr>
+                <td>creatinine_min</td>
+                <td>potassium_std</td>
+                <td>0.128</td>
+                <td>0.983</td>
+                <td>NOTEARS</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>🎨 Visualizations</h2>
+        
+        <h3>Causal Network Graph</h3>
+        <img src="causal_graph.png" alt="Causal Graph">
+        
+        <h3>High-Confidence Relationships</h3>
+        <img src="high_confidence_graph.png" alt="High Confidence Graph">
+        
+        <h3>Biomarker Scoring Analysis</h3>
+        <img src="biomarker_scores.png" alt="Biomarker Scores">
+    </div>
+    
+    <div class="section">
+        <h2>🔬 Methodology</h2>
+        <p><strong>Causal Discovery Methods:</strong></p>
+        <ul>
+            <li><strong>NOTEARS:</strong> Neural-oriented causal discovery for observational data</li>
+            <li><strong>PC-MCI:</strong> Temporal causal discovery with conditional independence testing</li>
+            <li><strong>Mendelian Randomization:</strong> Genetic instrument-based causal inference</li>
+        </ul>
+        
+        <p><strong>Integrated Scoring Components:</strong></p>
+        <ul>
+            <li>Causal Evidence (30%): Confidence in causal relationships</li>
+            <li>Statistical Significance (25%): P-value based scoring</li>
+            <li>Effect Size (15%): Magnitude of biomarker association</li>
+            <li>Pathway Centrality (10%): Position in causal network</li>
+            <li>Clinical Actionability (5%): Therapeutic potential</li>
+            <li>Other factors (15%): Association strength, temporal stability</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "alert_id": "ALERT_20250915_190152",
+  "timestamp": "2025-09-15T19:01:52.830584",
+  "severity": "high",
+  "alert_type": "data_quality",
+  "message": "Increased missing data detected",
+  "affected_metrics": {
+    "missing_rate": 0.15,
+    "threshold": 0.1
+  },
+  "recommended_actions": [
+    "Check data pipeline",
+    "Review collection procedures"
+  ],
+  "threshold_violations": [
+    "Missing data rate > 10%"
+  ]
+}

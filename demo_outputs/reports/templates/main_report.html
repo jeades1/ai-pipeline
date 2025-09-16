@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .header { background-color: #f8f9fa; padding: 20px; border-radius: 5px; }
+        .section { margin: 30px 0; }
+        .insight { background-color: #e7f3ff; padding: 10px; margin: 10px 0; border-radius: 3px; }
+        .metric { display: inline-block; margin: 10px; padding: 15px; background-color: #f1f1f1; border-radius: 5px; }
+        .visualization { margin: 20px 0; text-align: center; }
+        .alert { background-color: #fff3cd; border: 1px solid #ffeaa7; padding: 10px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{{ title }}</h1>
+        <p>Generated on: {{ generated_at }}</p>
+    </div>
+    
+    <div class="section">
+        <h2>Executive Summary</h2>
+        <div class="metric">
+            <strong>Total Samples:</strong> {{ data_summary.total_samples }}
+        </div>
+        <div class="metric">
+            <strong>Biomarkers:</strong> {{ data_summary.biomarker_count }}
+        </div>
+        <div class="metric">
+            <strong>Data Quality:</strong> {{ data_summary.data_quality }}
+        </div>
+        <div class="metric">
+            <strong>Performance:</strong> {{ performance_summary.overall_performance }}
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Key Findings</h2>
+        {% for finding in insights.key_findings %}
+        <div class="insight">{{ finding }}</div>
+        {% endfor %}
+    </div>
+    
+    <div class="section">
+        <h2>Clinical Implications</h2>
+        {% for implication in insights.clinical_implications %}
+        <div class="insight">{{ implication }}</div>
+        {% endfor %}
+    </div>
+    
+    <div class="section">
+        <h2>Recommendations</h2>
+        {% for recommendation in insights.recommendations %}
+        <div class="insight">{{ recommendation }}</div>
+        {% endfor %}
+    </div>
+    
+    {% if insights.quality_alerts %}
+    <div class="section">
+        <h2>Quality Alerts</h2>
+        {% for alert in insights.quality_alerts %}
+        <div class="alert">{{ alert }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    
+    <div class="section">
+        <h2>Performance Visualizations</h2>
+        {% for name, figure_html in html_figures.items() %}
+        <div class="visualization">
+            <h3>{{ name.replace('_', ' ').title() }}</h3>
+            {{ figure_html|safe }}
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="section">
+        <h2>Statistical Insights</h2>
+        {% for insight in insights.statistical_insights %}
+        <div class="insight">{{ insight }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+        

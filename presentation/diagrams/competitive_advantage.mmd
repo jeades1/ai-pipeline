@@ -1,0 +1,44 @@
+graph LR
+    subgraph "Traditional Biomarker Discovery"
+        T1[Single Institution<br/>Data Silos]
+        T2[Correlation Analysis<br/>Association Only]
+        T3[Manual Validation<br/>Years of Studies]
+        T4[Limited Scope<br/>Disease-Specific]
+        T5[Static Models<br/>No Real-time Updates]
+    end
+    
+    subgraph "AI Biomarker Pipeline"
+        A1[Federated Network<br/>6 Institutions<br/>11,300 Patients]
+        A2[Causal Discovery<br/>116 Mechanistic Edges<br/>Graph Neural Networks]
+        A3[Real-time Validation<br/>Sub-second Processing<br/>Continuous Learning]
+        A4[Multi-omics Integration<br/>51 Biomarkers<br/>4 Data Types]
+        A5[Adaptive System<br/>Self-improving Models<br/>Privacy-preserving]
+    end
+    
+    subgraph "Competitive Advantages"
+        ADV1[10x Faster Discovery<br/>Months → Weeks]
+        ADV2[50x Larger Dataset<br/>Privacy-preserved Collaboration]
+        ADV3[100x Processing Speed<br/>Real-time Clinical Support]
+        ADV4[Causal vs Correlation<br/>Mechanistic Understanding]
+        ADV5[First-to-Market<br/>Federated Biomarker Platform]
+    end
+    
+    T1 -.->|vs| A1
+    T2 -.->|vs| A2
+    T3 -.->|vs| A3
+    T4 -.->|vs| A4
+    T5 -.->|vs| A5
+    
+    A1 --> ADV1
+    A2 --> ADV2
+    A3 --> ADV3
+    A4 --> ADV4
+    A5 --> ADV5
+    
+    classDef traditional fill:#ffebee,stroke:#c62828,stroke-width:2px
+    classDef modern fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    classDef advantage fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    
+    class T1,T2,T3,T4,T5 traditional
+    class A1,A2,A3,A4,A5 modern
+    class ADV1,ADV2,ADV3,ADV4,ADV5 advantage

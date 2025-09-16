@@ -1,0 +1,30 @@
+{
+  "novel_multimodal_benchmark_20250915_165923": {
+    "report_id": "novel_multimodal_benchmark_20250915_165923",
+    "novel_biomarker_id": "novel_multimodal",
+    "overall_ranking": {
+      "novel_multimodal": 1,
+      "serum_creatinine": 2,
+      "ngal": 3,
+      "rifle_criteria": 4
+    },
+    "clinical_utility_scores": {
+      "novel_multimodal": 0.5520287576824398,
+      "serum_creatinine": 0.49958529101251203,
+      "ngal": 0.4156819302800328,
+      "rifle_criteria": 0.31941069874931394
+    },
+    "cost_effectiveness": {
+      "novel_multimodal": 0.005061605061605062,
+      "serum_creatinine": 0.028853252011146746,
+      "ngal": 0.008146458804353541,
+      "rifle_criteria": 0.569377990430622
+    },
+    "recommendations": [
+      "Insufficient evidence for clinical adoption",
+      "Consider alternative biomarker strategies",
+      "Highest clinical utility among tested biomarkers"
+    ],
+    "generated_date": "2025-09-15T16:59:23.583374"
+  }
+}

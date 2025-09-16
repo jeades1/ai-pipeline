@@ -1,0 +1,72 @@
+{
+  "analysis_date": "2025-09-14T00:49:28.521542",
+  "data_sources": {
+    "clinical_data": "mock_data",
+    "tubular_modules": "modeling/modules/tubular_modules_v1.json",
+    "subjects": 98,
+    "biomarkers": 13,
+    "outcome": "gene_IL18"
+  },
+  "top_biomarkers": [
+    {
+      "name": "module_collecting_duct",
+      "integrated_score": 0.5815898703090482,
+      "causal_confidence": 0.0,
+      "evidence_tier": 4
+    },
+    {
+      "name": "module_proximal_tubule",
+      "integrated_score": 0.3793046363961134,
+      "causal_confidence": 0.0,
+      "evidence_tier": 4
+    },
+    {
+      "name": "urea_mg_dL_min",
+      "integrated_score": 0.35,
+      "causal_confidence": 0.0,
+      "evidence_tier": 5
+    },
+    {
+      "name": "urea_mg_dL_max",
+      "integrated_score": 0.35,
+      "causal_confidence": 0.0,
+      "evidence_tier": 5
+    },
+    {
+      "name": "urea_mg_dL_mean",
+      "integrated_score": 0.35,
+      "causal_confidence": 0.0,
+      "evidence_tier": 5
+    },
+    {
+      "name": "gene_HAVCR1",
+      "integrated_score": 0.34325582552213985,
+      "causal_confidence": 0.0,
+      "evidence_tier": 5
+    },
+    {
+      "name": "creatinine_mg_dL_max",
+      "integrated_score": 0.340508453243443,
+      "causal_confidence": 0.0,
+      "evidence_tier": 5
+    },
+    {
+      "name": "creatinine_mg_dL_min",
+      "integrated_score": 0.31990510963585406,
+      "causal_confidence": 0.0,
+      "evidence_tier": 5
+    },
+    {
+      "name": "module_repair",
+      "integrated_score": 0.3149972831377519,
+      "causal_confidence": 0.0,
+      "evidence_tier": 5
+    },
+    {
+      "name": "gene_LCN2",
+      "integrated_score": 0.31432015777032735,
+      "causal_confidence": 0.0,
+      "evidence_tier": 5
+    }
+  ]
+}

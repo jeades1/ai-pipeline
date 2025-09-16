@@ -1,0 +1,40 @@
+# Large data files
+data/external/
+*.h5ad
+*.gct
+*.gctx
+*.gz
+*.zip
+*.CEL
+*.parquet
+
+# Model files
+*.joblib
+*.pkl
+*.model
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+
+# Compiled files
+__pycache__/
+*.py[cod]
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Coverage reports
+htmlcov/
+
+# Build files
+site/

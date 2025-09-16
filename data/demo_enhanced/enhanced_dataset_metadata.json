@@ -1,0 +1,42 @@
+{
+  "dataset_info": {
+    "name": "Enhanced AI Pipeline Demo Dataset",
+    "version": "2.0",
+    "created_date": "2025-09-14T22:33:39.015157",
+    "total_patients": 5000,
+    "institutions": 6,
+    "biomarkers_traditional": 16,
+    "biomarkers_federated": 10
+  },
+  "clinical_realism": {
+    "mean_age": 65.9,
+    "male_percentage": 57.6,
+    "mean_apache_ii": 18.1,
+    "diabetes_rate": 28.3,
+    "ckd_rate": 28.5,
+    "hypertension_rate": 55.7
+  },
+  "outcome_rates": {
+    "traditional_aki_rate": 31.8,
+    "federated_aki_rate": 29.9,
+    "traditional_rrt_rate": 7.0,
+    "federated_rrt_rate": 7.5,
+    "traditional_mortality": 45.8,
+    "federated_mortality": 44.5
+  },
+  "federated_advantages": {
+    "aki_improvement_pct": 6.1,
+    "rrt_improvement_pct": -7.7,
+    "mortality_improvement_pct": 2.8,
+    "exclusive_biomarkers": 10,
+    "participating_institutions": 6
+  },
+  "quality_improvements": [
+    "APACHE II scores calibrated to literature (mean 16-18)",
+    "Inter-biomarker correlations implemented",
+    "Institution-specific patient characteristics",
+    "Diagnosis-stratified risk modeling",
+    "Enhanced federated learning advantages",
+    "Realistic clinical outcome rates"
+  ]
+}

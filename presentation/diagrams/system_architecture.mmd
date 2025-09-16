@@ -1,0 +1,75 @@
+graph TB
+    subgraph "Multi-Omics Data Sources"
+        P[Proteomics<br/>15 biomarkers]
+        M[Metabolomics<br/>16 biomarkers] 
+        G[Genomics<br/>11 biomarkers]
+        C[Clinical<br/>9 biomarkers]
+    end
+    
+    subgraph "AI Discovery Engine"
+        ML[Machine Learning<br/>• Random Forest<br/>• XGBoost<br/>• Neural Networks]
+        GNN[Graph Neural Networks<br/>• GCN Architecture<br/>• 64-dim Embeddings<br/>• Causal Relationships]
+        CD[Causal Discovery<br/>• 116 Causal Edges<br/>• Propensity Matching<br/>• Mechanism Validation]
+    end
+    
+    subgraph "Federated Learning Network"
+        S1[Medical Center 1<br/>2,100 patients]
+        S2[Medical Center 2<br/>1,800 patients]
+        S3[Medical Center 3<br/>2,200 patients]
+        S4[Medical Center 4<br/>1,900 patients]
+        S5[Medical Center 5<br/>1,700 patients]
+        S6[Medical Center 6<br/>1,600 patients]
+        FL[Federated Learning<br/>• Differential Privacy<br/>• Secure Aggregation<br/>• Consensus Validation]
+    end
+    
+    subgraph "Clinical Decision Support"
+        API[Real-time API<br/>Sub-second Processing]
+        RS[Risk Stratification<br/>4 Clinical Levels]
+        TR[Treatment Recommendations<br/>Evidence-based Therapy]
+        BM[Biomarker Scoring<br/>Personalized Profiles]
+    end
+    
+    subgraph "Market Applications"
+        A[Therapy Response Engine<br/>$100K-$500K per client]
+        B[Biomarker Discovery<br/>Pharmaceutical partnerships]
+        C2[Trial Enrichment<br/>$1M-$5M per trial]
+        D[Safety Monitoring<br/>$1-$5 per patient/month]
+    end
+    
+    P --> ML
+    M --> ML
+    G --> GNN
+    C --> CD
+    
+    ML --> FL
+    GNN --> FL
+    CD --> FL
+    
+    S1 --> FL
+    S2 --> FL
+    S3 --> FL
+    S4 --> FL
+    S5 --> FL
+    S6 --> FL
+    
+    FL --> API
+    API --> RS
+    API --> TR
+    API --> BM
+    
+    RS --> A
+    TR --> B
+    BM --> C2
+    API --> D
+    
+    classDef dataSource fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef aiEngine fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef federated fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+    classDef clinical fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef market fill:#fce4ec,stroke:#880e4f,stroke-width:2px
+    
+    class P,M,G,C dataSource
+    class ML,GNN,CD aiEngine
+    class S1,S2,S3,S4,S5,S6,FL federated
+    class API,RS,TR,BM clinical
+    class A,B,C2,D market

@@ -1,0 +1,138 @@
+[
+  {
+    "name": "CRP",
+    "layer": "proteomic",
+    "type": "secreted",
+    "assoc_score": 0.27507932791778417,
+    "effect_size": 0.5810462268938208,
+    "p_value": 1.3096771394049966e-06,
+    "causal_strength": 0.10402964941397973,
+    "causal_confidence": 1.0,
+    "causal_evidence_level": 5,
+    "causal_mechanism": "multi_method_consensus",
+    "pathway_centrality": 0.9666666666666667,
+    "upstream_biomarkers": [
+      "ENZYME_ACTIVITY",
+      "METABOLITE_X",
+      "RANDOM_MARKER",
+      "disease_outcome"
+    ],
+    "downstream_targets": [
+      "ENZYME_ACTIVITY",
+      "METABOLITE_X",
+      "RANDOM_MARKER",
+      "disease_outcome"
+    ],
+    "clinical_actionability": 0.7,
+    "temporal_stability": 0.8,
+    "integrated_score": 0.9571555647367159,
+    "evidence_tier": 1,
+    "discovery_methods": [
+      "Integrated(NOTEARS, Mendelian Randomization)"
+    ],
+    "datasets": [
+      "biomarker_dataset",
+      "clinical_dataset"
+    ]
+  },
+  {
+    "name": "METABOLITE_X",
+    "layer": "metabolomic",
+    "type": "metabolite",
+    "assoc_score": 0.4058677417062852,
+    "effect_size": 0.9009467282584678,
+    "p_value": 2.5202062658991053e-13,
+    "causal_strength": 0.0144588315168924,
+    "causal_confidence": 0.8780717201295114,
+    "causal_evidence_level": 3,
+    "causal_mechanism": "",
+    "pathway_centrality": 0.7416666666666666,
+    "upstream_biomarkers": [
+      "ENZYME_ACTIVITY",
+      "CRP",
+      "disease_outcome"
+    ],
+    "downstream_targets": [
+      "ENZYME_ACTIVITY",
+      "CRP",
+      "RANDOM_MARKER",
+      "disease_outcome"
+    ],
+    "clinical_actionability": 0.5,
+    "temporal_stability": 0.8,
+    "integrated_score": 0.9532144184149461,
+    "evidence_tier": 2,
+    "discovery_methods": [
+      "NOTEARS"
+    ],
+    "datasets": [
+      "biomarker_dataset",
+      "clinical_dataset"
+    ]
+  },
+  {
+    "name": "ENZYME_ACTIVITY",
+    "layer": "proteomic",
+    "type": "enzymatic",
+    "assoc_score": 0.314241577842598,
+    "effect_size": 0.6756129360315912,
+    "p_value": 2.6728816937549027e-08,
+    "causal_strength": 0.011515365218100825,
+    "causal_confidence": 0.8562097327368563,
+    "causal_evidence_level": 3,
+    "causal_mechanism": "",
+    "pathway_centrality": 0.6,
+    "upstream_biomarkers": [
+      "METABOLITE_X",
+      "CRP",
+      "disease_outcome"
+    ],
+    "downstream_targets": [
+      "METABOLITE_X",
+      "CRP",
+      "disease_outcome"
+    ],
+    "clinical_actionability": 0.5,
+    "temporal_stability": 0.8,
+    "integrated_score": 0.8268808909203095,
+    "evidence_tier": 2,
+    "discovery_methods": [
+      "NOTEARS"
+    ],
+    "datasets": [
+      "biomarker_dataset",
+      "clinical_dataset"
+    ]
+  },
+  {
+    "name": "RANDOM_MARKER",
+    "layer": "proteomic",
+    "type": "secreted",
+    "assoc_score": 0.030885869642251883,
+    "effect_size": 0.062419039025900944,
+    "p_value": 0.5941356514364706,
+    "causal_strength": 0.11937136631607165,
+    "causal_confidence": 0.28793624076568813,
+    "causal_evidence_level": 3,
+    "causal_mechanism": "",
+    "pathway_centrality": 0.3,
+    "upstream_biomarkers": [
+      "METABOLITE_X",
+      "CRP"
+    ],
+    "downstream_targets": [
+      "CRP"
+    ],
+    "clinical_actionability": 0.7,
+    "temporal_stability": 0.8,
+    "integrated_score": 0.38647711930527456,
+    "evidence_tier": 5,
+    "discovery_methods": [
+      "NOTEARS"
+    ],
+    "datasets": [
+      "biomarker_dataset",
+      "clinical_dataset"
+    ]
+  }
+]

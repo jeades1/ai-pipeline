@@ -1,0 +1,9 @@
+{
+  "default": "omics",
+  "patterns": [
+    {"match": "GSE|RNA|DEG|TRANSCRIPT", "type": "omics"},
+    {"match": "PRIDE|PROTEOM|MS|SECRET", "type": "secretome"},
+    {"match": "IMAGE|PHENOTYP|CELLPAINT|HCS", "type": "imaging"},
+    {"match": "TEER|FUNCTION|ELECTRO|ASSAY", "type": "functional"}
+  ]
+}

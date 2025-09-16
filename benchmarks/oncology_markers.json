@@ -1,0 +1,18 @@
+{
+  "biomarkers": [
+    {"name": "BRCA1", "evidence": "high", "type": "tumor_suppressor"},
+    {"name": "BRCA2", "evidence": "high", "type": "tumor_suppressor"},
+    {"name": "TP53", "evidence": "high", "type": "tumor_suppressor"},
+    {"name": "EGFR", "evidence": "high", "type": "oncogene"},
+    {"name": "HER2", "evidence": "high", "type": "oncogene"},
+    {"name": "KRAS", "evidence": "high", "type": "oncogene"},
+    {"name": "PIK3CA", "evidence": "medium", "type": "oncogene"},
+    {"name": "APC", "evidence": "high", "type": "tumor_suppressor"},
+    {"name": "MYC", "evidence": "high", "type": "oncogene"},
+    {"name": "RB1", "evidence": "high", "type": "tumor_suppressor"}
+  ],
+  "aliases": {
+    "ERBB2": ["HER2"],
+    "ERBB1": ["EGFR"]
+  }
+}

@@ -1,0 +1,5 @@
+biomarker_id,biomarker_name,biomarker_type,n_predictions,auc,accuracy,precision,recall,f1_score,literature_auc,implementation_cost,clinical_interpretation
+novel_multimodal,Novel Multi-modal AKI Predictor,novel,300,0.7592407592407593,0.67,0.47058823529411764,0.7032967032967034,0.5638766519823789,,150.0,"Integrates molecular, functional, and clinical data"
+serum_creatinine,Serum Creatinine,clinical_standard,300,0.7213313002786687,0.6433333333333333,0.44366197183098594,0.6923076923076923,0.5407725321888412,0.65,25.0,Standard kidney function marker
+ngal,Neutrophil Gelatinase-Associated Lipocalin,literature_reference,300,0.6517167043482832,0.5866666666666667,0.381294964028777,0.5824175824175825,0.4608695652173913,0.7,80.0,Early kidney injury marker
+rifle_criteria,RIFLE Criteria Score,clinical_standard,300,0.569377990430622,0.55,0.35714285714285715,0.6043956043956044,0.4489795918367347,0.6,0.0,"Risk, Injury, Failure, Loss, End-stage classification"

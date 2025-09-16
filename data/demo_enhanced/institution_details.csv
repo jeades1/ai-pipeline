@@ -1,0 +1,7 @@
+name,city,patients,specialty,privacy_tier,academic_status,icu_beds,apache_bias,age_bias
+Mayo Clinic,Rochester,900,Comprehensive,High,Academic,120,2.0,0
+Johns Hopkins,Baltimore,1100,Research,High,Academic,150,1.5,-2
+Cleveland Clinic,Cleveland,800,Cardiac,Medium,Academic,100,3.0,3
+UCSF Medical Center,San Francisco,700,Cancer,High,Academic,90,2.5,5
+Stanford Medicine,Palo Alto,600,Innovation,High,Academic,80,1.0,-1
+Mass General Brigham,Boston,900,General,Medium,Academic,110,1.8,1

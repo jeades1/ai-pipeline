@@ -1,0 +1,732 @@
+{
+  "cycle_results": [
+    {
+      "cycle": 1,
+      "validation_rate": 0.0,
+      "model_confidence": 0.29999999999999993,
+      "n_experiments": 5
+    },
+    {
+      "cycle": 2,
+      "validation_rate": 0.0,
+      "model_confidence": 0.2,
+      "n_experiments": 5
+    },
+    {
+      "cycle": 3,
+      "validation_rate": 0.0,
+      "model_confidence": 0.2,
+      "n_experiments": 5
+    }
+  ],
+  "total_experiments": 15,
+  "overall_validation_rate": 0.0,
+  "final_model_confidence": 0.2,
+  "experiment_log": [
+    {
+      "cycle": 1,
+      "experiment": {
+        "experiment_id": "EXP_1_01",
+        "biomarker": "LPL",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_2",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_001",
+        "biomarker": "LPL",
+        "predicted_direction": "up",
+        "predicted_magnitude": 1.249080237694725,
+        "confidence": 0.7753571532049581,
+        "rationale": "KG pathway analysis suggests LPL responds to inflammatory_cytokines",
+        "priority_score": 0.8473084181184333
+      },
+      "result": {
+        "experiment_id": "EXP_1_01",
+        "biomarker_level": 0.9428619834245858,
+        "viability": 0.8737958581126448,
+        "barrier_function": 677.5082167486967,
+        "inflammatory_markers": {
+          "TNF_alpha": 0.7549197969202907,
+          "IL1_beta": 0.5446027374615571,
+          "IL6": 1.133940724797949
+        },
+        "confidence_score": 0.3,
+        "p_value": 0.6148538589793427
+      },
+      "validation": {
+        "validated": false,
+        "model_confidence": 0.38,
+        "evidence": {
+          "hypothesis_id": "H_001",
+          "biomarker": "LPL",
+          "validated": false,
+          "predicted_fc": 1.249080237694725,
+          "observed_fc": 0.9428619834245858,
+          "p_value": 0.6148538589793427,
+          "confidence_score": 0.3
+        }
+      }
+    },
+    {
+      "cycle": 1,
+      "experiment": {
+        "experiment_id": "EXP_1_02",
+        "biomarker": "APOB",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_4",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_003",
+        "biomarker": "APOB",
+        "predicted_direction": "up",
+        "predicted_magnitude": 0.6161672243363989,
+        "confidence": 0.7330880728874676,
+        "rationale": "KG pathway analysis suggests APOB responds to oxidative_stress",
+        "priority_score": 0.7627385565269965
+      },
+      "result": {
+        "experiment_id": "EXP_1_02",
+        "biomarker_level": 1.2737473933471388,
+        "viability": 0.9498860233456304,
+        "barrier_function": 795.5617275474817,
+        "inflammatory_markers": {
+          "TNF_alpha": 1.0570281038545524,
+          "IL1_beta": 0.5012771453813808,
+          "IL6": 1.1621586806653235
+        },
+        "confidence_score": 0.8,
+        "p_value": 0.30392975714358444
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.36,
+        "evidence": {
+          "hypothesis_id": "H_003",
+          "biomarker": "APOB",
+          "validated": "False",
+          "predicted_fc": 0.6161672243363989,
+          "observed_fc": 1.2737473933471388,
+          "p_value": 0.30392975714358444,
+          "confidence_score": 0.8
+        }
+      }
+    },
+    {
+      "cycle": 1,
+      "experiment": {
+        "experiment_id": "EXP_1_03",
+        "biomarker": "PCSK9",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_4",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_005",
+        "biomarker": "PCSK9",
+        "predicted_direction": "up",
+        "predicted_magnitude": 2.7486639612006325,
+        "confidence": 0.7424678221356552,
+        "rationale": "KG pathway analysis suggests PCSK9 responds to inflammatory_cytokines",
+        "priority_score": 0.6479739326733814
+      },
+      "result": {
+        "experiment_id": "EXP_1_03",
+        "biomarker_level": 1.7721484798866365,
+        "viability": 0.8933175598078757,
+        "barrier_function": 849.4472137679874,
+        "inflammatory_markers": {
+          "TNF_alpha": 0.8916111009834498,
+          "IL1_beta": 1.2631509433102883,
+          "IL6": 0.6028736465615796
+        },
+        "confidence_score": 0.7,
+        "p_value": 0.05714442518925498
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.33999999999999997,
+        "evidence": {
+          "hypothesis_id": "H_005",
+          "biomarker": "PCSK9",
+          "validated": "False",
+          "predicted_fc": 2.7486639612006325,
+          "observed_fc": 1.7721484798866365,
+          "p_value": 0.05714442518925498,
+          "confidence_score": 0.7
+        }
+      }
+    },
+    {
+      "cycle": 1,
+      "experiment": {
+        "experiment_id": "EXP_1_04",
+        "biomarker": "LPL",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_9",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_004",
+        "biomarker": "LPL",
+        "predicted_direction": "down",
+        "predicted_magnitude": 1.916145155592091,
+        "confidence": 0.3102922471479012,
+        "rationale": "KG pathway analysis suggests LPL responds to inflammatory_cytokines",
+        "priority_score": 0.3686160007416145
+      },
+      "result": {
+        "experiment_id": "EXP_1_04",
+        "biomarker_level": 1.109199226435767,
+        "viability": 0.8535906975550785,
+        "barrier_function": 869.6861235869123,
+        "inflammatory_markers": {
+          "TNF_alpha": 1.4466250474660822,
+          "IL1_beta": 1.1082929721972357,
+          "IL6": 0.9547943395443348
+        },
+        "confidence_score": 0.3,
+        "p_value": 0.6120408127066865
+      },
+      "validation": {
+        "validated": false,
+        "model_confidence": 0.31999999999999995,
+        "evidence": {
+          "hypothesis_id": "H_004",
+          "biomarker": "LPL",
+          "validated": false,
+          "predicted_fc": 0.5218811304986959,
+          "observed_fc": 1.109199226435767,
+          "p_value": 0.6120408127066865,
+          "confidence_score": 0.3
+        }
+      }
+    },
+    {
+      "cycle": 1,
+      "experiment": {
+        "experiment_id": "EXP_1_05",
+        "biomarker": "LPL",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_10",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_002",
+        "biomarker": "LPL",
+        "predicted_direction": "up",
+        "predicted_magnitude": 1.6973169683940732,
+        "confidence": 0.37800932022121825,
+        "rationale": "KG pathway analysis suggests LPL responds to statin_treatment",
+        "priority_score": 0.3259944092131838
+      },
+      "result": {
+        "experiment_id": "EXP_1_05",
+        "biomarker_level": 0.9698896304410711,
+        "viability": 0.9586850208416842,
+        "barrier_function": 796.185833833704,
+        "inflammatory_markers": {
+          "TNF_alpha": 0.5100028073451038,
+          "IL1_beta": 0.5895741633971725,
+          "IL6": 0.6362136006982155
+        },
+        "confidence_score": 0.3,
+        "p_value": 0.5332063738136892
+      },
+      "validation": {
+        "validated": false,
+        "model_confidence": 0.29999999999999993,
+        "evidence": {
+          "hypothesis_id": "H_002",
+          "biomarker": "LPL",
+          "validated": false,
+          "predicted_fc": 1.6973169683940732,
+          "observed_fc": 0.9698896304410711,
+          "p_value": 0.5332063738136892,
+          "confidence_score": 0.3
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "experiment": {
+        "experiment_id": "EXP_2_01",
+        "biomarker": "APOB",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_2",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_005",
+        "biomarker": "APOB",
+        "predicted_direction": "down",
+        "predicted_magnitude": 0.7317381190502594,
+        "confidence": 0.7315517129377967,
+        "rationale": "KG pathway analysis suggests APOB responds to oxidative_stress",
+        "priority_score": 0.7676312952908855
+      },
+      "result": {
+        "experiment_id": "EXP_2_01",
+        "biomarker_level": 1.598241418394153,
+        "viability": 0.9878120014285412,
+        "barrier_function": 746.2170123484518,
+        "inflammatory_markers": {
+          "TNF_alpha": 0.9628074141268743,
+          "IL1_beta": 1.7927990619156595,
+          "IL6": 1.3747036567936615
+        },
+        "confidence_score": 0.8,
+        "p_value": 0.0077268615620121935
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.2799999999999999,
+        "evidence": {
+          "hypothesis_id": "H_005",
+          "biomarker": "APOB",
+          "validated": "False",
+          "predicted_fc": 1.3666091378400842,
+          "observed_fc": 1.598241418394153,
+          "p_value": 0.0077268615620121935,
+          "confidence_score": 0.8
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "experiment": {
+        "experiment_id": "EXP_2_02",
+        "biomarker": "HMGCR",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_2",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_004",
+        "biomarker": "HMGCR",
+        "predicted_direction": "down",
+        "predicted_magnitude": 0.4313811040057837,
+        "confidence": 0.8111066977601136,
+        "rationale": "KG pathway analysis suggests HMGCR responds to statin_treatment",
+        "priority_score": 0.7651869395439781
+      },
+      "result": {
+        "experiment_id": "EXP_2_02",
+        "biomarker_level": 1.663097835616457,
+        "viability": 0.9243523534119086,
+        "barrier_function": 820.0992649534132,
+        "inflammatory_markers": {
+          "TNF_alpha": 1.0469491760627798,
+          "IL1_beta": 0.3034491133021088,
+          "IL6": 0.915881073523393
+        },
+        "confidence_score": 0.75,
+        "p_value": 0.022165663701598965
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.2599999999999999,
+        "evidence": {
+          "hypothesis_id": "H_004",
+          "biomarker": "HMGCR",
+          "validated": "False",
+          "predicted_fc": 2.3181358448806617,
+          "observed_fc": 1.663097835616457,
+          "p_value": 0.022165663701598965,
+          "confidence_score": 0.75
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "experiment": {
+        "experiment_id": "EXP_2_03",
+        "biomarker": "PCSK9",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_7",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_003",
+        "biomarker": "PCSK9",
+        "predicted_direction": "down",
+        "predicted_magnitude": 2.1309228569096685,
+        "confidence": 0.6534286719238085,
+        "rationale": "KG pathway analysis suggests PCSK9 responds to oxidative_stress",
+        "priority_score": 0.7132846117934304
+      },
+      "result": {
+        "experiment_id": "EXP_2_03",
+        "biomarker_level": 2.393248772282605,
+        "viability": 0.8949121478207732,
+        "barrier_function": 900.1448331524805,
+        "inflammatory_markers": {
+          "TNF_alpha": 1.7844198108650189,
+          "IL1_beta": 1.166806024230016,
+          "IL6": 1.1340611843975565
+        },
+        "confidence_score": 0.7,
+        "p_value": 0.0223569561864984
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.2399999999999999,
+        "evidence": {
+          "hypothesis_id": "H_003",
+          "biomarker": "PCSK9",
+          "validated": "False",
+          "predicted_fc": 0.4692802448279294,
+          "observed_fc": 2.393248772282605,
+          "p_value": 0.0223569561864984,
+          "confidence_score": 0.7
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "experiment": {
+        "experiment_id": "EXP_2_04",
+        "biomarker": "PCSK9",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_2",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_001",
+        "biomarker": "PCSK9",
+        "predicted_direction": "down",
+        "predicted_magnitude": 2.1043939615080793,
+        "confidence": 0.3372753218398854,
+        "rationale": "KG pathway analysis suggests PCSK9 responds to oxidative_stress",
+        "priority_score": 0.40296130113651557
+      },
+      "result": {
+        "experiment_id": "EXP_2_04",
+        "biomarker_level": 3.0513123792666432,
+        "viability": 0.9003945923433921,
+        "barrier_function": 703.6485051867882,
+        "inflammatory_markers": {
+          "TNF_alpha": 1.1595826298635443,
+          "IL1_beta": 1.1695664952932154,
+          "IL6": 1.0020474758789946
+        },
+        "confidence_score": 0.7,
+        "p_value": 0.13916376706985653
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.21999999999999992,
+        "evidence": {
+          "hypothesis_id": "H_001",
+          "biomarker": "PCSK9",
+          "validated": "False",
+          "predicted_fc": 0.4751961934367871,
+          "observed_fc": 3.0513123792666432,
+          "p_value": 0.13916376706985653,
+          "confidence_score": 0.7
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "experiment": {
+        "experiment_id": "EXP_2_05",
+        "biomarker": "APOB",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_6",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_002",
+        "biomarker": "APOB",
+        "predicted_direction": "down",
+        "predicted_magnitude": 2.044489538593315,
+        "confidence": 0.3993578407670862,
+        "rationale": "KG pathway analysis suggests APOB responds to pcsk9_inhibitor",
+        "priority_score": 0.3203683929220469
+      },
+      "result": {
+        "experiment_id": "EXP_2_05",
+        "biomarker_level": 1.4833743719690806,
+        "viability": 0.8798861365389191,
+        "barrier_function": 871.4938830094756,
+        "inflammatory_markers": {
+          "TNF_alpha": 0.3637976521516062,
+          "IL1_beta": 0.5678862836873909,
+          "IL6": 1.7534468782865364
+        },
+        "confidence_score": 0.8,
+        "p_value": 0.01976757464488661
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.2,
+        "evidence": {
+          "hypothesis_id": "H_002",
+          "biomarker": "APOB",
+          "validated": "False",
+          "predicted_fc": 0.48911964630938504,
+          "observed_fc": 1.4833743719690806,
+          "p_value": 0.01976757464488661,
+          "confidence_score": 0.8
+        }
+      }
+    },
+    {
+      "cycle": 3,
+      "experiment": {
+        "experiment_id": "EXP_3_01",
+        "biomarker": "HMGCR",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_4",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_001",
+        "biomarker": "HMGCR",
+        "predicted_direction": "down",
+        "predicted_magnitude": 0.4915346248162882,
+        "confidence": 0.9443670942413166,
+        "rationale": "KG pathway analysis suggests HMGCR responds to statin_treatment",
+        "priority_score": 0.850603641429056
+      },
+      "result": {
+        "experiment_id": "EXP_3_01",
+        "biomarker_level": 1.5563861012969207,
+        "viability": 0.9902602652939094,
+        "barrier_function": 989.2325753491903,
+        "inflammatory_markers": {
+          "TNF_alpha": 0.6438300989024375,
+          "IL1_beta": 1.047217837672064,
+          "IL6": 0.8208843921686506
+        },
+        "confidence_score": 0.75,
+        "p_value": 0.004608224376489273
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.2,
+        "evidence": {
+          "hypothesis_id": "H_001",
+          "biomarker": "HMGCR",
+          "validated": "False",
+          "predicted_fc": 2.0344446749275322,
+          "observed_fc": 1.5563861012969207,
+          "p_value": 0.004608224376489273,
+          "confidence_score": 0.75
+        }
+      }
+    },
+    {
+      "cycle": 3,
+      "experiment": {
+        "experiment_id": "EXP_3_02",
+        "biomarker": "LDLR",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_5",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_003",
+        "biomarker": "LDLR",
+        "predicted_direction": "down",
+        "predicted_magnitude": 0.5737738947090656,
+        "confidence": 0.6047821669899485,
+        "rationale": "KG pathway analysis suggests LDLR responds to inflammatory_cytokines",
+        "priority_score": 0.6054302571794554
+      },
+      "result": {
+        "experiment_id": "EXP_3_02",
+        "biomarker_level": 2.2834140191408654,
+        "viability": 0.963679470781769,
+        "barrier_function": 694.9336568933867,
+        "inflammatory_markers": {
+          "TNF_alpha": 1.0348758702538472,
+          "IL1_beta": 0.5286745635358411,
+          "IL6": 1.2085689482122608
+        },
+        "confidence_score": 0.8,
+        "p_value": 0.0021692312569164813
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.2,
+        "evidence": {
+          "hypothesis_id": "H_003",
+          "biomarker": "LDLR",
+          "validated": "False",
+          "predicted_fc": 1.7428468064185005,
+          "observed_fc": 2.2834140191408654,
+          "p_value": 0.0021692312569164813,
+          "confidence_score": 0.8
+        }
+      }
+    },
+    {
+      "cycle": 3,
+      "experiment": {
+        "experiment_id": "EXP_3_03",
+        "biomarker": "LPL",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_2",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_004",
+        "biomarker": "LPL",
+        "predicted_direction": "up",
+        "predicted_magnitude": 0.6029575024999787,
+        "confidence": 0.4393232321183057,
+        "rationale": "KG pathway analysis suggests LPL responds to statin_treatment",
+        "priority_score": 0.5110675075529113
+      },
+      "result": {
+        "experiment_id": "EXP_3_03",
+        "biomarker_level": 0.9080575765766197,
+        "viability": 0.997496720250877,
+        "barrier_function": 811.1735601023386,
+        "inflammatory_markers": {
+          "TNF_alpha": 0.6422637803137508,
+          "IL1_beta": 0.8073104280585285,
+          "IL6": 1.2491317617989517
+        },
+        "confidence_score": 0.3,
+        "p_value": 0.8620379932420408
+      },
+      "validation": {
+        "validated": false,
+        "model_confidence": 0.2,
+        "evidence": {
+          "hypothesis_id": "H_004",
+          "biomarker": "LPL",
+          "validated": false,
+          "predicted_fc": 0.6029575024999787,
+          "observed_fc": 0.9080575765766197,
+          "p_value": 0.8620379932420408,
+          "confidence_score": 0.3
+        }
+      }
+    },
+    {
+      "cycle": 3,
+      "experiment": {
+        "experiment_id": "EXP_3_04",
+        "biomarker": "PCSK9",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_4",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_002",
+        "biomarker": "PCSK9",
+        "predicted_direction": "up",
+        "predicted_magnitude": 1.494497011784771,
+        "confidence": 0.4504391549083848,
+        "rationale": "KG pathway analysis suggests PCSK9 responds to pcsk9_inhibitor",
+        "priority_score": 0.41167264855513713
+      },
+      "result": {
+        "experiment_id": "EXP_3_04",
+        "biomarker_level": 2.8386038715187967,
+        "viability": 0.9329941397124212,
+        "barrier_function": 928.182287177731,
+        "inflammatory_markers": {
+          "TNF_alpha": 0.5387652372103877,
+          "IL1_beta": 0.452813939319603,
+          "IL6": 1.2321697334099162
+        },
+        "confidence_score": 0.7,
+        "p_value": 0.026637696188697317
+      },
+      "validation": {
+        "validated": "False",
+        "model_confidence": 0.2,
+        "evidence": {
+          "hypothesis_id": "H_002",
+          "biomarker": "PCSK9",
+          "validated": "False",
+          "predicted_fc": 1.494497011784771,
+          "observed_fc": 2.8386038715187967,
+          "p_value": 0.026637696188697317,
+          "confidence_score": 0.7
+        }
+      }
+    },
+    {
+      "cycle": 3,
+      "experiment": {
+        "experiment_id": "EXP_3_05",
+        "biomarker": "LPL",
+        "perturbation": "inflammatory_cytokines",
+        "dose": 1.0,
+        "time_point": 24,
+        "chip_id": "CHIP_2",
+        "replicate": 1
+      },
+      "hypothesis": {
+        "hypothesis_id": "H_005",
+        "biomarker": "LPL",
+        "predicted_direction": "up",
+        "predicted_magnitude": 0.9791237813339448,
+        "confidence": 0.37244743604561154,
+        "rationale": "KG pathway analysis suggests LPL responds to inflammatory_cytokines",
+        "priority_score": 0.3708761190888195
+      },
+      "result": {
+        "experiment_id": "EXP_3_05",
+        "biomarker_level": 1.0296984673233187,
+        "viability": 0.9508820422755573,
+        "barrier_function": 971.7070796980111,
+        "inflammatory_markers": {
+          "TNF_alpha": 1.1197933224473418,
+          "IL1_beta": 1.6626967951185554,
+          "IL6": 1.0724365452445868
+        },
+        "confidence_score": 0.3,
+        "p_value": 0.8322518545590705
+      },
+      "validation": {
+        "validated": false,
+        "model_confidence": 0.2,
+        "evidence": {
+          "hypothesis_id": "H_005",
+          "biomarker": "LPL",
+          "validated": false,
+          "predicted_fc": 0.9791237813339448,
+          "observed_fc": 1.0296984673233187,
+          "p_value": 0.8322518545590705,
+          "confidence_score": 0.3
+        }
+      }
+    }
+  ]
+}

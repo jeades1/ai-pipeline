@@ -1,0 +1,98 @@
+{
+  "mol_func_barrier": {
+    "pathway_id": "mol_func_barrier",
+    "validation_method": "cross_validation",
+    "validation_level": "comprehensive",
+    "p_value": 1.0,
+    "confidence_interval": null,
+    "effect_size": 0.47072236353860475,
+    "power": 0.0,
+    "cv_scores": [
+      0.35136128672325473,
+      0.30172162829805216,
+      0.33767253074208314,
+      0.25487241879146527,
+      0.09198912871210096
+    ],
+    "cv_mean": 0.26752339865339125,
+    "cv_std": 0.09390584469023137,
+    "model_performance": {
+      "r2_score": 0.9063858490480772,
+      "rmse": 4.8152033022885945
+    },
+    "feature_importance": {
+      "GENE_001": 4.671964448512747,
+      "GENE_002": 5.656404497619638,
+      "GENE_003": 6.4000975625719425
+    },
+    "is_significant": true,
+    "passes_effect_size": true,
+    "is_validated": true,
+    "sample_size": 200,
+    "missing_data_fraction": 0.0,
+    "data_quality_score": 1.0,
+    "detailed_results": {},
+    "validation_date": "2025-09-15T15:35:45.732131"
+  },
+  "func_clin_aki": {
+    "pathway_id": "func_clin_aki",
+    "validation_method": "cross_validation",
+    "validation_level": "comprehensive",
+    "p_value": 1.0,
+    "confidence_interval": null,
+    "effect_size": 0.0,
+    "power": 0.0,
+    "cv_scores": [
+      0.9404761904761904,
+      0.9970238095238095,
+      0.9791666666666665,
+      0.9970238095238095,
+      0.9672619047619047
+    ],
+    "cv_mean": 0.9761904761904763,
+    "cv_std": 0.021128856368212965,
+    "model_performance": {
+      "auc_score": 1.0,
+      "accuracy": 1.0
+    },
+    "feature_importance": {},
+    "is_significant": true,
+    "passes_effect_size": false,
+    "is_validated": false,
+    "sample_size": 200,
+    "missing_data_fraction": 0.0,
+    "data_quality_score": 1.0,
+    "detailed_results": {},
+    "validation_date": "2025-09-15T15:35:45.977679"
+  },
+  "complete_pathway": {
+    "pathway_id": "complete_pathway",
+    "validation_method": "cross_validation",
+    "validation_level": "comprehensive",
+    "p_value": 4.948463580066608e-08,
+    "confidence_interval": null,
+    "effect_size": 0.41894193884313735,
+    "power": 0.0,
+    "cv_scores": [],
+    "cv_mean": 0.0,
+    "cv_std": 0.0,
+    "model_performance": {},
+    "feature_importance": {},
+    "is_significant": true,
+    "passes_effect_size": true,
+    "is_validated": true,
+    "sample_size": 200,
+    "missing_data_fraction": 0.0,
+    "data_quality_score": 1.0,
+    "detailed_results": {
+      "path_a_correlation": 0.5556676309902715,
+      "path_a_pvalue": 1.3377113579065112e-17,
+      "path_b_correlation": -0.7539433925573975,
+      "path_b_pvalue": 5.547492922480137e-38,
+      "path_c_correlation": -0.3738648037723455,
+      "path_c_pvalue": 4.948463580066608e-08,
+      "indirect_effect": -0.41894193884313735
+    },
+    "validation_date": "2025-09-15T15:35:46.198790"
+  }
+}

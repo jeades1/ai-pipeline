@@ -1,0 +1,117 @@
+{
+  "report_id": "validation_20250912_204529",
+  "engine_version": "1.0.0",
+  "validation_date": "2025-09-12T20:45:29.252394",
+  "overall_performance_score": 0.3634974772906403,
+  "clinical_readiness_score": 0.0,
+  "regulatory_readiness_score": 0.6711680608950469,
+  "strengths": [],
+  "limitations": [
+    "PersonalizationEngine: Poor performance (0.57)",
+    "TrajectoryPredictor: Poor performance (0.00)",
+    "OutcomePrediction: Poor performance (0.55)"
+  ],
+  "improvement_recommendations": [
+    "Redesign PersonalizationEngine architecture and validation approach",
+    "Redesign TrajectoryPredictor architecture and validation approach",
+    "Redesign OutcomePrediction architecture and validation approach",
+    "Consider fundamental architecture review",
+    "Expand validation to external datasets",
+    "Implement prospective validation study",
+    "Conduct sensitivity analysis across patient subgroups"
+  ],
+  "benchmark_comparisons": {
+    "personalization_improvement": 3.8081546378586983,
+    "trajectory_accuracy": 0.0008107012565869478,
+    "outcome_auc": 0.7655516294829341
+  },
+  "component_results": {
+    "PersonalizationEngine": [
+      {
+        "validation_id": "personalization_2025-09-12T20:45:16.233502",
+        "primary_metric": "combined_performance",
+        "primary_score": 0.5712231956788048,
+        "confidence_interval": [
+          0.4712231956788048,
+          0.6712231956788047
+        ],
+        "all_metrics": {
+          "consistency_score": 1.0,
+          "improvement_score": 0.14244639135760945,
+          "samples_tested": 500
+        },
+        "sample_size": 500,
+        "clinical_significance": "Demonstrates personalization improves biomarker relevance",
+        "clinical_impact_score": 0.4569785565430438
+      }
+    ],
+    "TrajectoryPredictor": [
+      {
+        "validation_id": "trajectory_2025-09-12T20:45:21.114546",
+        "primary_metric": "prediction_accuracy",
+        "primary_score": 0.0006080259424402108,
+        "confidence_interval": [
+          0.0,
+          0.15060802594244022
+        ],
+        "all_metrics": {
+          "mean_absolute_error": 467.4594172758245,
+          "trend_accuracy": 0.0012160518848804217,
+          "predictions_tested": 2467
+        },
+        "sample_size": 2467,
+        "clinical_significance": "Accurate trajectory prediction enables proactive interventions",
+        "clinical_impact_score": 0.0005472233481961898
+      }
+    ],
+    "OutcomePrediction": [
+      {
+        "validation_id": "outcomes_2025-09-12T20:45:29.252278",
+        "primary_metric": "auc_score",
+        "primary_score": 0.5511971732277126,
+        "confidence_interval": [
+          0.4511971732277126,
+          0.6511971732277125
+        ],
+        "all_metrics": {
+          "auc_score": 0.5033971890406927,
+          "calibration_score": 0.5989971574147325,
+          "n_predictions": 1500,
+          "outcome_rate": 0.07866666666666666
+        },
+        "sample_size": 1500,
+        "clinical_significance": "Accurate outcome prediction enables risk stratification",
+        "clinical_impact_score": 0.5033971890406927
+      }
+    ]
+  },
+  "cohort_characteristics": {
+    "total_patients": 500,
+    "age_distribution": {
+      "mean": 64.916,
+      "std": 14.764584111989066,
+      "min": 18.0,
+      "max": 95.0
+    },
+    "sex_distribution": {
+      "female": 0.492,
+      "male": 0.508
+    },
+    "comorbidity_prevalence": {
+      "hypertension": 0.872,
+      "diabetes": 0.37,
+      "coronary_artery_disease": 0.48,
+      "chronic_kidney_disease": 0.348,
+      "smoking": 0.116,
+      "obesity": 0.146
+    },
+    "outcome_prevalence": {
+      "myocardial_infarction": 0.082,
+      "diabetes_progression": 0.068,
+      "stroke": 0.06,
+      "death": 0.018,
+      "heart_failure": 0.094
+    },
+    "data_completeness_score": 0.85
+  }
+}
