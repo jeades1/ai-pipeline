@@ -57,6 +57,8 @@ python presentation/generate_visualizations.py
 
 **Systematic Guide to Biomarker Discovery Platform** - This structured guide covers our integrated computational-experimental approach to biomarker discovery. For medical researchers and clinicians familiar with biomarker validation but new to machine learning and systems biology approaches.
 
+• For a concise end-to-end narrative, see: **[How It Works: End-to-End Walkthrough](./docs/how-it-works.md)**.
+
 #### **Phase 1: Scientific Foundation** 
 *"Core methodology and biological principles"*
 
