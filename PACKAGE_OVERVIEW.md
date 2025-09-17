@@ -8,10 +8,10 @@
 Current biomarker discovery faces the challenge of integrating high-dimensional omics data (genomics, transcriptomics, proteomics, metabolomics) with functional readouts and clinical outcomes. The combinatorial space of potential biomarker signatures is vast, requiring systematic approaches to identify mechanistically-grounded, clinically-translatable candidates.
 
 ### **Our Computational Approach**
-1. **Multi-Modal Integration**: Systematic integration of molecular, cellular, tissue-level, and clinical data streams
-2. **Causal Discovery**: Machine learning methods that distinguish correlation from causation in biological networks
-3. **Digital Patient Models**: Mechanistic models calibrated to individual patient physiology for personalized biomarker identification
-4. **Automated Validation**: Systematic validation pipelines that progress from molecular mechanisms to clinical utility
+1. **Multi-Modal Integration** — We fuse transcriptomic, proteomic, imaging, functional assay, and clinical variables into a consistent representation. Instead of relying on a single-omics snapshot, the platform encodes relationships across scales (gene → module → pathway → tissue function → clinical outcome) so signals must cohere mechanistically, not just correlate spuriously. See also: `docs/methodology_metrics.md` (data fusion methods).
+2. **Causal Discovery** — We deploy constraint-based and model-based approaches (PC/FCI variants, mediation analysis, MR where applicable) to prefer causal structures compatible with time-ordering, interventions, and biological priors. This explicitly addresses a key gap in current state-of-the-art associative discovery. See: `CAUSAL_DISCOVERY_ANALYSIS.md`.
+3. **Digital Patient Models (Avatars)** — Hybrid mechanistic–ML models are fit per patient/donor to explain functional readouts (e.g., TEER, MEA) and simulate counterfactuals. These avatars expose patient-specific biomarker panels and predicted treatment responses. See: README “Patient Avatars & Personalization.”
+4. **Automated Validation** — Discoveries must pass an evidence ladder (E0→E5) that starts at correlation, escalates to interventional tissue-chip evidence, demands cross-donor replication, and culminates in prospective clinical validation with analytical readiness (LoD/LoQ, precision). See: `ENHANCED_VALIDATION_SUMMARY.md`.
 
 ---
 
@@ -44,17 +44,15 @@ Current biomarker discovery faces the challenge of integrating high-dimensional 
 ## 🔬 Scientific Innovation vs Current Best Practices
 
 ### **Comparison to Current State-of-the-Art**  
-❌ High failure rate (90%+ of candidates fail in clinical trials)  
-❌ One-size-fits-all approach  
-❌ Limited to simple, single-marker tests  
+Despite significant advances, many “cutting-edge” discovery platforms still emphasize associative ranking without mechanistic confirmation, leading to low prospective success rates. Common shortfalls include: (a) instability across cohorts/time, (b) batch/platform artifacts mistaken for biology, (c) biomarkers that track downstream consequence rather than causal mediator, and (d) limited transportability beyond the discovery site. Our framework addresses these by requiring interventional evidence on tissue function, enforcing mediation through mesoscale function, and validating across sites and time.
 
 | Method | Current Best Practice | Our Platform | Key Advantage |
 |--------|----------------------|---------------|---------------|
-| **Discovery Approach** | Candidate biomarker hypothesis testing | Unbiased multi-modal discovery with causal inference | Identifies mechanistic biomarkers without prior bias |
-| **Validation Strategy** | Single-site, single-assay validation | Multi-site federated validation with tissue-chip confirmation | Higher statistical power, mechanistic validation |
-| **Data Integration** | Manual integration of omics datasets | Automated multi-modal fusion (genomics, proteomics, imaging, functional) | Comprehensive biological understanding |
-| **Statistical Methods** | Standard significance testing | Advanced causal discovery with uncertainty quantification | Distinguishes causation from correlation |
-| **Clinical Translation** | Retrospective biomarker-outcome association | Prospective validation with mechanistic confirmation | Higher likelihood of clinical success |
+| **Discovery Approach** | Candidate-based or associative ranking | Unbiased multi-modal discovery with causal inference | Mechanistic biomarkers with directional support |
+| **Validation Strategy** | Single-site, single-assay validation | Multi-site federated validation + tissue-chip confirmation | Higher statistical power; mechanistic validation |
+| **Data Integration** | Manual or weakly-coupled omics | Automated multi-modal fusion (omics, imaging, functional, clinical) | Cross-scale coherence, less spurious signal |
+| **Statistical Methods** | Standard association testing | Causal discovery + uncertainty quantification | Distinguishes causation from correlation |
+| **Clinical Translation** | Retrospective associations | Prospective validation with mechanistic confirmation | Higher likelihood of clinical success |
 | **Personalization** | Population-based biomarkers | Individual digital twins with patient-specific signatures | Precision medicine capabilities |
 
 ### **Key Methodological Advances**

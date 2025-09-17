@@ -273,6 +273,12 @@ Storage & Data Model
 
 Knowledge Graph
 
+The knowledge graph (KG) is the platform’s memory and hypothesis engine. It encodes typed nodes (genes, cell states, pathways, ligands/receptors, tissues, clinical outcomes) and directed relations with provenance and uncertainty. The KG serves four roles:
+1) regularization and priors for discovery (constrains search toward biologically plausible structures),
+2) mechanistic scaffold for avatars (pathway-informed parameters),
+3) decision surface for active learning (where uncertainty is most informative), and
+4) ledger for evidence across the E0→E5 ladder. See also: `docs/capabilities.md` (Knowledge Graph Integration) and `KG_EXPANSION_SUMMARY.md`.
+
 The spine of the platform: a typed, versioned graph that contains priors from open sources and accumulating, provenance-linked evidence from our analyses.
 	•	Entities: donor/patient, sample, cell type/state, ligand–receptor pair, pathway/module, gene/protein/variant, perturbation, device, assay, tissue function, environment (flow/O₂), clinical outcome, medication/exposure.
 	•	Relations: causal (interventional support), temporal, co-expression/module membership, cell–cell communication, spatial neighborhood, clinical association, provenance.
@@ -302,6 +308,13 @@ Decision & Orchestration
 ⸻
 
 Biomarker Discovery Pipeline
+
+From features to dossiers: candidates emerge only after passing sequential gates. Pipeline stages:
+1) Feature engineering across omics, imaging, and functional assays; strict leakage controls.
+2) Association screening with multiple-testing control and temporal precedence checks.
+3) Causal/m mediation analysis to ensure effects route through tissue function mediators.
+4) Interventional testing on tissue chips (E2) with replication (E3) and random-effects meta-analysis.
+5) Clinical validation (E4–E5): transportability (site/time), calibration, decision-curve thresholds, and analytical validation (LoD/LoQ, precision). Outputs a ranked list with an evidence dossier per biomarker (mechanism path, effect sizes, risks, next steps). See: `ENHANCED_VALIDATION_SUMMARY.md`.
 	•	Use cases: diagnostic, prognostic, predictive, monitoring, PD markers.
 	•	Scoring: causal impact on functional mediators; cross-model/donor replication; clinical association/mediation; assayability; robustness.
 	•	Evidence dossier: mechanism path (graph), interventional evidence, replication, clinical mediation, analytical validation, risk/uncertainty, next steps.
@@ -310,11 +323,15 @@ Biomarker Discovery Pipeline
 
 Patient Avatars & Personalization
 
+Hybrid mechanistic–ML twins are calibrated per donor/patient to reproduce functional readouts (e.g., TEER, MEA) under observed perturbations. They enable counterfactual simulation (virtual dosing, timing, combinations), identification of patient-specific biomarkers, and risk-aware decision support. Avatars tie clinical recommendations to mechanism by attributing predictions to pathway-level parameters. See: `docs/next_win_personalized_biomarkers.md`.
+
 A donor-specific hybrid twin calibrated to that donor’s functional and omic trajectories; outputs personalized predictions and unique markers with path-level attribution.
 
 ⸻
 
 Evidence Ladder & Validation
+
+We formalize rigor with E0→E5. Each level requires predefined criteria and quantitative thresholds. Candidates that fail promotion are recycled with targeted experiments chosen by the active learner. This creates a closed loop where negative results increase knowledge value (by pruning causal hypotheses) and positive results accelerate clinical translation. Details: `ENHANCED_VALIDATION_SUMMARY.md`, `docs/benchmarks.md`, `docs/methodology_metrics.md`.
 	•	E0: Correlation only
 	•	E1: Temporal precedence + module linkage
 	•	E2: Interventional causality in vitro
