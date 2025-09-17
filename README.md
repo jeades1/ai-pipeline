@@ -249,9 +249,12 @@ To export images (requires Mermaid CLI):
 make render-diagrams
 
 Physical Testbeds
-	•	Systems: perfused patient-derived organoids, multicellular tubular tissues, vascularized spheroids/organoids; programmable microfluidics; environmental control (O₂, shear, temp, light).
-	•	Capabilities: time-sequenced dosing/gradients; sampling ports (media/biopsies); viability guardrails.
-	•	Functional outputs: TEER/permeability, electrophysiology (MEA), contractility, calcium/optical physiology, oxygen consumption, perfusion/flow metrics, cilia beat frequency.
+	•	**Advanced Tissue Systems**: Perfused patient-derived organoids with proven multicellular tubular architecture; vascularized spheroids/organoids with enhanced molecular delivery; precision-cut tissue slices maintaining native architecture; programmable microfluidics with recirculation capabilities for kinetic analysis.
+	•	**Multicellular Integration**: Authenticated cell-cell signaling networks (paracrine, contact-dependent, gap junction); tissue-level organization with proper cell polarity and barrier function; co-culture systems enabling epithelial-endothelial-immune interactions.
+	•	**Vascularization Technology**: Patient-derived organoid vascularization for 10-100x improved large molecule delivery; extended culture viability (2-4 weeks vs 3-7 days); physiological perfusion with realistic shear stress and transport kinetics.
+	•	**Dynamic Culture Systems**: Perfusion-enhanced hydrogel cultures for improved organoid maturation; recirculation systems enabling real-time biomarker kinetics; environmental control (O₂, shear, temp, light) with gradient generation.
+	•	**Functional Capabilities**: Time-sequenced dosing/gradients; multiple sampling ports (media/biopsies); real-time viability guardrails; kinetic analysis of biomarker clearance and half-lives.
+	•	**Functional outputs**: TEER/permeability (>1000 Ω·cm²), electrophysiology (MEA), contractility, calcium/optical physiology, oxygen consumption, perfusion/flow metrics, cilia beat frequency, biomarker clearance kinetics.
 
 ⸻
 

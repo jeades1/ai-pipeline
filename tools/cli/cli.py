@@ -98,6 +98,15 @@ def render_diagrams():
         _run(["make", "render-diagrams"])
 
 
+@app.command("tissue-chip-demo")
+def tissue_chip_demo():
+    """Run advanced tissue-chip integration demo with multicellular architecture."""
+    if _exists("test_tissue_chip_integration.py"):
+        _run([_py(), "test_tissue_chip_integration.py"])
+    else:
+        typer.echo("test_tissue_chip_integration.py not found; skipping.", err=True)
+
+
 @app.command("update-readme-tree")
 def update_readme_tree():
     """

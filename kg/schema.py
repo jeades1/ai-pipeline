@@ -6,6 +6,55 @@ import pandas as pd
 import networkx as nx
 
 
+class AdvancedTissueChipKGSchema:
+    """
+    Extended KG schema for multicellular tissue-chip architecture,
+    PDO vascularization, and kinetic analysis metadata.
+    """
+
+    # Multicellular Architecture Node Types
+    MULTICELLULAR_NODE_TYPES = {
+        "MulticellularArchitecture": "multicellular_architecture",
+        "TubularGeometry": "tubular_geometry",
+        "CellTypeComposition": "cell_type_composition",
+        "CellCellSignaling": "cell_cell_signaling",
+        "BarrierFunction": "barrier_function",
+        "TissueOrganization": "tissue_organization",
+    }
+
+    # Vascularization Node Types
+    VASCULARIZATION_NODE_TYPES = {
+        "PDOVascularization": "pdo_vascularization",
+        "VascularNetwork": "vascular_network",
+        "MolecularDelivery": "molecular_delivery",
+        "PerfusionSystem": "perfusion_system",
+        "EndothelialIntegration": "endothelial_integration",
+        "VascularPermeability": "vascular_permeability",
+    }
+
+    # Kinetic Analysis Node Types
+    KINETIC_NODE_TYPES = {
+        "RecirculationSystem": "recirculation_system",
+        "KineticAnalysis": "kinetic_analysis",
+        "BiomarkerKinetics": "biomarker_kinetics",
+        "TemporalProfiling": "temporal_profiling",
+        "PharmacokineticModeling": "pharmacokinetic_modeling",
+        "ClearanceAnalysis": "clearance_analysis",
+    }
+
+    # Tissue-Chip Edge Types
+    TISSUE_CHIP_EDGE_TYPES = {
+        "has_architecture": "multicellular_architecture_relationship",
+        "enables_signaling": "cell_cell_signaling_relationship",
+        "provides_vascularization": "vascularization_relationship",
+        "enhances_delivery": "molecular_delivery_relationship",
+        "supports_kinetics": "kinetic_analysis_relationship",
+        "extends_viability": "culture_longevity_relationship",
+        "improves_sensitivity": "detection_sensitivity_relationship",
+        "validates_biomarker": "tissue_chip_validation_relationship",
+    }
+
+
 class KGEvidenceGraph:
     """
     Small helper over a MultiDiGraph that enforces a few conventions:
