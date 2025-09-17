@@ -191,6 +191,7 @@ Our enhanced validation has been tested on real clinical data:
 ## 🔧 Technical Implementation (Simplified)
 
 ### **Data Flow (How Information Moves Through the System)**
+(For an end-to-end narrative, see: `docs/how-it-works.md`)
 
 1. **Data Collection**: Patient samples, clinical records, imaging data
 2. **Quality Control**: AI checks data quality and removes errors
