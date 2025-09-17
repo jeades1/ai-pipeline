@@ -1,6 +1,28 @@
-# AI-Guided Biomarker Discovery Platform: Complete Package Overview
+# AI-Guided Biomarker Discovery Pl3. **Digital Patient Models (Avatars)** — Hybrid mechanistic–ML models are fit per patient/donor to explain functional readouts (e.g., TEER, MEA) and simulate counterfactuals. These avatars expose patient-specific biomarker panels and predicted treatment responses. See: [README "Patient Avatars & Personalization"](./README.md#patient-avatars--personalization).tform: Complete Package Overview
 
 > **For Medical and Research Professionals**: This platform integrates advanced computational methods with experimental biology to accelerate biomarker discovery through multi-modal data integration, causal inference, and automated hypothesis generation. The system combines tissue-chip technology with federated machine learning to enable mechanistic biomarker validation at scale.
+
+## 🧭 Quick Navigation
+
+### **Core Platform Components**
+- **[Biomarker Discovery Pipeline](./README.md#biomarker-discovery-pipeline)** - AI-guided discovery methodology with tissue-chip validation
+- **[Patient Avatars & Personalization](./README.md#patient-avatars--personalization)** - Digital twins for personalized medicine
+- **[Knowledge Graph](./README.md#knowledge-graph)** - Dynamic biological knowledge integration
+- **[Evidence Ladder & Validation](./README.md#evidence-ladder--validation)** - Multi-tier validation framework
+
+### **Technical Deep Dive**
+- **[System Architecture](./README.md#system-architecture)** - Complete technical overview
+- **[Enhanced Validation Framework](./ENHANCED_VALIDATION_SUMMARY.md)** - Statistical validation and bias control
+- **[Clinical Integration](./CLINICAL_EXPANSION_SUMMARY.md)** - Clinical decision support
+- **[Production Deployment](./DEPLOYMENT_SUMMARY.md)** - Implementation guide
+
+### **Advanced Capabilities**
+- **[Advanced Tissue Architecture](./docs/advanced_tissue_architecture.md)** - Multicellular tissue-chip platform
+- **[Biomarker Validation Framework](./docs/biomarker_validation_framework.md)** - Comprehensive validation protocols
+- **[Experimental Design](./docs/experimental_design.md)** - Multicellular experimental frameworks
+- **[Competitive Analysis](./docs/quantitative_competitive_analysis.md)** - Quantitative advantages
+
+---
 
 ## 🎯 Platform Capabilities
 
