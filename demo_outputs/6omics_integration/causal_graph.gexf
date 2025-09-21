@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-09-21">
+    <creator>NetworkX 3.5</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <nodes>
+      <node id="exposure_air_pm25" label="exposure_air_pm25" />
+      <node id="clinical_outcome_000" label="clinical_outcome_000" />
+      <node id="clinical_outcome_002" label="clinical_outcome_002" />
+      <node id="clinical_outcome_003" label="clinical_outcome_003" />
+      <node id="clinical_outcome_005" label="clinical_outcome_005" />
+      <node id="clinical_outcome_006" label="clinical_outcome_006" />
+      <node id="clinical_outcome_007" label="clinical_outcome_007" />
+      <node id="clinical_outcome_008" label="clinical_outcome_008" />
+      <node id="clinical_outcome_010" label="clinical_outcome_010" />
+      <node id="clinical_outcome_011" label="clinical_outcome_011" />
+      <node id="clinical_outcome_012" label="clinical_outcome_012" />
+      <node id="clinical_outcome_013" label="clinical_outcome_013" />
+      <node id="exposure_air_no2" label="exposure_air_no2" />
+      <node id="clinical_outcome_001" label="clinical_outcome_001" />
+      <node id="clinical_outcome_004" label="clinical_outcome_004" />
+      <node id="clinical_outcome_009" label="clinical_outcome_009" />
+    </nodes>
+    <edges>
+      <edge source="exposure_air_pm25" target="clinical_outcome_000" id="0" weight="0.35070184938718274" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_002" id="1" weight="0.31143076184413354" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_003" id="2" weight="0.3617475162695495" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_005" id="3" weight="0.3276823700251457" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_006" id="4" weight="0.5061939466774602" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_007" id="5" weight="0.39984055405543467" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_008" id="6" weight="0.3563688843564069" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_010" id="7" weight="0.32665061948873875" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_011" id="8" weight="0.3398558025407637" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_012" id="9" weight="0.34688105394743296" />
+      <edge source="exposure_air_pm25" target="clinical_outcome_013" id="10" weight="0.31896629623747136" />
+      <edge source="clinical_outcome_000" target="exposure_air_pm25" id="11" weight="0.35070184938718274" />
+      <edge source="clinical_outcome_000" target="exposure_air_no2" id="12" weight="0.385791639356631" />
+      <edge source="clinical_outcome_000" target="clinical_outcome_002" id="13" weight="0.32410009526015027" />
+      <edge source="clinical_outcome_000" target="clinical_outcome_006" id="14" weight="0.35138692217298456" />
+      <edge source="clinical_outcome_000" target="clinical_outcome_013" id="15" weight="0.3828161493662129" />
+      <edge source="clinical_outcome_002" target="exposure_air_pm25" id="16" weight="0.31143076184413354" />
+      <edge source="clinical_outcome_002" target="exposure_air_no2" id="17" weight="0.37942881224067826" />
+      <edge source="clinical_outcome_002" target="clinical_outcome_000" id="18" weight="0.32410009526015027" />
+      <edge source="clinical_outcome_002" target="clinical_outcome_003" id="19" weight="0.3285751101890631" />
+      <edge source="clinical_outcome_002" target="clinical_outcome_005" id="20" weight="0.30203521263027916" />
+      <edge source="clinical_outcome_002" target="clinical_outcome_006" id="21" weight="0.33362813830951765" />
+      <edge source="clinical_outcome_003" target="exposure_air_pm25" id="22" weight="0.3617475162695495" />
+      <edge source="clinical_outcome_003" target="exposure_air_no2" id="23" weight="0.3833677991642295" />
+      <edge source="clinical_outcome_003" target="clinical_outcome_002" id="24" weight="0.3285751101890631" />
+      <edge source="clinical_outcome_003" target="clinical_outcome_006" id="25" weight="0.37666238167705757" />
+      <edge source="clinical_outcome_005" target="exposure_air_pm25" id="26" weight="0.3276823700251457" />
+      <edge source="clinical_outcome_005" target="exposure_air_no2" id="27" weight="0.3148825460109566" />
+      <edge source="clinical_outcome_005" target="clinical_outcome_002" id="28" weight="0.30203521263027916" />
+      <edge source="clinical_outcome_005" target="clinical_outcome_006" id="29" weight="0.35282054402179724" />
+      <edge source="clinical_outcome_006" target="exposure_air_pm25" id="30" weight="0.5061939466774602" />
+      <edge source="clinical_outcome_006" target="exposure_air_no2" id="31" weight="0.30716531773123407" />
+      <edge source="clinical_outcome_006" target="clinical_outcome_000" id="32" weight="0.35138692217298456" />
+      <edge source="clinical_outcome_006" target="clinical_outcome_002" id="33" weight="0.33362813830951765" />
+      <edge source="clinical_outcome_006" target="clinical_outcome_003" id="34" weight="0.37666238167705757" />
+      <edge source="clinical_outcome_006" target="clinical_outcome_005" id="35" weight="0.35282054402179724" />
+      <edge source="clinical_outcome_006" target="clinical_outcome_007" id="36" weight="0.32225892758343855" />
+      <edge source="clinical_outcome_006" target="clinical_outcome_010" id="37" weight="0.31522723494848504" />
+      <edge source="clinical_outcome_006" target="clinical_outcome_011" id="38" weight="0.33589081148508976" />
+      <edge source="clinical_outcome_007" target="exposure_air_pm25" id="39" weight="0.39984055405543467" />
+      <edge source="clinical_outcome_007" target="clinical_outcome_006" id="40" weight="0.32225892758343855" />
+      <edge source="clinical_outcome_007" target="clinical_outcome_013" id="41" weight="0.30189149974494706" />
+      <edge source="clinical_outcome_008" target="exposure_air_pm25" id="42" weight="0.3563688843564069" />
+      <edge source="clinical_outcome_010" target="exposure_air_pm25" id="43" weight="0.32665061948873875" />
+      <edge source="clinical_outcome_010" target="exposure_air_no2" id="44" weight="0.4249009214269314" />
+      <edge source="clinical_outcome_010" target="clinical_outcome_006" id="45" weight="0.31522723494848504" />
+      <edge source="clinical_outcome_010" target="clinical_outcome_009" id="46" weight="0.3027772454005892" />
+      <edge source="clinical_outcome_010" target="clinical_outcome_011" id="47" weight="0.3526771425581212" />
+      <edge source="clinical_outcome_011" target="exposure_air_pm25" id="48" weight="0.3398558025407637" />
+      <edge source="clinical_outcome_011" target="exposure_air_no2" id="49" weight="0.3303105202690407" />
+      <edge source="clinical_outcome_011" target="clinical_outcome_006" id="50" weight="0.33589081148508976" />
+      <edge source="clinical_outcome_011" target="clinical_outcome_010" id="51" weight="0.3526771425581212" />
+      <edge source="clinical_outcome_012" target="exposure_air_pm25" id="52" weight="0.34688105394743296" />
+      <edge source="clinical_outcome_013" target="exposure_air_pm25" id="53" weight="0.31896629623747136" />
+      <edge source="clinical_outcome_013" target="exposure_air_no2" id="54" weight="0.3402852666713107" />
+      <edge source="clinical_outcome_013" target="clinical_outcome_000" id="55" weight="0.3828161493662129" />
+      <edge source="clinical_outcome_013" target="clinical_outcome_007" id="56" weight="0.30189149974494706" />
+      <edge source="exposure_air_no2" target="clinical_outcome_000" id="57" weight="0.385791639356631" />
+      <edge source="exposure_air_no2" target="clinical_outcome_001" id="58" weight="0.35976333767714613" />
+      <edge source="exposure_air_no2" target="clinical_outcome_002" id="59" weight="0.37942881224067826" />
+      <edge source="exposure_air_no2" target="clinical_outcome_003" id="60" weight="0.3833677991642295" />
+      <edge source="exposure_air_no2" target="clinical_outcome_004" id="61" weight="0.32298705218966545" />
+      <edge source="exposure_air_no2" target="clinical_outcome_005" id="62" weight="0.3148825460109566" />
+      <edge source="exposure_air_no2" target="clinical_outcome_006" id="63" weight="0.30716531773123407" />
+      <edge source="exposure_air_no2" target="clinical_outcome_009" id="64" weight="0.3420088003172496" />
+      <edge source="exposure_air_no2" target="clinical_outcome_010" id="65" weight="0.4249009214269314" />
+      <edge source="exposure_air_no2" target="clinical_outcome_011" id="66" weight="0.3303105202690407" />
+      <edge source="exposure_air_no2" target="clinical_outcome_013" id="67" weight="0.3402852666713107" />
+      <edge source="clinical_outcome_001" target="exposure_air_no2" id="68" weight="0.35976333767714613" />
+      <edge source="clinical_outcome_004" target="exposure_air_no2" id="69" weight="0.32298705218966545" />
+      <edge source="clinical_outcome_009" target="exposure_air_no2" id="70" weight="0.3420088003172496" />
+      <edge source="clinical_outcome_009" target="clinical_outcome_010" id="71" weight="0.3027772454005892" />
+    </edges>
+  </graph>
+</gexf>

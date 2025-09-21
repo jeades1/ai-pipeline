@@ -1,0 +1,28 @@
+{
+  "start_time": "2025-09-21T14:12:21.636874",
+  "n_samples": 250,
+  "n_features_by_omics": {
+    "genomics": 30,
+    "exposomics": 20,
+    "epigenomics": 40,
+    "transcriptomics": 50,
+    "proteomics": 35,
+    "metabolomics": 25,
+    "clinical": 15
+  },
+  "processing_steps": [
+    "Configuration setup",
+    "Synthetic data generation",
+    "Individual omics processing",
+    "Multi-omics integration",
+    "Causal structure discovery",
+    "Predictive modeling"
+  ],
+  "performance_metrics": {
+    "prediction": {
+      "average_r2": 0.06515200893346798,
+      "n_outcomes_tested": 5
+    }
+  },
+  "end_time": "2025-09-21T14:12:25.968997"
+}

@@ -1,0 +1,82 @@
+{
+  "clinical_outcome_000": {
+    "mse": 0.9224945146288049,
+    "r2": 0.091816909774044,
+    "top_features": {
+      "exposure_air_no2": 0.12905845606948704,
+      "exposure_air_pm25": 0.08844949648245777,
+      "exposure_lifestyle_stress": 0.02651663356705239,
+      "metabolite_metab_014": 0.020759492781570785,
+      "exposure_chem_pfoa": 0.01894727250786048,
+      "transcript_gene_029": 0.014878666258620714,
+      "protein_prot_030": 0.014541704384230138,
+      "protein_prot_034": 0.013992370426761998,
+      "metabolite_metab_024": 0.013454059376074126,
+      "transcript_gene_023": 0.013175853442247067
+    }
+  },
+  "clinical_outcome_001": {
+    "mse": 1.0904880766857368,
+    "r2": 0.077705540330407,
+    "top_features": {
+      "exposure_air_no2": 0.10278768875300064,
+      "exposure_air_pm25": 0.06067484281385856,
+      "protein_prot_003": 0.035132209842222165,
+      "exposure_chem_lead": 0.028044644608012134,
+      "epigenetic_cpg_014": 0.016978103408960887,
+      "transcript_gene_043": 0.01612507380548631,
+      "transcript_gene_011": 0.015061333446881962,
+      "epigenetic_cpg_031": 0.014287139457531472,
+      "protein_prot_007": 0.013557537206032168,
+      "epigenetic_cpg_018": 0.013217917123658354
+    }
+  },
+  "clinical_outcome_002": {
+    "mse": 0.9789043147199309,
+    "r2": 0.11548756413463912,
+    "top_features": {
+      "exposure_air_no2": 0.14840509743336633,
+      "exposure_air_pm25": 0.0523230653553534,
+      "epigenetic_cpg_035": 0.02975816726136076,
+      "protein_prot_012": 0.026601324066281334,
+      "epigenetic_cpg_009": 0.015217020405470556,
+      "epigenetic_cpg_034": 0.014177321770451936,
+      "epigenetic_cpg_021": 0.013475257626459234,
+      "transcript_gene_008": 0.010873125761034032,
+      "metabolite_metab_008": 0.010511022436576964,
+      "metabolite_metab_009": 0.008617479379566213
+    }
+  },
+  "clinical_outcome_003": {
+    "mse": 0.7564205582774836,
+    "r2": 0.07840166182766506,
+    "top_features": {
+      "exposure_air_pm25": 0.14410390864945777,
+      "exposure_air_no2": 0.14342269196043114,
+      "protein_prot_034": 0.02252288733534814,
+      "metabolite_metab_004": 0.014627922321304755,
+      "epigenetic_cpg_008": 0.01348121730937466,
+      "transcript_gene_020": 0.012253794592451477,
+      "epigenetic_cpg_021": 0.011752357774048584,
+      "transcript_gene_017": 0.011072416883732214,
+      "transcript_gene_033": 0.010501327829944014,
+      "metabolite_metab_024": 0.010021049921058673
+    }
+  },
+  "clinical_outcome_004": {
+    "mse": 1.2087024450968007,
+    "r2": -0.0376516313994153,
+    "top_features": {
+      "exposure_air_pm25": 0.11954566402844753,
+      "exposure_built_noise": 0.056425986270267,
+      "epigenetic_cpg_024": 0.046330194758145885,
+      "exposure_air_no2": 0.03007002207771912,
+      "exposure_env_004": 0.023785479430801476,
+      "epigenetic_cpg_032": 0.017523858529265517,
+      "exposure_lifestyle_sleep": 0.0170673408916625,
+      "metabolite_metab_010": 0.01624508907641634,
+      "protein_prot_017": 0.01608763189641202,
+      "metabolite_metab_019": 0.014014590757079287
+    }
+  }
+}

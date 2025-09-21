@@ -1,0 +1,224 @@
+{
+  "transcript_gene_001": {
+    "biomarker_id": "transcript_gene_001",
+    "omics_type": "transcriptomics",
+    "validation_level": "E3",
+    "statistical_significance": 4.4132457441360206e-07,
+    "effect_size": 0.36725722071387196,
+    "confidence_interval": [
+      0.32539258902389356,
+      0.4520046849650756
+    ],
+    "multiple_testing_corrected": true,
+    "temporal_stability": null,
+    "temporal_trend_p_value": 0.22434686452192906,
+    "temporal_autocorrelation": -0.056935348991987336,
+    "cross_omics_correlation": {
+      "genomics": 0.027835584060636374,
+      "proteomics": 0.06679767528977656,
+      "metabolomics": 0.045910201161239235,
+      "exposomics": 0.020483515214374262,
+      "clinical": 0.017180348127999158
+    },
+    "biological_plausibility_score": 0.5,
+    "environmental_association_strength": null,
+    "dose_response_p_value": 0.5228554288634485,
+    "methylation_stability": null,
+    "chromatin_context_score": null,
+    "tissue_specificity_score": null,
+    "clinical_utility_score": 0.863360195950554,
+    "predictive_performance": {
+      "r2": 0.863360195950554,
+      "cv_r2_std": 0.05555476273854423
+    },
+    "safety_profile": "moderate_confidence",
+    "validation_timestamp": "2025-09-21T14:21:37.971056",
+    "sample_size": 200,
+    "validation_notes": [
+      "Statistical test p-value: 0.000000, effect size: 0.367",
+      "Temporal validation completed",
+      "Cross-omics validation completed",
+      "Environmental validation completed",
+      "Clinical utility validation completed",
+      "Overall quality score: 0.75, Evidence level: E3"
+    ]
+  },
+  "epigenetic_cpg_001": {
+    "biomarker_id": "epigenetic_cpg_001",
+    "omics_type": "epigenomics",
+    "validation_level": "E2",
+    "statistical_significance": 0.29915668894250175,
+    "effect_size": 0.09529714294735002,
+    "confidence_interval": [
+      0.007072882280065482,
+      0.23307705590404523
+    ],
+    "multiple_testing_corrected": true,
+    "temporal_stability": null,
+    "temporal_trend_p_value": 0.63381033425602,
+    "temporal_autocorrelation": -0.02769528687064223,
+    "cross_omics_correlation": {
+      "genomics": 0.2597459819032464,
+      "transcriptomics": 0.0479122989654203,
+      "proteomics": 0.045848817657280355,
+      "metabolomics": 0.08075307201606377,
+      "exposomics": 0.03194235984597534,
+      "clinical": 0.05810505322749259
+    },
+    "biological_plausibility_score": 0.5,
+    "environmental_association_strength": null,
+    "dose_response_p_value": 0.7106927814463976,
+    "methylation_stability": 0.9471538608630442,
+    "chromatin_context_score": 0.7,
+    "tissue_specificity_score": 0.5674822342158549,
+    "clinical_utility_score": -0.4217311584825235,
+    "predictive_performance": {
+      "r2": -0.4217311584825235,
+      "cv_r2_std": 0.09612059431598223
+    },
+    "safety_profile": "low_confidence",
+    "validation_timestamp": "2025-09-21T14:21:38.288587",
+    "sample_size": 200,
+    "validation_notes": [
+      "Statistical test p-value: 0.179494, effect size: 0.095",
+      "Temporal validation completed",
+      "Cross-omics validation completed",
+      "Environmental validation completed",
+      "Epigenetic validation completed",
+      "Clinical utility validation completed",
+      "Overall quality score: 0.40, Evidence level: E2"
+    ]
+  },
+  "protein_prot_001": {
+    "biomarker_id": "protein_prot_001",
+    "omics_type": "proteomics",
+    "validation_level": "E1",
+    "statistical_significance": 0.006766959367054479,
+    "effect_size": 0.21100594268501083,
+    "confidence_interval": [
+      0.10491752867266489,
+      0.3084487322577119
+    ],
+    "multiple_testing_corrected": true,
+    "temporal_stability": null,
+    "temporal_trend_p_value": 0.14280084912517083,
+    "temporal_autocorrelation": -0.008977352546648085,
+    "cross_omics_correlation": {
+      "genomics": 0.04099352953726832,
+      "transcriptomics": 0.03342548970883831,
+      "metabolomics": 0.027920679623123796,
+      "exposomics": 0.0790803894868656,
+      "clinical": 0.060771428507948214
+    },
+    "biological_plausibility_score": 0.5,
+    "environmental_association_strength": null,
+    "dose_response_p_value": 0.3722476901125297,
+    "methylation_stability": null,
+    "chromatin_context_score": null,
+    "tissue_specificity_score": null,
+    "clinical_utility_score": -0.43080510430520036,
+    "predictive_performance": {
+      "r2": -0.43080510430520036,
+      "cv_r2_std": 0.2702562658999362
+    },
+    "safety_profile": "low_confidence",
+    "validation_timestamp": "2025-09-21T14:21:38.681250",
+    "sample_size": 200,
+    "validation_notes": [
+      "Statistical test p-value: 0.002707, effect size: 0.211",
+      "Temporal validation completed",
+      "Cross-omics validation completed",
+      "Environmental validation completed",
+      "Clinical utility validation completed",
+      "Overall quality score: 0.25, Evidence level: E1"
+    ]
+  },
+  "exposure_air_pm25": {
+    "biomarker_id": "exposure_air_pm25",
+    "omics_type": "exposomics",
+    "validation_level": "E1",
+    "statistical_significance": 0.7897685847094177,
+    "effect_size": 0.018969458745380634,
+    "confidence_interval": [
+      0.0026396050149279063,
+      0.1584913304083964
+    ],
+    "multiple_testing_corrected": true,
+    "temporal_stability": null,
+    "temporal_trend_p_value": 0.6937974370357134,
+    "temporal_autocorrelation": -0.09439663570591524,
+    "cross_omics_correlation": {
+      "genomics": 0.026486866494261074,
+      "transcriptomics": 0.02195036043974314,
+      "proteomics": 0.0326330814905212,
+      "metabolomics": 0.051620991329909376,
+      "clinical": 0.021772014357296275
+    },
+    "biological_plausibility_score": 0.5,
+    "environmental_association_strength": 0.9999999999999999,
+    "dose_response_p_value": 0.12626794736686753,
+    "methylation_stability": null,
+    "chromatin_context_score": null,
+    "tissue_specificity_score": null,
+    "clinical_utility_score": -0.3079750729752771,
+    "predictive_performance": {
+      "r2": -0.3079750729752771,
+      "cv_r2_std": 0.19216666449503542
+    },
+    "safety_profile": "low_confidence",
+    "validation_timestamp": "2025-09-21T14:21:39.021325",
+    "sample_size": 200,
+    "validation_notes": [
+      "Statistical test p-value: 0.789769, effect size: 0.019",
+      "Temporal validation completed",
+      "Cross-omics validation completed",
+      "Environmental validation completed",
+      "Clinical utility validation completed",
+      "Overall quality score: 0.20, Evidence level: E1"
+    ]
+  },
+  "metabolite_metab_001": {
+    "biomarker_id": "metabolite_metab_001",
+    "omics_type": "metabolomics",
+    "validation_level": "E1",
+    "statistical_significance": 0.44853874115916764,
+    "effect_size": 0.06522346131743975,
+    "confidence_interval": [
+      0.002934583283642939,
+      0.23632354099973527
+    ],
+    "multiple_testing_corrected": true,
+    "temporal_stability": null,
+    "temporal_trend_p_value": 0.7086023417082026,
+    "temporal_autocorrelation": -0.010293176355199942,
+    "cross_omics_correlation": {
+      "genomics": 0.04649193262568576,
+      "transcriptomics": 0.04002587632213424,
+      "proteomics": 0.047949849075868536,
+      "exposomics": 0.04604094521376284,
+      "clinical": 0.06711320267939394
+    },
+    "biological_plausibility_score": 0.5,
+    "environmental_association_strength": null,
+    "dose_response_p_value": 0.5067077466993466,
+    "methylation_stability": null,
+    "chromatin_context_score": null,
+    "tissue_specificity_score": null,
+    "clinical_utility_score": -0.5457430304347827,
+    "predictive_performance": {
+      "r2": -0.5457430304347827,
+      "cv_r2_std": 0.28070613194519567
+    },
+    "safety_profile": "low_confidence",
+    "validation_timestamp": "2025-09-21T14:21:39.355367",
+    "sample_size": 200,
+    "validation_notes": [
+      "Statistical test p-value: 0.358831, effect size: 0.065",
+      "Temporal validation completed",
+      "Cross-omics validation completed",
+      "Environmental validation completed",
+      "Clinical utility validation completed",
+      "Overall quality score: 0.00, Evidence level: E1"
+    ]
+  }
+}

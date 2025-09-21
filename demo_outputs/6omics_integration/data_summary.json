@@ -1,0 +1,26 @@
+{
+  "generation_timestamp": "2025-09-21T14:12:21.641348",
+  "n_samples": 250,
+  "omics_types": [
+    "genomics",
+    "exposomics",
+    "epigenomics",
+    "transcriptomics",
+    "proteomics",
+    "metabolomics",
+    "clinical"
+  ],
+  "feature_counts": {
+    "genomics": 30,
+    "exposomics": 20,
+    "epigenomics": 40,
+    "transcriptomics": 50,
+    "proteomics": 35,
+    "metabolomics": 25,
+    "clinical": 15
+  },
+  "sample_info": {
+    "first_sample": "patient_0000",
+    "last_sample": "patient_0249"
+  }
+}
