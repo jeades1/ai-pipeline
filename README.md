@@ -169,7 +169,30 @@ python presentation/generate_visualizations.py
 
 ---
 
-## 🎯 Key Features
+## � Strategic Framework Integration (v2.0)
+
+### **🎯 Hybrid Platform Capabilities**
+Our platform now combines your proven clinical strengths with advanced research framework methods:
+
+- **🔬 Enhanced Data Integration**: SNF, MOFA, and real-time public repository access (TCGA, CPTAC, ICGC)
+- **🤖 Foundation Model AI**: Multi-omics transformers with cross-modal prediction and synthetic patient generation  
+- **📊 Advanced Statistical Framework**: Bootstrap confidence intervals, multiple testing correction, bias detection
+- **🏥 Unified Clinical Platform**: Seamless integration of research methods with existing clinical workflows
+- **🌐 Public Data Integration**: Real-time harmonization of global biomarker datasets
+- **✅ Enhanced Validation Pipeline**: Network propagation, pathway constraints, multi-omics evidence integration
+
+**📋 Complete Details**: [Strategic Framework Integration Summary](./STRATEGIC_FRAMEWORK_INTEGRATION_SUMMARY.md)
+
+### **🚀 What This Enables**
+- **Superior Discovery**: Combine tissue-chip validation with global public data insights
+- **AI-Powered Innovation**: Foundation models for next-generation biomarker discovery
+- **Rigorous Validation**: Multi-layer statistical validation with network biology constraints
+- **Clinical Translation**: Production-ready system with real-time decision support
+- **Research Excellence**: State-of-the-art methods for high-impact publications and grants
+
+---
+
+## �🎯 Key Features
 
 ### ✅ **Enhanced Validation Framework**
 - **Statistical Rigor**: Advanced statistical testing with multiple correction methods
@@ -193,11 +216,15 @@ python presentation/generate_visualizations.py
 - **📋 Details**: [Clinical Expansion Summary](./CLINICAL_EXPANSION_SUMMARY.md)
 
 ### 🧬 **Advanced AI & ML**
+- **Foundation Models**: Multi-omics transformers with cross-modal prediction capabilities
+- **Enhanced Data Integration**: SNF and MOFA algorithms for advanced multi-omics fusion
+- **Public Data Integration**: Real-time TCGA, CPTAC, ICGC repository access with harmonization
+- **Network Biology**: Biomarker validation using network propagation and pathway constraints
 - **Causal Discovery**: Automated causal inference and discovery
 - **Tissue Chip Integration**: In-vitro system AI integration
 - **Federated Learning**: Privacy-preserving multi-institutional learning
-- **Digital Twins**: Patient-specific simulation models
-- **📋 Details**: [Package Overview](./PACKAGE_OVERVIEW.md)
+- **Digital Twins**: Patient-specific simulation models with enhanced multi-omics insights
+- **📋 Details**: [Strategic Integration Summary](./STRATEGIC_FRAMEWORK_INTEGRATION_SUMMARY.md)
 
 ---
 

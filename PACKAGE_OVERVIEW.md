@@ -35,6 +35,23 @@ Current biomarker discovery faces the challenge of integrating high-dimensional 
 3. **Digital Patient Models (Avatars)** — Hybrid mechanistic–ML models are fit per patient/donor to explain functional readouts (e.g., TEER, MEA) and simulate counterfactuals. These avatars expose patient-specific biomarker panels and predicted treatment responses. See: README “Patient Avatars & Personalization.”
 4. **Automated Validation** — Discoveries must pass an evidence ladder (E0→E5) that starts at correlation, escalates to interventional tissue-chip evidence, demands cross-donor replication, and culminates in prospective clinical validation with analytical readiness (LoD/LoQ, precision). See: `ENHANCED_VALIDATION_SUMMARY.md`.
 
+### **🌟 Strategic Framework Integration (v2.0)**
+Building on our proven clinical foundation, we have integrated advanced research framework capabilities:
+
+5. **Enhanced Data Integration** — Advanced multi-omics fusion using Similarity Network Fusion (SNF) and Multi-Omics Factor Analysis (MOFA) with real-time public repository integration (TCGA, CPTAC, ICGC). Implementation: `biomarkers/enhanced_integration.py`.
+
+6. **Foundation Model AI** — Multi-omics transformer architectures with cross-modal prediction, synthetic patient generation, and omics tokenization for next-generation biomarker discovery. Implementation: `biomarkers/foundation_models.py`.
+
+7. **Advanced Statistical Framework** — Bootstrap confidence intervals (BCa method), multiple testing correction, temporal cross-validation, and systematic bias detection ensuring rigorous statistical validation. Implementation: `biomarkers/advanced_statistics.py`.
+
+8. **Hybrid Platform Architecture** — Unified system combining clinical-grade tissue-chip validation with enhanced research methods in a single production-ready platform. Implementation: `biomarkers/hybrid_platform.py`.
+
+9. **Public Data Repository Integration** — Real-time connectors to major public repositories with automated harmonization, FAIR metadata standards, and context-aware dataset recommendations. Implementation: `biomarkers/public_data_connectors.py`.
+
+10. **Enhanced Validation Pipeline** — Network propagation analysis, pathway-informed constraints, and multi-omics evidence integration for comprehensive biomarker validation beyond traditional statistical methods. Implementation: `biomarkers/enhanced_validation.py`.
+
+**Key Achievement**: This hybrid approach delivers capabilities superior to either clinical or research approaches alone, combining tissue-chip validation rigor with global public data insights and state-of-the-art AI methods.
+
 ---
 
 ## 🏗️ System Architecture
