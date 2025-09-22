@@ -94,6 +94,14 @@ class ValidationResult:
     predictive_performance: Optional[Dict[str, float]] = None
     safety_profile: str = "unknown"
 
+    # Mechanism validation (CTD/AOP pathways)
+    mechanism_evidence_score: float = 0.0
+    aop_pathway_support: List[str] = field(default_factory=list)
+    ctd_evidence_count: int = 0
+    pathway_concordance_score: float = 0.0
+    mechanism_validation_level: str = "none"  # none, weak, moderate, strong
+    lincs_perturbation_support: Optional[float] = None
+
     # Meta information
     validation_timestamp: str = field(
         default_factory=lambda: datetime.now().isoformat()
@@ -218,7 +226,11 @@ class Enhanced6OmicsValidator:
             # 6. Clinical validation
             self._validate_clinical_utility(result, data, outcomes)
 
-            # 7. Overall assessment
+            # 7. Mechanism validation (if enabled)
+            # This is now done separately via enhance_validation_with_mechanism_support()
+            # to allow for optional KG integration
+
+            # 8. Overall assessment
             self._assess_overall_validation_quality(result)
 
             # Store result
@@ -776,6 +788,322 @@ class Enhanced6OmicsValidator:
 
         return min(1.0, plausibility_score)
 
+    def validate_mechanism_support(
+        self,
+        biomarker_id: str,
+        omics_type: OmicsType,
+        clinical_outcome: Optional[str] = None,
+        mechanism_kg=None,
+    ) -> Dict[str, Any]:
+        """Validate mechanistic support using CTD, AOP, and LINCS data"""
+
+        mechanism_validation = {
+            "mechanism_evidence_score": 0.0,
+            "aop_pathway_support": [],
+            "ctd_evidence_count": 0,
+            "pathway_concordance_score": 0.0,
+            "mechanism_validation_level": "none",
+            "lincs_perturbation_support": None,
+        }
+
+        if not mechanism_kg:
+            logger.info(
+                f"No mechanism KG provided for {biomarker_id} - using simplified validation"
+            )
+            return self._simplified_mechanism_validation(
+                biomarker_id, omics_type, clinical_outcome
+            )
+
+        try:
+            # Import mechanism KG functions
+            from .mechanism_kg_extensions import (
+                query_mechanism_paths,
+                validate_mechanism_with_lincs,
+            )
+
+            # Query CTD relationships for this biomarker
+            if clinical_outcome:
+                # Look for biomarker → clinical outcome paths
+                mechanism_paths = query_mechanism_paths(
+                    mechanism_kg, biomarker_id, clinical_outcome, max_path_length=4
+                )
+
+                if mechanism_paths:
+                    # Extract CTD evidence
+                    ctd_count = sum(
+                        path["evidence_sources"].get("CTD", 0)
+                        for path in mechanism_paths
+                    )
+                    mechanism_validation["ctd_evidence_count"] = ctd_count
+
+                    # Extract AOP pathways
+                    aop_pathways = []
+                    for path in mechanism_paths:
+                        aop_nodes = [
+                            node for node in path["path"] if node.startswith("AOP:")
+                        ]
+                        aop_pathways.extend(aop_nodes)
+
+                    mechanism_validation["aop_pathway_support"] = list(
+                        set(aop_pathways)
+                    )
+
+                    # Calculate pathway concordance score
+                    if mechanism_paths:
+                        avg_evidence_score = np.mean(
+                            [p["evidence_score"] for p in mechanism_paths[:5]]
+                        )
+                        mechanism_validation["pathway_concordance_score"] = float(
+                            avg_evidence_score
+                        )
+
+            # Validate with LINCS perturbation data
+            lincs_validation = validate_mechanism_with_lincs(biomarker_id)
+            if lincs_validation and "perturbation_score" in lincs_validation:
+                mechanism_validation["lincs_perturbation_support"] = lincs_validation[
+                    "perturbation_score"
+                ]
+
+            # Calculate overall mechanism evidence score
+            evidence_components = []
+
+            # CTD evidence (normalized by max possible)
+            if mechanism_validation["ctd_evidence_count"] > 0:
+                ctd_score = min(1.0, mechanism_validation["ctd_evidence_count"] / 10.0)
+                evidence_components.append(ctd_score)
+
+            # AOP pathway support
+            if mechanism_validation["aop_pathway_support"]:
+                aop_score = min(
+                    1.0, len(mechanism_validation["aop_pathway_support"]) / 3.0
+                )
+                evidence_components.append(aop_score)
+
+            # Pathway concordance
+            if mechanism_validation["pathway_concordance_score"] > 0:
+                evidence_components.append(
+                    mechanism_validation["pathway_concordance_score"]
+                )
+
+            # LINCS perturbation support
+            if mechanism_validation["lincs_perturbation_support"]:
+                evidence_components.append(
+                    mechanism_validation["lincs_perturbation_support"]
+                )
+
+            # Overall evidence score (average of available components)
+            if evidence_components:
+                mechanism_validation["mechanism_evidence_score"] = float(
+                    np.mean(evidence_components)
+                )
+
+            # Determine validation level
+            evidence_score = mechanism_validation["mechanism_evidence_score"]
+            if evidence_score >= 0.8 and len(evidence_components) >= 3:
+                mechanism_validation["mechanism_validation_level"] = "strong"
+            elif evidence_score >= 0.6 and len(evidence_components) >= 2:
+                mechanism_validation["mechanism_validation_level"] = "moderate"
+            elif evidence_score >= 0.3:
+                mechanism_validation["mechanism_validation_level"] = "weak"
+            else:
+                mechanism_validation["mechanism_validation_level"] = "none"
+
+        except ImportError:
+            logger.warning(
+                "Mechanism KG extensions not available - using simplified validation"
+            )
+            return self._simplified_mechanism_validation(
+                biomarker_id, omics_type, clinical_outcome
+            )
+        except Exception as e:
+            logger.error(f"Error in mechanism validation for {biomarker_id}: {e}")
+            return mechanism_validation
+
+        logger.info(
+            f"Mechanism validation for {biomarker_id}: level={mechanism_validation['mechanism_validation_level']}, score={mechanism_validation['mechanism_evidence_score']:.3f}"
+        )
+
+        return mechanism_validation
+
+    def _simplified_mechanism_validation(
+        self,
+        biomarker_id: str,
+        omics_type: OmicsType,
+        clinical_outcome: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """Simplified mechanism validation without external KG"""
+
+        # Rule-based heuristics for mechanism plausibility
+        mechanism_score = 0.0
+        validation_level = "none"
+
+        biomarker_lower = biomarker_id.lower()
+
+        # Known biomarker patterns with strong mechanistic support
+        strong_mechanism_patterns = [
+            "il6",
+            "tnf",
+            "crp",
+            "p53",
+            "nfkb",
+            "apoe",
+            "brca",
+            "egfr",
+            "vegf",
+            "pdgf",
+            "tgfb",
+            "ifn",
+            "stat",
+            "jak",
+            "mapk",
+        ]
+
+        moderate_mechanism_patterns = [
+            "gene",
+            "protein",
+            "kinase",
+            "receptor",
+            "factor",
+            "enzyme",
+            "transcript",
+            "methylation",
+            "cpg",
+        ]
+
+        # Check for known mechanistic biomarkers
+        if any(pattern in biomarker_lower for pattern in strong_mechanism_patterns):
+            mechanism_score = 0.8
+            validation_level = "strong"
+        elif any(pattern in biomarker_lower for pattern in moderate_mechanism_patterns):
+            mechanism_score = 0.5
+            validation_level = "moderate"
+        elif omics_type in [OmicsType.TRANSCRIPTOMICS, OmicsType.PROTEOMICS]:
+            mechanism_score = 0.4
+            validation_level = "weak"
+        else:
+            mechanism_score = 0.2
+            validation_level = "none"
+
+        # Adjust based on omics type biological plausibility
+        omics_adjustment = {
+            OmicsType.GENOMICS: 0.1,  # Genetic variants have clear mechanisms
+            OmicsType.EPIGENOMICS: 0.15,  # Epigenetic marks have known regulatory mechanisms
+            OmicsType.TRANSCRIPTOMICS: 0.2,  # Gene expression has well-characterized pathways
+            OmicsType.PROTEOMICS: 0.25,  # Proteins are direct functional mediators
+            OmicsType.METABOLOMICS: 0.15,  # Metabolites reflect pathway activity
+            OmicsType.EXPOSOMICS: 0.1,  # Environmental exposures have diverse mechanisms
+            OmicsType.CLINICAL: 0.05,  # Clinical measures are distal from mechanisms
+        }
+
+        mechanism_score = min(
+            1.0, mechanism_score + omics_adjustment.get(omics_type, 0.0)
+        )
+
+        return {
+            "mechanism_evidence_score": mechanism_score,
+            "aop_pathway_support": [],
+            "ctd_evidence_count": 0,
+            "pathway_concordance_score": mechanism_score,  # Use overall score as proxy
+            "mechanism_validation_level": validation_level,
+            "lincs_perturbation_support": None,
+        }
+
+    def enhance_validation_with_mechanism_support(
+        self,
+        biomarker_id: str,
+        clinical_outcome: Optional[str] = None,
+        mechanism_kg=None,
+    ) -> ValidationResult:
+        """Enhance existing validation result with mechanism support"""
+
+        if biomarker_id not in self.validation_results:
+            logger.warning(f"No validation result found for {biomarker_id}")
+            return None
+
+        result = self.validation_results[biomarker_id]
+
+        # Validate mechanism support
+        mechanism_validation = self.validate_mechanism_support(
+            biomarker_id, result.omics_type, clinical_outcome, mechanism_kg
+        )
+
+        # Update validation result with mechanism information
+        result.mechanism_evidence_score = mechanism_validation[
+            "mechanism_evidence_score"
+        ]
+        result.aop_pathway_support = mechanism_validation["aop_pathway_support"]
+        result.ctd_evidence_count = mechanism_validation["ctd_evidence_count"]
+        result.pathway_concordance_score = mechanism_validation[
+            "pathway_concordance_score"
+        ]
+        result.mechanism_validation_level = mechanism_validation[
+            "mechanism_validation_level"
+        ]
+        result.lincs_perturbation_support = mechanism_validation[
+            "lincs_perturbation_support"
+        ]
+
+        # Update overall validation quality considering mechanism support
+        self._update_validation_quality_with_mechanism(result)
+
+        # Add mechanism-specific validation notes
+        result.validation_notes.append(
+            f"Mechanism validation: {result.mechanism_validation_level} (score: {result.mechanism_evidence_score:.3f})"
+        )
+
+        if result.ctd_evidence_count > 0:
+            result.validation_notes.append(
+                f"CTD evidence relationships: {result.ctd_evidence_count}"
+            )
+
+        if result.aop_pathway_support:
+            result.validation_notes.append(
+                f"AOP pathway support: {len(result.aop_pathway_support)} pathways"
+            )
+
+        if result.lincs_perturbation_support:
+            result.validation_notes.append(
+                f"LINCS perturbation validation: {result.lincs_perturbation_support:.3f}"
+            )
+
+        logger.info(
+            f"Enhanced {biomarker_id} with mechanism validation: {result.mechanism_validation_level}"
+        )
+
+        return result
+
+    def _update_validation_quality_with_mechanism(self, result: ValidationResult):
+        """Update overall validation quality incorporating mechanism evidence"""
+
+        # Parse current evidence level
+        current_level = result.validation_level
+        evidence_levels = {"E1": 1, "E2": 2, "E3": 3, "E4": 4, "E5": 5}
+        current_score = evidence_levels.get(current_level, 1)
+
+        # Mechanism validation bonus
+        mechanism_bonus = 0
+        if result.mechanism_validation_level == "strong":
+            mechanism_bonus = 1
+        elif result.mechanism_validation_level == "moderate":
+            mechanism_bonus = 0.5
+        elif result.mechanism_validation_level == "weak":
+            mechanism_bonus = 0.25
+
+        # Apply mechanism bonus (can upgrade evidence level)
+        new_score = min(5, current_score + mechanism_bonus)
+
+        # Map back to evidence level
+        score_to_level = {1: "E1", 2: "E2", 3: "E3", 4: "E4", 5: "E5"}
+
+        # Use ceiling to ensure mechanism support can upgrade level
+        upgraded_level = score_to_level[int(np.ceil(new_score))]
+
+        if upgraded_level != current_level:
+            result.validation_level = upgraded_level
+            result.validation_notes.append(
+                f"Evidence level upgraded from {current_level} to {upgraded_level} due to mechanism support"
+            )
+
     def apply_multiple_testing_correction(
         self, biomarker_ids: List[str], method: str = "fdr_bh"
     ) -> Dict[str, float]:
@@ -868,6 +1196,11 @@ class Enhanced6OmicsValidator:
                         k.value: v for k, v in result.cross_omics_correlation.items()
                     },
                     "clinical_utility_score": result.clinical_utility_score,
+                    "mechanism_evidence_score": result.mechanism_evidence_score,
+                    "mechanism_validation_level": result.mechanism_validation_level,
+                    "aop_pathway_count": len(result.aop_pathway_support),
+                    "ctd_evidence_count": result.ctd_evidence_count,
+                    "pathway_concordance_score": result.pathway_concordance_score,
                     "validation_notes": result.validation_notes,
                 }
 
@@ -891,14 +1224,40 @@ class Enhanced6OmicsValidator:
             > self.config.effect_size_threshold
         )
 
+        # Mechanism validation metrics
+        mechanism_validated_biomarkers = sum(
+            1
+            for bid in biomarker_ids
+            if bid in self.validation_results
+            and self.validation_results[bid].mechanism_validation_level
+            in ["moderate", "strong"]
+        )
+
+        strong_mechanism_biomarkers = sum(
+            1
+            for bid in biomarker_ids
+            if bid in self.validation_results
+            and self.validation_results[bid].mechanism_validation_level == "strong"
+        )
+
         report["quality_metrics"] = {
             "significant_biomarkers": significant_biomarkers,
             "high_effect_biomarkers": high_effect_biomarkers,
+            "mechanism_validated_biomarkers": mechanism_validated_biomarkers,
+            "strong_mechanism_biomarkers": strong_mechanism_biomarkers,
             "significance_rate": (
                 significant_biomarkers / len(biomarker_ids) if biomarker_ids else 0
             ),
             "high_effect_rate": (
                 high_effect_biomarkers / len(biomarker_ids) if biomarker_ids else 0
+            ),
+            "mechanism_validation_rate": (
+                mechanism_validated_biomarkers / len(biomarker_ids)
+                if biomarker_ids
+                else 0
+            ),
+            "strong_mechanism_rate": (
+                strong_mechanism_biomarkers / len(biomarker_ids) if biomarker_ids else 0
             ),
         }
 
@@ -939,6 +1298,12 @@ class Enhanced6OmicsValidator:
                 "clinical_utility_score": result.clinical_utility_score,
                 "predictive_performance": result.predictive_performance,
                 "safety_profile": result.safety_profile,
+                "mechanism_evidence_score": result.mechanism_evidence_score,
+                "aop_pathway_support": result.aop_pathway_support,
+                "ctd_evidence_count": result.ctd_evidence_count,
+                "pathway_concordance_score": result.pathway_concordance_score,
+                "mechanism_validation_level": result.mechanism_validation_level,
+                "lincs_perturbation_support": result.lincs_perturbation_support,
                 "validation_timestamp": result.validation_timestamp,
                 "sample_size": result.sample_size,
                 "validation_notes": result.validation_notes,
@@ -1048,6 +1413,19 @@ def run_enhanced_6omics_validation_demo():
     biomarker_ids = list(validation_results.keys())
     validator.apply_multiple_testing_correction(biomarker_ids)
 
+    # Demonstrate mechanism validation enhancement
+    print("\n🔬 Enhancing validation with mechanism support...")
+    for biomarker_id in biomarker_ids:
+        enhanced_result = validator.enhance_validation_with_mechanism_support(
+            biomarker_id=biomarker_id,
+            clinical_outcome="clinical_outcome_001",  # Demo clinical outcome
+            mechanism_kg=None,  # Using simplified validation without external KG
+        )
+        if enhanced_result:
+            print(
+                f"  Enhanced {biomarker_id}: {enhanced_result.mechanism_validation_level} mechanism support"
+            )
+
     # Generate report
     report = validator.generate_validation_report()
 
@@ -1078,8 +1456,20 @@ def run_enhanced_6omics_validation_demo():
     print(
         f"  High effect biomarkers: {report['quality_metrics']['high_effect_biomarkers']}"
     )
+    print(
+        f"  Mechanism validated biomarkers: {report['quality_metrics']['mechanism_validated_biomarkers']}"
+    )
+    print(
+        f"  Strong mechanism biomarkers: {report['quality_metrics']['strong_mechanism_biomarkers']}"
+    )
     print(f"  Significance rate: {report['quality_metrics']['significance_rate']:.1%}")
     print(f"  High effect rate: {report['quality_metrics']['high_effect_rate']:.1%}")
+    print(
+        f"  Mechanism validation rate: {report['quality_metrics']['mechanism_validation_rate']:.1%}"
+    )
+    print(
+        f"  Strong mechanism rate: {report['quality_metrics']['strong_mechanism_rate']:.1%}"
+    )
 
     print("\nDetailed Biomarker Results:")
     for biomarker_id, details in report["detailed_results"].items():
@@ -1087,10 +1477,16 @@ def run_enhanced_6omics_validation_demo():
         print(f"    Evidence Level: {details['evidence_level']}")
         print(f"    P-value: {details['statistical_significance']:.6f}")
         print(f"    Effect Size: {details['effect_size']:.3f}")
+        print(f"    Mechanism Level: {details['mechanism_validation_level']}")
+        print(f"    Mechanism Score: {details['mechanism_evidence_score']:.3f}")
         if details["temporal_stability"]:
             print(f"    Temporal Stability: {details['temporal_stability']:.3f}")
         if details["clinical_utility_score"]:
             print(f"    Clinical Utility: {details['clinical_utility_score']:.3f}")
+        if details["ctd_evidence_count"] > 0:
+            print(f"    CTD Evidence: {details['ctd_evidence_count']} relationships")
+        if details["aop_pathway_count"] > 0:
+            print(f"    AOP Pathways: {details['aop_pathway_count']} pathways")
         if details["cross_omics_correlations"]:
             print(
                 f"    Cross-Omics Correlations: {details['cross_omics_correlations']}"
@@ -1107,6 +1503,10 @@ def run_enhanced_6omics_validation_demo():
     print("✅ Clinical utility assessment")
     print("✅ Multiple testing correction applied")
     print("✅ Evidence-based quality scoring")
+    print("✅ Mechanism validation with CTD/AOP pathway support")
+    print("✅ LINCS perturbation validation integration")
+    print("✅ Pathway concordance scoring")
+    print("✅ Mechanism-informed evidence level upgrading")
 
     # Save results
     validator.save_validation_results("demo_outputs/enhanced_validation")

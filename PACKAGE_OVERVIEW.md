@@ -50,6 +50,8 @@ Building on our proven clinical foundation, we have integrated advanced research
 
 10. **Enhanced Validation Pipeline** — Network propagation analysis, pathway-informed constraints, and multi-omics evidence integration for comprehensive biomarker validation beyond traditional statistical methods. Implementation: `biomarkers/enhanced_validation.py`.
 
+11. **Exposure-Mechanism-Biomarker Integration** — Systematic framework for reconciling lifestyle and environmental factors to biological mechanisms using CTD chemical-gene relationships and AOP molecular pathways. OMOP/FHIR/UCUM compliant exposure data standardization with temporal mediation analysis. Implementation: `biomarkers/exposure_standards.py`, `biomarkers/mechanism_kg_extensions.py`, `biomarkers/exposure_mediation_pipeline.py`.
+
 **Key Achievement**: This hybrid approach delivers capabilities superior to either clinical or research approaches alone, combining tissue-chip validation rigor with global public data insights and state-of-the-art AI methods.
 
 ---
@@ -434,6 +436,11 @@ Our enhanced validation has been tested on real clinical data:
 - **Function**: Stores and connects all biological and clinical knowledge
 - **Methods**: Graph databases, semantic reasoning, automated curation
 - **Output**: Contextualized insights and mechanistic explanations
+
+#### **Exposure-Mechanism Integration Engine**
+- **Function**: Reconciles environmental/lifestyle factors with biological mechanisms
+- **Methods**: CTD chemical-gene relationships, AOP molecular pathways, OMOP/FHIR standardization
+- **Output**: Evidence-based exposure → mechanism → biomarker pathways
 
 ---
 

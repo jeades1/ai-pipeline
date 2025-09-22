@@ -15,6 +15,9 @@ pip install -r requirements.txt
 # Run enhanced validation demo
 python test_enhanced_validation.py
 
+# Run exposure-mechanism-biomarker integration demo
+python biomarkers/integrated_pipeline_demo.py
+
 # Start production API server
 docker-compose up -d
 # Visit http://localhost:8000/docs for API documentation
@@ -80,7 +83,8 @@ python presentation/generate_visualizations.py
 #### **Phase 2: Methodological Advances** 
 *"What makes this approach scientifically rigorous?"*
 
-7. **[Enhanced Validation Framework](./ENHANCED_VALIDATION_SUMMARY.md)** - Statistical methods and bias control
+3. **[Exposure-Mechanism Framework](#-exposure-mechanism-biomarker-framework)** - Environmental health analytics with systematic exposure data integration
+4. **[Enhanced Validation](#-enhanced-validation-framework)** - Rigorous statistical validation and bias detection
    - **Why this matters**: 90% of biomarker candidates fail in clinical trials due to poor validation
    - Our solution: Multi-layer statistical validation that catches problems early
    - Read this to understand how we achieve higher success rates than traditional approaches
@@ -199,7 +203,15 @@ Our platform now combines your proven clinical strengths with advanced research 
 - **Bias Detection**: Systematic bias identification and mitigation
 - **Temporal Stability**: Longitudinal validation and stability assessment
 - **Clinical Assessment**: Real-world clinical validation metrics
+- **Mechanism Validation**: CTD/AOP pathway evidence integration with biomarker validation
 - **📋 Details**: [Enhanced Validation Summary](./ENHANCED_VALIDATION_SUMMARY.md)
+
+### 🌍 **Exposure-Mechanism-Biomarker Framework**
+- **Systematic Exposure Data Integration**: OMOP/FHIR/UCUM compliant standardization for EPA, NHANES, wearable data
+- **Mechanism Knowledge Graph**: CTD chemical-gene relationships and AOP molecular pathways integration
+- **Exposure-Mediation Analysis**: Temporal exposure → molecular mediator → clinical outcome analysis
+- **Environmental Health Analytics**: Rigorous reconciliation of lifestyle/environmental factors to biological mechanisms
+- **📋 Details**: [Exposure-Mechanism-Biomarker Deployment Guide](./EXPOSURE_MECHANISM_BIOMARKER_DEPLOYMENT_GUIDE.md)
 
 ### 🚀 **Production-Ready Deployment**
 - **FastAPI REST API**: 12+ endpoints with comprehensive documentation
